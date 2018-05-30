@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - 'node_modules'
+
+notifications:
+  email: mindreeper2420@gmail.com
+
+node_js:
+  - '8'
+
+env:
+  global:
+    - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
+    - TRIGGER_REPO_SLUG: "mindreeper2420/prototype-template.github.io"
+    - TRIGGER_REPO_BRANCH: "master"
+
+before_script:
+  - npm install -g gulp-cli
+
+script: gulp
