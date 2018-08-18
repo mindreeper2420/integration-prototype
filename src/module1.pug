@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  include includes/header.pug
+
+  body
+    include includes/navigation.pug
+    ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
+      li
+        a(href='index.html').active
+          i.fa.fa-home.fa-lg
+      li
+        a(href='steel-thread-0.html') Steel Thread 0
+      li
+        | Module 1 of 4: Build your REST endpoint
+    section
+      .container-fluid
+        .row

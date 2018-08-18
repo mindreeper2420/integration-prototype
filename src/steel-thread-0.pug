@@ -1,0 +1,101 @@
+doctype html
+html(lang='en')
+  include includes/header.pug
+
+  body
+    include includes/navigation.pug
+    ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
+      li
+        a(href='index.html').active
+          i.fa.fa-home.fa-lg
+      li
+        | Steel Thread 0
+    section
+      .container-fluid
+        .row
+          .col-xs-12.col-sm-8
+            h1 What will I accomplish?
+              .small.pull-right
+                i.fa.fa-clock-o 20 minutes
+            p In this walkthrough, you will sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            a.btn.btn-primary(href='module1.html') Get Started
+          .col-sm-4(style='position: absolute; right: 0; top: 96px; bottom: 0; background-color: #ddd;')
+            h3 Prerequisites
+            ul(style='padding-left: 0;').list-unstyled
+              li
+                i.fa.fa-check-square
+                | Lorem ipsum dolor
+              li
+                i.fa.fa-check-square
+                | Lorem ipsum dolor
+              li
+                i.fa.fa-check-square
+                | Lorem ipsum dolor
+              li
+                i.fa.fa-check-square
+                | Lorem ipsum dolor
+            h3 Roles
+            ul(style='padding-left: 0;').list-unstyled
+              li
+                i.fa.fa-user
+                | Operator
+              li
+                i.fa.fa-user
+                | Developer
+            h3 Installed applications used in this tutorial
+              span.badge Eclipse Che
+              span.badge Enmasse
+              span.badge Fuse Online
+              span.badge Red Hat OpenShift Application Runtimes
+        .row
+          .col-xs-12.col-sm-8
+            h1 Modules to complete
+            .list-group.list-view-pf
+              .list-group-item.list-view-pf-stacked
+                .list-view-pf-main-info
+                  .list-view-pf-left
+                    | 1.
+                  .list-view-pf-body
+                    .list-view-pf-description.list-view-pf-integreatly-description
+                      .list-group-item-heading
+                        | Build your REST endpoint
+                        .small.pull-right
+                          i.fa.fa-clock-o 5 minutes
+                      .list-group-item-text
+                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              .list-group-item.list-view-pf-stacked
+                .list-view-pf-main-info
+                  .list-view-pf-left
+                    | 2.
+                  .list-view-pf-body
+                    .list-view-pf-description.list-view-pf-integreatly-description
+                      .list-group-item-heading
+                        | Create connections
+                        .small.pull-right
+                          i.fa.fa-clock-o 3 minutes
+                      .list-group-item-text
+                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              .list-group-item.list-view-pf-stacked
+                .list-view-pf-main-info
+                  .list-view-pf-left
+                    | 3.
+                  .list-view-pf-body
+                    .list-view-pf-description.list-view-pf-integreatly-description
+                      .list-group-item-heading
+                        | Set up messaging
+                        .small.pull-right
+                          i.fa.fa-clock-o 4 minutes
+                      .list-group-item-text
+                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              .list-group-item.list-view-pf-stacked
+                .list-view-pf-main-info
+                  .list-view-pf-left
+                    | 4.
+                  .list-view-pf-body
+                    .list-view-pf-description.list-view-pf-integreatly-description
+                      .list-group-item-heading
+                        | Build integration
+                        .small.pull-right
+                          i.fa.fa-clock-o 4 minutes
+                      .list-group-item-text
+                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.

@@ -1,0 +1,737 @@
+nav.navbar.navbar-pf-vertical
+  .navbar-header
+    button.navbar-toggle(type='button')
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.navbar-brand(href='/')
+      img.navbar-brand-icon(src='/img/logo-alt.svg' alt='')
+      | PatternFly Enterprise Application
+  nav.collapse.navbar-collapse
+    ul.nav.navbar-nav.navbar-right.navbar-iconic.navbar-utility
+      li
+        button.btn.btn-link.nav-item-iconic.drawer-pf-trigger-icon
+          span.fa.fa-shopping-cart.dropdown-title(title='Notifications')
+          span.badge.badge-pf-bordered  
+          // in order to show the empty badge this requires a space, otherwise add a value
+      li.drawer-pf-trigger.dropdown
+        button.btn.btn-link.nav-item-iconic.drawer-pf-trigger-icon
+          span.fa.fa-bell.dropdown-title(title='Notifications')
+          span.badge.badge-pf-bordered  
+          // in order to show the empty badge this requires a space, otherwise add a value
+      li.applauncher-pf.applauncher-pf-block-list.dropdown
+        button.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' href='#')
+          span.fa.fa-th.applauncher-pf-icon(aria-hidden='true')
+          span.dropdown-title
+            span.applauncher-pf-title
+              | Application Launcher
+              span.caret(aria-hidden='true')
+        ul.dropdown-menu(role='menu')
+          li.applauncher-pf-item(role='presentation')
+            a.applauncher-pf-link(href='#' role='menuitem')
+              i.applauncher-pf-link-icon.pficon.pficon-storage-domain(aria-hidden='true')
+              span.applauncher-pf-link-title Recteque
+          li.applauncher-pf-item(role='presentation')
+            a.applauncher-pf-link(href='#' role='menuitem')
+              i.applauncher-pf-link-icon.pficon.pficon-virtual-machine(aria-hidden='true')
+              span.applauncher-pf-link-title Ipsum
+          li.applauncher-pf-item(role='presentation')
+            a.applauncher-pf-link(href='#' role='menuitem')
+              // Placeholder left to maintain spacing
+              i.applauncher-pf-link-icon(aria-hidden='true')
+              span.applauncher-pf-link-title Suavitate
+          li.applauncher-pf-item(role='presentation')
+            a.applauncher-pf-link(href='#' role='menuitem')
+              i.applauncher-pf-link-icon.pficon.pficon-domain(aria-hidden='true')
+              span.applauncher-pf-link-title Lorem
+          li.applauncher-pf-item(role='presentation')
+            a.applauncher-pf-link(href='#' role='menuitem')
+              i.applauncher-pf-link-icon.pficon.pficon-home(aria-hidden='true')
+              span.applauncher-pf-link-title Home
+      li.dropdown
+        button#dropdownMenu1.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+          span.fa.fa-question-circle(title='Help')
+        ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+          li
+            a(href='#0') Help
+          li
+            a(href='#0') About
+      li.dropdown
+        button#dropdownMenu2.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+          span.fa.fa-user(title='Username')
+          span.dropdown-title
+            | Brian Johnson
+            span.caret
+        ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+          li
+            a(href='#0') Preferences
+          li
+            a(href='#0') Logout
+    .drawer-pf.hide.drawer-pf-notifications-non-clickable
+      .drawer-pf-title
+        a.drawer-pf-toggle-expand.fa.fa-angle-double-left.hidden-xs
+        a.drawer-pf-close.pficon.pficon-close
+        h3.text-center Notifications Drawer
+      #notification-drawer-accordion.panel-group(style='overflow-y: auto;')
+        .panel.panel-default
+          .panel-heading(data-component='collapse-heading')
+            h4.panel-title
+              a(data-toggle='collapse' data-parent='#notification-drawer-accordion' href='#fixedCollapseOne')
+                | Notification Tab 1
+            span.panel-counter 2 New Events
+          #fixedCollapseOne.panel-collapse.collapse.in
+            .panel-body(style='max-height: 25px; overflow-y: auto;')
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight11.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight11')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight21.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight21')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight31.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight31')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight41.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight41')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+            .blank-slate-pf.hidden(style='')
+              .blank-slate-pf-icon
+                span.pficon-info
+              h1 There are no notifications to display.
+            .drawer-pf-action
+              .drawer-pf-action-link(data-toggle='mark-all-read')
+                button.btn.btn-link Mark All Read
+              .drawer-pf-action-link(data-toggle='clear-all')
+                button.btn.btn-link
+                  span.pficon.pficon-close
+                  |                   Clear All
+        .panel.panel-default
+          .panel-heading(data-component='collapse-heading')
+            h4.panel-title
+              a.collapsed(data-toggle='collapse' data-parent='#notification-drawer-accordion' href='#fixedCollapseTwo')
+                | Notification Tab 2
+            span.panel-counter 6 New Events
+          #fixedCollapseTwo.panel-collapse.collapse
+            .panel-body(style='max-height: 25px; overflow-y: auto;')
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight12.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight12')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight22.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight22')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight32.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight32')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight42.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight42')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight13.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight13')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight23.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight23')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight33.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight33')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight43.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight43')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight14.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight14')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight24.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight24')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight34.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight34')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight44.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight44')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-loading.text-center
+                span.spinner.spinner-xs.spinner-inline
+                |  Loading More
+            .blank-slate-pf.hidden(style='')
+              .blank-slate-pf-icon
+                span.pficon-info
+              h1 There are no notifications to display.
+            .drawer-pf-action
+              .drawer-pf-action-link(data-toggle='mark-all-read')
+                button.btn.btn-link Mark All Read
+              .drawer-pf-action-link(data-toggle='clear-all')
+                button.btn.btn-link
+                  span.pficon.pficon-close
+                  |                   Clear All
+        .panel.panel-default
+          .panel-heading(data-component='collapse-heading')
+            h4.panel-title
+              a.collapsed(data-toggle='collapse' data-parent='#notification-drawer-accordion' href='#fixedCollapseThree')
+                | Notification Tab 3
+            span.panel-counter 6 New Events
+          #fixedCollapseThree.panel-collapse.collapse
+            .panel-body(style='max-height: 25px; overflow-y: auto;')
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight15.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight15')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight25.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight25')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight35.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight35')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight45.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight45')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight16.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight16')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight26.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight26')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight36.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight36')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight46.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight46')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight17.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight17')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-info.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification.unread
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight27.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight27')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-ok.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight37.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight37')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-warning-triangle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message
+                    | Another Event Notification that is really long to see how it reacts on smaller screens sizes.
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+              .drawer-pf-notification
+                .dropdown.pull-right.dropdown-kebab-pf
+                  button#dropdownKebabRight47.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                    span.fa.fa-ellipsis-v
+                  ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight47')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another Action
+                    li
+                      a(href='#') Something Else Here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated Link
+                span.pficon.pficon-error-circle-o.pull-left
+                .drawer-pf-notification-content
+                  span.drawer-pf-notification-message Another Event Notification
+                  .drawer-pf-notification-info
+                    span.date 3/31/16
+                    span.time 12:12:44 PM
+            .blank-slate-pf.hidden(style='')
+              .blank-slate-pf-icon
+                span.pficon-info
+              h1 There are no notifications to display.
+            .drawer-pf-action
+              .drawer-pf-action-link(data-toggle='mark-all-read')
+                button.btn.btn-link Mark All Read
+              .drawer-pf-action-link(data-toggle='clear-all')
+                button.btn.btn-link
+                  span.pficon.pficon-close
+                  |                   Clear All
+  .drawer-pf.hide.drawer-pf-notifications-non-clickable
+    .drawer-pf-title
+      a.drawer-pf-toggle-expand.fa.fa-angle-double-left.hidden-xs
+      a.drawer-pf-close.pficon.pficon-close
+      h3.text-center Notifications Drawer
+    #notification-drawer-accordion.panel-group
+      .panel.panel-default
+        .panel-heading(data-component='collapse-heading')
+          h4.panel-title
+            a(data-toggle='collapse' data-parent='#notification-drawer-accordion' href='#fixedCollapseOne')
+              | Notification Tab 1
+          span.panel-counter 5 New Events
+        #fixedCollapseOne.panel-collapse.collapse.in
+          .panel-body
+            .drawer-pf-notification.unread
+              .dropdown.pull-right.dropdown-kebab-pf
+                button#dropdownKebabRight11.btn.btn-link.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                  span.fa.fa-ellipsis-v
+                ul.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownKebabRight11')
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another Action
+                  li
+                    a(href='#') Something Else Here
+                  li.divider(role='separator')
+                  li
+                    a(href='#') Separated Link
+              span.pficon.pficon-info.pull-left
+              .drawer-pf-notification-content
+                span.drawer-pf-notification-message A New Event! Huzzah! Bold!
+                .drawer-pf-notification-info
+                  span.date 3/31/16
+                  span.time 12:12:44 PM

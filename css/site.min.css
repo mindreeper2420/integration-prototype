@@ -2,3 +2,20 @@
  * Prototype Template -  v0.1.1 (https://www.adamjolicoeur.com/prototype-template)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
+.right {
+  float: right; }
+
+.circle-placeholder {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  margin: 0 auto; }
+
+.breadcrumb {
+  padding-left: 25px;
+  background-color: #eee; }
+
+.list-view-pf-integreatly-description {
+  flex: 1 !important;
+  /* stylelint-disable-line declaration-no-important */ }

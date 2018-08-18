@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  include includes/header.pug
+
+  body
+    include includes/navigation.pug
+    header(style="background-color: #aaa; min-height: 65vh;")
+      .container-fluid
+        .row
+          h1 Welcome to your Red Hat evaluation experience.
+          h4 will be covering...
+      .container-fluid
+        .row
+          .col-sm-3
+            .circle-placeholder
+            h4.text-center Your products together in one place.
+          .col-sm-3
+            .circle-placeholder
+            h4.text-center Explore tutorials for easy set-up.
+          .col-sm-3
+            .circle-placeholder
+            h4.text-center.white Support in the places you need them.
+      .container-fluid
+        .row
+          .col-xs-12
+            h2 Solve problems with tutorials
+    section(style='')
+      include includes/steal-thread-row-1.pug
+      include includes/steal-thread-row-2.pug
+    section
+      .container
+        .row
+          h1 Your installed applications in one place
+        .row
+          ul.list-group.col-xs-12.col-sm-4
+            li.list-group-item
+              a(href='#') Red Hat OpenShift Application Runtimes
+            li.list-group-item
+              a(href='#') Fuse Online
+            li.list-group-item
+              a(href='#') Eclipse Che
+            li.list-group-item
+              a(href='#') enmasse
+          .col-xs-12.col-sm-8
+            h2 Red Hat OpenShift Application Runtimes
+            p Description of Red Hat OpenShift Application Runtimes
+        .row
+          .col-xs-12
+            p.text-right
+              u
+                a(href='#') All Applications
+      footer(style='min-height: 10vh;')
+    include includes/scripts.pug
