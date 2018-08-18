@@ -1,8 +1,8 @@
 {
-  "name": "prototype-template",
+  "name": "integration-prototype",
   "version": "0.1.1",
-  "description": "A template for creating prototypes",
-  "homepage": "https://www.adamjolicoeur.com/prototype-template",
+  "description": "Integration Prototype",
+  "homepage": "https://www.adamjolicoeur.com/integration-prototype",
   "main": "index.js",
   "scripts": {
     "start": "gulp serve"
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mindreeper2420/prototype-template"
+    "url": "https://github.com/mindreeper2420/integration-prototype"
   },
   "author": "Adam J. Jolicoeur",
   "license": "Apache-2.0",

@@ -1,6 +1,6 @@
-# Prototype Template
+# Integration Prototype
 
-This is a template for creating prototypes. If you wish to use it, please download or fork this repo.
+This is for the integration prototype.
 
 ----
 
@@ -19,6 +19,6 @@ This is a template for creating prototypes. If you wish to use it, please downlo
 - Gulp
 - stylelint
 - travis (rewrite this configuration)
-- Bootstrap 4
+- PatternFly 3
 - Sass
 - JS
