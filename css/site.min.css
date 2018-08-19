@@ -2,8 +2,39 @@
  * Prototype Template -  v0.1.1 (https://www.adamjolicoeur.com/integration-prototype)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
-.right {
-  float: right; }
+body {
+  font-size: 14px;
+  background-color: #ededed; }
+
+h1 {
+  font-size: 2em;
+  line-height: 1.3em; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.3em; }
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.3em; }
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.3em; }
+
+h5 {
+  font-size: 1.1em;
+  line-height: 1.3em; }
+
+.list-view-pf-integreatly-description {
+  flex: 1 !important;
+  /* stylelint-disable-line declaration-no-important */ }
+
+.module1-list {
+  padding-left: 15px; }
+
+.breadcrumb {
+  padding-left: 25px; }
 
 .circle-placeholder {
   height: 20rem;
@@ -11,11 +42,3 @@
   border-radius: 50%;
   background-color: #d8d8d8;
   margin: 0 auto; }
-
-.breadcrumb {
-  padding-left: 25px;
-  background-color: #eee; }
-
-.list-view-pf-integreatly-description {
-  flex: 1 !important;
-  /* stylelint-disable-line declaration-no-important */ }

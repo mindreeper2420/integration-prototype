@@ -83,3 +83,6 @@ if ($('.drawer-pf .panel-collapse .unread').length === 0) {
 });
 $('#notification-drawer-accordion').initCollapseHeights('.panel-body');
 });
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});

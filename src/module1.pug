@@ -7,7 +7,7 @@ html(lang='en')
     ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
       li
         a(href='index.html').active
-          i.fa.fa-home.fa-lg
+          i.pficon.pficon-home.fa-lg
       li
         a(href='steel-thread-0.html') Steel Thread 0
       li
@@ -15,3 +15,36 @@ html(lang='en')
     section
       .container-fluid
         .row
+          .col-sm-3(style='display: grid; height: calc(100vh - 120px); background-color: #fff;')
+            .module-column(style='display: grid; grid-template-rows: 100px auto 1fr 150px;')
+              .module-status(style='background-color: #fafafa; border-bottom: 1px solid #d1d1d1; margin: 0 -20px; padding: 1px 20px;')
+                h4 Module Completion
+                .progress
+                  .progress-bar(style='width: 50%;', role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', data-toggle='tooltip', data-placement='right', title='50%')
+              .module-steps
+                h4 Create your REST endpoint using Red Hat OpenShift Application Runtimes
+                ol.module1-list
+                  li To open the application launcher console, lick <b>Launch Your Project</b>.
+                  li From the <b>Create application</b> screen, add a name for your REST endpoint application and click <b>Continue</b>.
+                  li From the <b>Target Environment</b> screen, select <b>"Code locally, Build and Deploy"</b>.
+                  li From the Mission list, select <b>Health Check</b>.
+                  li From the Runtime list, select <b>SpringBoot</b> and click the blue arrow to continue.
+                  li Authorize your GitHub provider and click the blue arrow to continue.
+                  li Review and click <b>Set Up Application</b>. You'll see a confirmation screen when setup is complete.
+              .module-status
+                h4 Check for success
+                //- i.pficon.pficon-info
+                  //- span(style='padding-left: 5px;') Complete the procedure above
+                i.pficon.pficon-ok
+                  span(style='padding-left: 5px;') <b>REST endpoint successfully built!</b> To See your REST endpoint in the context of the thing, <a href='#'>click to visit there</a>.
+              .module-footer(style='background-color: #fafafa; margin: 0 -20px; padding: 1px 20px;')
+                h4 What's next?
+                //- p You may still view the next procedure, but to complete this module, you must first complete the procedure above.
+                //- button.btn.btn-default Next
+                //-   i.fa.fa-angle-right(style='padding-left: 5px;')
+                p Next, we'll make some changes to the REST endpoint we just created and commit those changes.
+                button.btn.btn-primary Next
+                  i.fa.fa-angle-right(style='padding-left: 5px;')
+          .col-sm-9 
+            img(src='img/launcher-start.png', style='height: auto; width: 100%;')
+    include includes/scripts.pug

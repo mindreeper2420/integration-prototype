@@ -3,29 +3,20 @@
 // do not add CSS directly to this file
 //
 
-// @import 'xyz.scss';
-// .list-group {
-//   border-top: none;
-//   border-right: 1px solid #d7d7d7;
-//   &-item {
-//     padding: 20px 15px;
-//     border: none;
-//   }
-// }
-.right {
-  float: right;
+body {
+  font-size: 14px;
+  background-color: #ededed;
 }
+
+@import 'fonts';
+@import 'typography';
+@import 'lists';
+@import 'breadcrumbs';
+
 .circle-placeholder {
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
   background-color: #d8d8d8;
   margin: 0 auto;
-}
-.breadcrumb {
-  padding-left: 25px;
-  background-color: #eee;
-}
-.list-view-pf-integreatly-description {
-  flex: 1 !important; /* stylelint-disable-line declaration-no-important */
 }
