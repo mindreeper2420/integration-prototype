@@ -1,3 +1,6 @@
+.integr8ly-container {
+  background-color: #eee;
+}
 .integr8ly-module {
   // display: grid;
   // height: calc(100vh - 120px);
@@ -45,8 +48,26 @@
   right: 0;
   bottom: 0;
   background-color: #ddd;
-  height: 100%;
+  // height: 100%;
 }
 .integr8ly-steel-thread-rows {
-  background-color: #fff;
+  // background-color: #fff;
+  margin-top: -10em;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 5;
+}
+.integr8ly-list-group--application-list {
+  margin-top: 20px;
+}
+.integr8ly-masthead {
+  background-color: #aaa;
+  color: #fff;
+  height: 35vh;
+}
+.integr8ly-container-cards-pf {
+  margin-top: 0;
+}
+.integr8ly-card-pf {
+  background-color: transparent;
 }

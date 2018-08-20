@@ -2,8 +2,11 @@
  * Prototype Template -  v0.1.1 (https://www.adamjolicoeur.com/integration-prototype)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
-body {
-  background-color: #ededed; }
+.integr8ly-h2-white {
+  color: #fff; }
+
+.integr8ly-container {
+  background-color: #eee; }
 
 .integr8ly-module {
   position: fixed;
@@ -38,11 +41,27 @@ body {
   top: 96px;
   right: 0;
   bottom: 0;
-  background-color: #ddd;
-  height: 100%; }
+  background-color: #ddd; }
 
 .integr8ly-steel-thread-rows {
-  background-color: #fff; }
+  margin-top: -10em;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 5; }
+
+.integr8ly-list-group--application-list {
+  margin-top: 20px; }
+
+.integr8ly-masthead {
+  background-color: #aaa;
+  color: #fff;
+  height: 35vh; }
+
+.integr8ly-container-cards-pf {
+  margin-top: 0; }
+
+.integr8ly-card-pf {
+  background-color: transparent; }
 
 .list-view-pf-integreatly-description {
   flex: 1 !important;

@@ -4,12 +4,12 @@ html(lang='en')
 
   body
     include includes/navigation.pug
-    header(style="background-color: #aaa; min-height: 65vh;")
-      .container-fluid
+    header.integr8ly-masthead
+      .container
         .row
           h1 Welcome to your Red Hat evaluation experience.
           h4 will be covering...
-      .container-fluid
+      .container
         .row
           .col-sm-3
             .circle-placeholder
@@ -20,27 +20,23 @@ html(lang='en')
           .col-sm-3
             .circle-placeholder
             h4.text-center.white Support in the places you need them.
-      .container-fluid
+    section.integr8ly-steel-thread-rows
+      .container
         .row
           .col-xs-12
-            h2 Solve problems with tutorials
-    section.integr8ly-steel-thread-rows
+            h2.integr8ly-h2-white Solve problems with tutorials
       include includes/steal-thread-row-1.pug
       include includes/steal-thread-row-2.pug
-    section
       .container
         .row
           h1 Your installed applications in one place
         .row
-          ul.list-group.col-xs-12.col-sm-4
-            li.list-group-item
-              a(href='#') Red Hat OpenShift Application Runtimes
-            li.list-group-item
-              a(href='#') Fuse Online
-            li.list-group-item
-              a(href='#') Eclipse Che
-            li.list-group-item
-              a(href='#') enmasse
+          .col-xs-12.col-sm-4
+            .list-group.integr8ly-list-group--application-list
+              a.list-group-item.active(href='#') Red Hat OpenShift Application Runtimes
+              a.list-group-item(href='#') Fuse Online
+              a.list-group-item(href='#') Eclipse Che
+              a.list-group-item(href='#') enmasse
           .col-xs-12.col-sm-8
             h2 Red Hat OpenShift Application Runtimes
             p Description of Red Hat OpenShift Application Runtimes

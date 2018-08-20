@@ -2,15 +2,15 @@ doctype html
 html(lang='en')
   include includes/header.pug
 
-  body
+  body.integr8ly-container
     include includes/navigation.pug
-    ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
-      li
-        a(href='index.html').active
-          i.pficon.pficon-home.fa-lg
-      li
-        | Steel Thread 0
     section
+      ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
+        li
+          a(href='index.html').active
+            i.pficon.pficon-home.fa-lg
+        li
+          | Steel Thread 0
       .container-fluid
         .row
           .col-xs-12.col-sm-8
