@@ -45,9 +45,10 @@
 
 .integr8ly-steel-thread-rows {
   margin-top: -10em;
-  margin-left: 100px;
-  position: absolute;
-  z-index: 5; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
 
 .integr8ly-list-group--application-list {
   margin-top: 20px; }
