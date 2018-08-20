@@ -26,6 +26,7 @@
     background-color: #fff; }
   .integr8ly-module-column--footer {
     background-color: #fafafa;
+    border-top: 1px solid #d1d1d1;
     margin: 0 -20px;
     padding: 10px 20px 20px; }
 
@@ -64,6 +65,9 @@
 .integr8ly-card-pf {
   background-color: transparent; }
 
+.module-list {
+  padding-left: 15px; }
+
 .list-view-pf-integreatly-description {
   flex: 1 !important;
   /* stylelint-disable-line declaration-no-important */ }
@@ -77,6 +81,9 @@
 @media (min-width: 768px) {
   .applauncher-pf:not(.applauncher-pf-block-list) .applauncher-pf-link-title {
     flex: 0; } }
+
+.navbar-pf-vertical .navbar-brand {
+  padding: 15px 20px; }
 
 .circle-placeholder {
   height: 20rem;

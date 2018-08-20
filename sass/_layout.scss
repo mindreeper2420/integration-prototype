@@ -2,14 +2,6 @@
   background-color: #eee;
 }
 .integr8ly-module {
-  // display: grid;
-  // height: calc(100vh - 120px);
-  // background-color: #fff;
-  // > div {
-  //   min-height: 10vh;
-  //   max-height: 80vh;
-  //   overflow: hidden;
-  // }
   position: fixed;
   top: 100px;
   bottom: 0;
@@ -30,6 +22,7 @@
     }
     &--footer {
       background-color: #fafafa;
+      border-top: 1px solid #d1d1d1;
       margin: 0 -20px;
       padding: 10px 20px 20px;
     }
@@ -48,13 +41,9 @@
   right: 0;
   bottom: 0;
   background-color: #ddd;
-  // height: 100%;
 }
 .integr8ly-steel-thread-rows {
-  // background-color: #fff;
   margin-top: -10em;
-  // position: absolute;
-  // z-index: 5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,4 +62,7 @@
 }
 .integr8ly-card-pf {
   background-color: transparent;
+}
+.module-list {
+  padding-left: 15px;
 }
