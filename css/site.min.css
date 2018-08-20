@@ -73,6 +73,10 @@
 .breadcrumb {
   padding-left: 25px; }
 
+@media (min-width: 768px) {
+  .applauncher-pf:not(.applauncher-pf-block-list) .applauncher-pf-link-title {
+    flex: 0; } }
+
 .circle-placeholder {
   height: 20rem;
   width: 20rem;

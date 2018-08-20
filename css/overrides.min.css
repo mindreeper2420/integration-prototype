@@ -1,0 +1,7 @@
+/*!
+ * Prototype Template -  v0.1.1 (https://www.adamjolicoeur.com/integration-prototype)
+ * Copyright 2018-2018 Adam J. Jolicoeur
+ */
+@media (min-width: 768px) {
+  .applauncher-pf:not(.applauncher-pf-block-list) .applauncher-pf-link-title {
+    flex: 0; } }

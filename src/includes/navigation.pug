@@ -15,35 +15,7 @@ nav.navbar.navbar-pf-vertical
           span.fa.fa-bell.dropdown-title(title='Notifications')
           span.badge.badge-pf-bordered  
           // in order to show the empty badge this requires a space, otherwise add a value
-      li.applauncher-pf.applauncher-pf-block-list.dropdown
-        button.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' href='#')
-          span.fa.fa-th.applauncher-pf-icon(aria-hidden='true')
-          span.dropdown-title
-            span.applauncher-pf-title
-              | Application Launcher
-              span.caret(aria-hidden='true')
-        ul.dropdown-menu(role='menu')
-          li.applauncher-pf-item(role='presentation')
-            a.applauncher-pf-link(href='#' role='menuitem')
-              i.applauncher-pf-link-icon.pficon.pficon-storage-domain(aria-hidden='true')
-              span.applauncher-pf-link-title Recteque
-          li.applauncher-pf-item(role='presentation')
-            a.applauncher-pf-link(href='#' role='menuitem')
-              i.applauncher-pf-link-icon.pficon.pficon-virtual-machine(aria-hidden='true')
-              span.applauncher-pf-link-title Ipsum
-          li.applauncher-pf-item(role='presentation')
-            a.applauncher-pf-link(href='#' role='menuitem')
-              // Placeholder left to maintain spacing
-              i.applauncher-pf-link-icon(aria-hidden='true')
-              span.applauncher-pf-link-title Suavitate
-          li.applauncher-pf-item(role='presentation')
-            a.applauncher-pf-link(href='#' role='menuitem')
-              i.applauncher-pf-link-icon.pficon.pficon-domain(aria-hidden='true')
-              span.applauncher-pf-link-title Lorem
-          li.applauncher-pf-item(role='presentation')
-            a.applauncher-pf-link(href='#' role='menuitem')
-              i.applauncher-pf-link-icon.pficon.pficon-home(aria-hidden='true')
-              span.applauncher-pf-link-title Home
+      include launcher.pug
       li.dropdown
         button#dropdownMenu1.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
           span.fa.fa-question-circle(title='Help')
