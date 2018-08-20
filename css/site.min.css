@@ -16,10 +16,15 @@ body {
     border-bottom: 1px solid #d1d1d1;
     margin: 0 -20px;
     padding: 1px 20px; }
+  .integr8ly-module-column--steps {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 15px 20px 25px;
+    background-color: #fff; }
   .integr8ly-module-column--footer {
     background-color: #fafafa;
     margin: 0 -20px;
-    padding: 1px 20px; }
+    padding: 10px 20px 20px; }
 
 .integr8ly-frame {
   position: fixed;
@@ -35,6 +40,9 @@ body {
   bottom: 0;
   background-color: #ddd;
   height: 100%; }
+
+.integr8ly-steel-thread-rows {
+  background-color: #fff; }
 
 .list-view-pf-integreatly-description {
   flex: 1 !important;
