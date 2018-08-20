@@ -46,7 +46,7 @@ html(lang='en')
             h3 Installed applications used in this tutorial
             p
               span.badge Eclipse Che
-              span.badge Enmasse
+              span.badge EnMasse
               span.badge Fuse Online
               span.badge Red Hat OpenShift Application Runtimes
         .row
@@ -55,54 +55,46 @@ html(lang='en')
             .list-group.list-view-pf
               .list-group-item.list-view-pf-stacked
                 .list-view-pf-main-info
-                  .list-view-pf-left
-                    | 1.
                   .list-view-pf-body
                     .list-view-pf-description.list-view-pf-integreatly-description
                       .list-group-item-heading
-                        | Build your REST endpoint
+                        | 1. Build your REST endpoint
+                        .small.pull-right
+                          i.fa.fa-clock-o(style='margin-right: 5px;')
+                          span 6 minutes
+                      .list-group-item-text
+                        | Create an HTTP endpoint that will receive requests from a Fuse Ignite integration and add new fruits types to the inventory. You will also customise the endpoint using Eclipse Che.
+              .list-group-item.list-view-pf-stacked
+                .list-view-pf-main-info
+                  .list-view-pf-body
+                    .list-view-pf-description.list-view-pf-integreatly-description
+                      .list-group-item-heading
+                        | 2. Create connections
+                        .small.pull-right
+                          i.fa.fa-clock-o(style='margin-right: 5px;')
+                          span 4 minutes
+                      .list-group-item-text
+                        | Set up connections between your HTTP endpoint and your Enmasse messaging queue in Fuse Ignite.
+              .list-group-item.list-view-pf-stacked
+                .list-view-pf-main-info
+                  .list-view-pf-body
+                    .list-view-pf-description.list-view-pf-integreatly-description
+                      .list-group-item-heading
+                        | 3. Set up messaging
                         .small.pull-right
                           i.fa.fa-clock-o(style='margin-right: 5px;')
                           span 5 minutes
                       .list-group-item-text
-                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        | Provision the Enmasse messaging service.
               .list-group-item.list-view-pf-stacked
                 .list-view-pf-main-info
-                  .list-view-pf-left
-                    | 2.
                   .list-view-pf-body
                     .list-view-pf-description.list-view-pf-integreatly-description
                       .list-group-item-heading
-                        | Create connections
+                        | 4. Build integration
                         .small.pull-right
                           i.fa.fa-clock-o(style='margin-right: 5px;')
-                          span 3 minutes
+                          span 5 minutes
                       .list-group-item-text
-                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-              .list-group-item.list-view-pf-stacked
-                .list-view-pf-main-info
-                  .list-view-pf-left
-                    | 3.
-                  .list-view-pf-body
-                    .list-view-pf-description.list-view-pf-integreatly-description
-                      .list-group-item-heading
-                        | Set up messaging
-                        .small.pull-right
-                          i.fa.fa-clock-o(style='margin-right: 5px;')
-                          span 4 minutes
-                      .list-group-item-text
-                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-              .list-group-item.list-view-pf-stacked
-                .list-view-pf-main-info
-                  .list-view-pf-left
-                    | 4.
-                  .list-view-pf-body
-                    .list-view-pf-description.list-view-pf-integreatly-description
-                      .list-group-item-heading
-                        | Build integration
-                        .small.pull-right
-                          i.fa.fa-clock-o(style='margin-right: 5px;')
-                          span 4 minutes
-                      .list-group-item-text
-                        | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        | Invoke the integration to add a new fruit type to the inventory list.
     include includes/scripts.pug
