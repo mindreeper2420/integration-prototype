@@ -3,30 +3,38 @@
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
 body {
-  font-size: 14px;
   background-color: #ededed; }
 
-.module-grid {
-  display: grid;
-  height: calc(100vh - 120px);
-  background-color: #fff; }
-  .module-grid-column {
-    display: grid;
-    grid-template-rows: 8vh 50vh 15vh 15vh; }
-    .module-grid-column-status {
-      background-color: #fafafa;
-      border-bottom: 1px solid #d1d1d1;
-      margin: 0 -20px;
-      padding: 1px 20px; }
-    .module-grid-column-steps {
-      overflow-y: scroll; }
-    .module-grid-column-check {
-      align-self: center; }
-    .module-grid-column-footer {
-      background-color: #fafafa;
-      margin: 0 -20px;
-      padding: 1px 20px;
-      align-self: flex-end; }
+.integr8ly-module {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto; }
+  .integr8ly-module-column--status {
+    background-color: #fafafa;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 -20px;
+    padding: 1px 20px; }
+  .integr8ly-module-column--footer {
+    background-color: #fafafa;
+    margin: 0 -20px;
+    padding: 1px 20px; }
+
+.integr8ly-frame {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto; }
+
+.integr8ly-prerequisites {
+  position: absolute;
+  top: 96px;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  height: 100%; }
 
 .list-view-pf-integreatly-description {
   flex: 1 !important;

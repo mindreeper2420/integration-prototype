@@ -1,33 +1,46 @@
-.module-grid {
-  display: grid;
-  height: calc(100vh - 120px);
-  background-color: #fff;
+.integr8ly-module {
+  // display: grid;
+  // height: calc(100vh - 120px);
+  // background-color: #fff;
   // > div {
   //   min-height: 10vh;
   //   max-height: 80vh;
   //   overflow: hidden;
   // }
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
   &-column {
-    display: grid;
-    // grid-template-rows: 100px auto 1fr 150px;
-    grid-template-rows: 8vh 50vh 15vh 15vh;
-    &-status {
+    &--status {
       background-color: #fafafa;
       border-bottom: 1px solid #d1d1d1;
       margin: 0 -20px;
       padding: 1px 20px;
     }
-    &-steps {
-      overflow-y: scroll;
+    &--steps {
+      // overflow-y: auto;
     }
-    &-check {
-      align-self: center;
-    }
-    &-footer {
+    &--footer {
       background-color: #fafafa;
       margin: 0 -20px;
       padding: 1px 20px;
-      align-self: flex-end;
     }
   }
+}
+.integr8ly-frame {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+.integr8ly-prerequisites {
+  position: absolute;
+  top: 96px;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  height: 100%;
 }
