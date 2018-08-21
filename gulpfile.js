@@ -5,6 +5,7 @@ var cssnano = require('cssnano');
 var header = require('gulp-header');
 var postcss = require('gulp-postcss');
 var pkg = require('./package.json');
+var plumber = require('gulp-plumber');
 var pug = require('gulp-pug');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
@@ -67,10 +68,12 @@ gulp.task('js', function() {
 // compile pug templates
 gulp.task('views', function () {
   return gulp.src('./src/*.pug')
+  .pipe(plumber())
   .pipe(pug({
     doctype: 'html',
     pretty: true
   }))
+  .pipe(plumber.stop())
   .pipe(gulp.dest('./'));
 });
 
