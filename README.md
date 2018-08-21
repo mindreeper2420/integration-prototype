@@ -1,3 +1,5 @@
+https://travis-ci.com/mindreeper2420/integration-prototype.svg?branch=master
+
 # Integration Prototype
 
 This is for the integration prototype.
@@ -17,8 +19,8 @@ This is for the integration prototype.
 **Framework**
 
 - Gulp
-- stylelint
-- travis (rewrite this configuration)
+- Stylelint
+- Travis-ci
 - PatternFly 3
 - Sass
 - JS
