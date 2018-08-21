@@ -37,6 +37,8 @@
     "stylelint": "^9.2.1"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
+    "bootstrap": "3.3.7",
     "patternfly": "^3.54.1"
   }
 }

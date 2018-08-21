@@ -2,11 +2,13 @@
  * Prototype Template -  v0.1.1 (https://www.adamjolicoeur.com/integration-prototype)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
+@import url(../node_modules/patternfly/dist/css/rcue.css);
+@import url(../node_modules/patternfly/dist/css/rcue-additions.css);
 .integr8ly-h2-white {
   color: #fff; }
 
 .integr8ly-container {
-  background-color: #eee; }
+  background-color: #ededed; }
 
 .integr8ly-module {
   position: fixed;
@@ -16,7 +18,8 @@
   overflow-y: auto; }
   .integr8ly-module-column--status {
     background-color: #fafafa;
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid;
+    border-bottom-color: #d1d1d1;
     margin: 0 -20px;
     padding: 1px 20px; }
   .integr8ly-module-column--steps {
@@ -26,7 +29,8 @@
     background-color: #fff; }
   .integr8ly-module-column--footer {
     background-color: #fafafa;
-    border-top: 1px solid #d1d1d1;
+    border-top: 1px solid;
+    border-top-color: #d1d1d1;
     margin: 0 -20px;
     padding: 10px 20px 20px; }
 
@@ -42,7 +46,7 @@
   top: 96px;
   right: 0;
   bottom: 0;
-  background-color: #ddd; }
+  background-color: #d1d1d1; }
 
 .integr8ly-steel-thread-rows {
   margin-top: -10em;
@@ -55,7 +59,7 @@
   margin-top: 20px; }
 
 .integr8ly-masthead {
-  background-color: #aaa;
+  background-color: #8b8d8f;
   color: #fff;
   height: 450px; }
 
@@ -65,7 +69,7 @@
 .integr8ly-card-pf {
   background-color: transparent; }
   .integr8ly-card-pf-custom {
-    background-color: #d8d8d8;
+    background-color: #d1d1d1;
     width: 100%;
     height: 200px; }
   .integr8ly-card-pf-footer {
@@ -85,8 +89,9 @@
 .breadcrumb {
   margin-bottom: 0;
   padding-left: 25px;
-  border-bottom: 1px solid #d7d7d7;
-  box-shadow: 0 2px 2px #d7d7d7; }
+  border-bottom: 1px solid;
+  border-bottom-color: #d1d1d1;
+  box-shadow: 0 2px 2px #d1d1d1; }
 
 @media (min-width: 768px) {
   .applauncher-pf:not(.applauncher-pf-block-list) .applauncher-pf-link-title {
@@ -99,5 +104,5 @@
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
-  background-color: #d8d8d8;
+  background-color: #d1d1d1;
   margin: 0 auto; }
