@@ -1,4 +1,4 @@
-https://travis-ci.com/mindreeper2420/integration-prototype.svg?branch=master
+[![Build Status](https://travis-ci.com/mindreeper2420/integration-prototype.svg?branch=master)](https://travis-ci.com/mindreeper2420/integration-prototype)
 
 # Integration Prototype
 
