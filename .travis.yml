@@ -12,7 +12,7 @@ node_js:
 env:
   global:
     - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
-    - TRIGGER_REPO_SLUG: "mindreeper2420/prototype-template.github.io"
+    - TRIGGER_REPO_SLUG: "mindreeper2420/integration-template.github.io"
     - TRIGGER_REPO_BRANCH: "master"
 
 before_script:
