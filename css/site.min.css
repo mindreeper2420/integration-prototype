@@ -64,6 +64,13 @@
 
 .integr8ly-card-pf {
   background-color: transparent; }
+  .integr8ly-card-pf-custom {
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 200px; }
+  .integr8ly-card-pf-footer {
+    background-color: #fff;
+    border-top: none; }
 
 .module-list {
   padding-left: 15px; }

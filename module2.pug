@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+  include includes/header.pug
+
+  body.integr8ly-container
+    include includes/navigation.pug
+    ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
+      li
+        a(href='index.html').active
+          i.pficon.pficon-home.fa-lg
+      li
+        a(href='steel-thread-0.html') Steel Thread 0
+      li
+        | Module 2 of 4: Create Connections
+    section
+      .container-fluid
+        .row
+          .col-sm-3.integr8ly-module
+            .integr8ly-module-column
+              .integr8ly-module-column--status
+                h4 Module 2
+                .progress.progress-sm
+                  .progress-bar(style='width: 0%;', role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', data-toggle='tooltip', data-placement='bottom', title='0%')
+              .integr8ly-module-column--steps
+                h4 Lorem ipsum dolor sit amet
+                ol.module-list
+                  li Batman
+                  li Robin
+                  li Batwomen
+                  li Nightwing
+                  li Red Hood
+                  li Bat Girl
+                  li and repeat...
+                  li Batman
+                  li Robin
+                  li Batwomen
+                  li Nightwing
+                  li Red Hood
+                  li Bat Girl
+                  li and repeat...
+                  li Batman
+                  li Robin
+                  li Batwomen
+                  li Nightwing
+                  li Red Hood
+                  li Bat Girl
+                  li and repeat...
+                  li Batman
+                  li Robin
+                  li Batwomen
+                  li Nightwing
+                  li Red Hood
+                  li Bat Girl
+                  li and repeat...
+                  li Batman
+                  li Robin
+                  li Batwomen
+                  li Nightwing
+                  li Red Hood
+                  li Bat Girl
+                  li and repeat...
+                h4 Check for success
+                //- i.pficon.pficon-info
+                  //- span(style='padding-left: 5px;') Complete the procedure above
+                .alert.alert-success
+                  span.pficon.pficon-ok
+                  <strong>REST endpoint successfully built!</strong> To See your REST endpoint in the context of the thing, <a href='#'>click to visit there</a>.
+              .integr8ly-module-column--footer
+                h4 What's next?
+                //- p You may still view the next procedure, but to complete this module, you must first complete the procedure above.
+                //- button.btn.btn-default Next
+                //-   i.fa.fa-angle-right(style='padding-left: 5px;')
+                p Next, we'll review your completed module.
+                .btn-group.btn-group-justified(role='group', aria-label='module step progress buttons')
+                  .btn-group(role='group')
+                    a.btn.btn-default(href='module1b.html', role='button')
+                      i.fa.fa-angle-left(style='padding-right: 5px;')
+                      | Back
+                  .btn-group(role='group')
+                    a.btn.btn-primary(href='module-complete.html', role='button')
+                      | Next
+                      i.fa.fa-angle-right(style='padding-left: 5px;')
+          .col-sm-9.integr8ly-frame
+            img(src='img/launcher-start.png', style='height: auto; width: 100%;')
+    include includes/scripts.pug

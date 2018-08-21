@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+  include includes/header.pug
+
+  body
+    include includes/navigation.pug
+    header.integr8ly-masthead
+      .container
+        .row
+          h1 Welcome to your Red Hat evaluation experience.
+          h4 will be covering...
+      .container
+        .row
+          .col-sm-3
+            .circle-placeholder
+            h4.text-center Your products together in one place.
+          .col-sm-3
+            .circle-placeholder
+            h4.text-center Explore tutorials for easy set-up.
+          .col-sm-3
+            .circle-placeholder
+            h4.text-center.white Support in the places you need them.
+    section.integr8ly-steel-thread-rows
+      .container
+        .row
+          .col-xs-12
+            h2.integr8ly-h2-white Solve problems with tutorials
+      include includes/steal-thread-row-1.pug
+      include includes/steal-thread-row-2.pug
+      .container
+        .row
+          h1 Your installed applications in one place
+        .row
+          .col-xs-12.col-sm-4
+            .list-group.integr8ly-list-group--application-list
+              a.list-group-item.active(href='#') Red Hat OpenShift Application Runtimes
+              a.list-group-item(href='#') Fuse Online
+              a.list-group-item(href='#') Eclipse Che
+              a.list-group-item(href='#') enmasse
+          .col-xs-12.col-sm-8
+            h2 Red Hat OpenShift Application Runtimes
+            p Description of Red Hat OpenShift Application Runtimes
+        .row
+          .col-xs-12
+            p.text-right
+              a(href='#') All Applications
+      footer(style='min-height: 10vh;')
+    include includes/scripts.pug
