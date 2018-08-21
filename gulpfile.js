@@ -68,12 +68,10 @@ gulp.task('js', function() {
 // compile pug templates
 gulp.task('views', function () {
   return gulp.src('./src/*.pug')
-  .pipe(plumber())
   .pipe(pug({
     doctype: 'html',
     pretty: true
   }))
-  .pipe(plumber.stop())
   .pipe(gulp.dest('./'));
 });
 
