@@ -2,10 +2,6 @@
 // add @imports here
 // do not add CSS directly to this file
 //
-// @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
-// @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss';
-// @import '../node_modules/patternfly/dist/sass/patternfly.scss';
-// @import '../node_modules/patternfly/dist/sass/patternfly/rcue.scss';
 
 @import '../node_modules/patternfly/dist/css/rcue.css';
 @import '../node_modules/patternfly/dist/css/rcue-additions.css';
@@ -21,10 +17,4 @@
 
 @import 'overrides';
 
-.circle-placeholder {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  background-color: $color-pf-black-300;
-  margin: 0 auto;
-}
+@import 'wireframe';
