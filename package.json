@@ -20,7 +20,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "autoprefixer": "^8.6.3",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.6",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",
