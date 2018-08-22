@@ -83,8 +83,15 @@
   flex: 1 !important;
   /* stylelint-disable-line declaration-no-important */ }
 
-.module1-list {
+.module-list {
   padding-left: 15px; }
+  .module-list > li {
+    margin-top: 10px;
+    padding-bottom: 10px; }
+    .module-list > li:first-child {
+      margin-top: 20px; }
+    .module-list > li:last-child {
+      margin-bottom: 0; }
 
 .breadcrumb {
   margin-bottom: 0;
