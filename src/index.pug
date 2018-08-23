@@ -5,44 +5,42 @@ html(lang='en')
   body
     include includes/navigation.pug
     header.integr8ly-masthead
-      .container
+      .container-fluid
         .row
-          h1 Welcome to your Red Hat evaluation experience.
-          h4 will be covering...
-      .container
-        .row
-          .col-sm-3
-            .circle-placeholder
-            h4.text-center Your products together in one place.
-          .col-sm-3
-            .circle-placeholder
-            h4.text-center Explore tutorials for easy set-up.
-          .col-sm-3
-            .circle-placeholder
-            h4.text-center.white Support in the places you need them.
-          .col-sm-3
-            .circle-placeholder
-            h4.text-center.white Detailed information.
+          .col-xs-12.col-sm-6
+            h1 Welcome to your Red Hat evaluation experience.
+            h2 What we offer you...
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            button.btn.btn-default See Your Applications
     section.integr8ly-steel-thread-rows
-      .container
+      .container-fluid
         .row
           .col-xs-12
-            h2.integr8ly-h2-white Solve problems with tutorials
-      include includes/steal-thread-row-1.pug
-      include includes/steal-thread-row-2.pug
-      .container
+            h2.integr8ly-h2-white Solve Problems with Tutorials
+        include includes/steal-thread-row-1.pug
+        include includes/steal-thread-row-2.pug
+    section.integr8ly-applications-list
+      .container-fluid
         .row
-          h1 Your installed applications in one place
+          .col-xs-12
+            h1 Your installed applications in one place
         .row
-          .col-xs-12.col-sm-4
+          .col-xs-12.col-sm-3
             .list-group.integr8ly-list-group--application-list
               a.list-group-item.active(href='#') Red Hat OpenShift Application Runtimes
               a.list-group-item(href='#') Fuse Online
               a.list-group-item(href='#') Eclipse Che
               a.list-group-item(href='#') enmasse
-          .col-xs-12.col-sm-8
+          .col-xs-12.col-sm-5
+            img(src='img/openshift-logo.svg')
             h2 Red Hat OpenShift Application Runtimes
-            p Description of Red Hat OpenShift Application Runtimes
+            p Cloud-native development made simpler and more flexible.
+            p Red Hat &copy; OpenShift Application Runtimes is a collection of cloud-native runtimes for developing Java &trade; or JavaScript applications on OpenShift. It provides portability across multiple cloud infrastructures, allowing the developer to use microservices, containers, and DevOps automation.
+          .col-xs-12.col-sm-4
+            h2 Tutorials that use OpenShift
+            span.badge Build a REST based integration
+            span.badge Steel Thread 1
+            span.badge Steel Thread 2
         .row
           .col-xs-12
             p.text-right
