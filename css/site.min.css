@@ -44,7 +44,9 @@
   top: 38px;
   right: 0;
   bottom: 0;
-  background-color: #d1d1d1; }
+  background-color: #f5f5f5;
+  border-left: 1px solid;
+  border-left-color: #d1d1d1; }
 
 .integr8ly-steel-thread-rows {
   margin-top: -10em;
@@ -90,7 +92,7 @@
   padding-left: 25px;
   border-bottom: 1px solid;
   border-bottom-color: #d1d1d1;
-  box-shadow: 0 2px 2px #d1d1d1; }
+  box-shadow: 0 1px 1px #d1d1d1; }
 
 @media (min-width: 768px) {
   .applauncher-pf:not(.applauncher-pf-block-list) .applauncher-pf-link-title {

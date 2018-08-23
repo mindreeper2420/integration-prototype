@@ -44,7 +44,9 @@
     top: 38px;
     right: 0;
     bottom: 0;
-    background-color: $color-pf-black-300;
+    background-color: $color-pf-black-150;
+    border-left: 1px solid;
+    border-left-color: $color-pf-black-300;
   }
   &-steel-thread-rows {
     margin-top: -10em;
