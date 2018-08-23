@@ -3,7 +3,6 @@ html(lang='en')
   include includes/header.pug
 
   body.integr8ly-container
-    include includes/navigation.pug
     section
       ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
         li
@@ -11,6 +10,30 @@ html(lang='en')
             i.pficon.pficon-home.fa-lg
         li
           | Steel Thread 0
+        li.applauncher-pf.dropdown.pull-right
+          button.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' href='#')
+            span.fa.fa-th.applauncher-pf-icon(aria-hidden='true')
+            span.dropdown-title
+              span.applauncher-pf-title
+                | Application Launcher
+                span.caret(aria-hidden='true')
+          ul.dropdown-menu(role='menu')
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | Eclipse Che
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | EnMasse
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | Fuse Online
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | Red Hat OpenShift Application Runtimes
       .container-fluid
         .row
           .col-xs-12.col-sm-8

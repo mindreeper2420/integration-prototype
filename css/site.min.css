@@ -7,9 +7,6 @@
 .integr8ly-h2-white {
   color: #fff; }
 
-.integr8ly-container {
-  background-color: #ededed; }
-
 .integr8ly-module {
   position: fixed;
   top: 40px;
@@ -39,11 +36,12 @@
   top: 40px;
   right: 0;
   bottom: 0;
-  overflow-y: auto; }
+  overflow-y: auto;
+  background-color: #ededed; }
 
 .integr8ly-prerequisites {
   position: absolute;
-  top: 96px;
+  top: 38px;
   right: 0;
   bottom: 0;
   background-color: #d1d1d1; }
