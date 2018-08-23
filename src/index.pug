@@ -3,27 +3,30 @@ html(lang='en')
   include includes/header.pug
 
   body
-    include includes/navigation.pug
+    //- include includes/navigation.pug
     header.integr8ly-masthead
       .container-fluid
         .row
           .col-xs-12.col-sm-6
-            h1 Welcome to your Red Hat evaluation experience.
-            h2 What we offer you...
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            button.btn.btn-default See Your Applications
+            h1 Welcome to the Red Hat evaluation environment.
+            p The environment contains everything you need to explore common integration scenarios. Get started with an end-to-end tutorial or dig into any of the available application services on your own to create custom integrations. 
+            p Everything you build will reside on the OpenShift cluster associated with this environment.
+            ul
+              li End-to-end integration tutorials
+              li One-click access to Red Hat application services, all running on the same OpenShift cluster
+            button.btn.btn-default See Application Services
     section.integr8ly-steel-thread-rows
       .container-fluid
         .row
           .col-xs-12
-            h2.integr8ly-h2-white Solve Problems with Tutorials
+            h2.integr8ly-h2-white Tutorials
         include includes/steal-thread-row-1.pug
         include includes/steal-thread-row-2.pug
     section.integr8ly-applications-list
       .container-fluid
         .row
           .col-xs-12
-            h1 Your installed applications in one place
+            h1 Available application services
         .row
           .col-xs-12.col-sm-3
             .list-group.integr8ly-list-group--application-list
@@ -34,8 +37,7 @@ html(lang='en')
           .col-xs-12.col-sm-5
             img(src='img/openshift-logo.svg')
             h2 Red Hat OpenShift Application Runtimes
-            p Cloud-native development made simpler and more flexible.
-            p Red Hat &copy; OpenShift Application Runtimes is a collection of cloud-native runtimes for developing Java &trade; or JavaScript applications on OpenShift. It provides portability across multiple cloud infrastructures, allowing the developer to use microservices, containers, and DevOps automation.
+            p A collection of cloud-native runtimes for developing Java &trade; or JavaScript applications on OpenShift.
           .col-xs-12.col-sm-4
             h2 Tutorials that use OpenShift
             span.badge Build a REST based integration
