@@ -3,50 +3,105 @@ html(lang='en')
   include includes/header.pug
 
   body
-    //- include includes/navigation.pug
-    header.integr8ly-masthead
-      .container-fluid
-        .row
-          .col-xs-12.col-sm-6
-            h1 Welcome to the Red Hat evaluation environment.
-            p The environment contains everything you need to explore common integration scenarios. Get started with an end-to-end tutorial or dig into any of the available application services on your own to create custom integrations. 
-            p Everything you build will reside on the OpenShift cluster associated with this environment.
-            ul
-              li End-to-end integration tutorials
-              li One-click access to Red Hat application services, all running on the same OpenShift cluster
-            button.btn.btn-default See Application Services
-    section.integr8ly-steel-thread-rows
-      .container-fluid
-        .row
-          .col-xs-12
-            h2.integr8ly-h2-white Tutorials
-        include includes/steal-thread-row-1.pug
-        include includes/steal-thread-row-2.pug
-    section.integr8ly-applications-list
-      .container-fluid
-        .row
-          .col-xs-12
-            h1 Available application services
-        .row
-          .col-xs-12.col-sm-3
-            .list-group.integr8ly-list-group--application-list
-              a.list-group-item.active(href='#') Red Hat OpenShift Application Runtimes
-              a.list-group-item(href='#') Red Hat Fuse
-              a.list-group-item(href='#') Eclipse Che
-              a.list-group-item(href='#') Red Hat AMQ
-              a.list-group-item(href='#') Red Hat 3scale API Management Platform
-          .col-xs-12.col-sm-5
-              img(src='img/openshift-logo.svg')
-              h2 Red Hat OpenShift Application Runtimes
-              p A collection of cloud-native runtimes for developing Java &trade; or JavaScript applications on OpenShift.
-          .col-xs-12.col-sm-4
-            h2 Tutorials that use OpenShift
-            span.badge Build a REST based integration
-            span.badge Steel Thread 1
-            span.badge Steel Thread 2
-        .row
-          .col-xs-12
-            p.text-right
-              a(href='#') All Applications
-      footer(style='min-height: 10vh;')
+    .pf-c-background-image
+#page.pf-l-page
+  include includes/navigation.pug
+  aside.pf-l-page__sidebar
+    nav#primary-nav.pf-c-nav(aria-label='Primary Nav Default Example')
+      ul.pf-c-nav__list
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            <b>Experience application services</b>
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            | Red Hat OpenShift
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            | Red Hat 3scale API Management Platform
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            | Red Hat AMQ
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            | Red Hat Fuse
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            | Red Hat OpenShift Application Runtimes
+        li.pf-c-nav__item
+          a.pf-c-nav__link(href='#')
+            | Eclipse Che
+  main.pf-l-page__main(role='main')
+    section.pf-l-page__main-section.pf-m-light.integr8ly-header
+      .pf-c-content
+        h1 Welcome to the Red Hat solution explorer
+        p
+          | Get started with an end-to-end solution walkthrough or
+          br
+          | use any of the available application services to create custom integrations.
+    section.pf-l-page__main-section.pf-m-light
+      .pf-l-gallery.pf-m-gutter
+        .pf-l-gallery__item
+          .pf-c-card
+            .pf-c-card__header
+              | Integrating two RESTful web services
+            .pf-c-card__body
+              | Build a simple REST-based integration that enables a new fruit type to be added to an inventory list for a fictional grocery list.
+              <br>
+              i.far.fa-user(style='padding-right: 5px;')
+              | Operator, Developer
+            .pf-c-card__footer
+              a(href='#').pf-c-button.pf-m-link
+                i.far.fa-arrow-circle-right
+                | Get Started
+              i.far.fa-clock(style='padding-right: 5px;')
+              | 40 Minutes
+        .pf-l-gallery__item
+          .pf-c-card
+            .pf-c-card__header
+              | Develop an API from beginning to end
+            .pf-c-card__body
+              | Coming soon.
+              <br>
+              i.far.fa-user(style='padding-right: 5px;')
+              | Developer
+            .pf-c-card__footer
+              i.far.fa-clock(style='padding-right: 5px;')
+              | 0 Minutes
+        .pf-l-gallery__item
+          .pf-c-card
+            .pf-c-card__header
+              | Create a greenfield-brownfield facade
+            .pf-c-card__body
+              | Coming soon.
+              <br>
+              i.far.fa-user(style='padding-right: 5px;')
+              | Operator, Developer
+            .pf-c-card__footer
+              i.far.fa-clock(style='padding-right: 5px;')
+              | 0 Minutes
+        .pf-l-gallery__item
+          .pf-c-card
+            .pf-c-card__header
+              | Build a microservice API gateway
+            .pf-c-card__body
+              | Coming soon.
+              <br>
+              i.far.fa-user(style='padding-right: 5px;')
+              | Operator, Developer
+            .pf-c-card__footer
+              i.far.fa-clock(style='padding-right: 5px;')
+              | 0 Minutes
+        .pf-l-gallery__item
+          .pf-c-card
+            .pf-c-card__header
+              | Create a REST facade to existing SOAP-based web service
+            .pf-c-card__body
+              | Coming soon.
+              <br>
+              i.far.fa-user(style='padding-right: 5px;')
+              | Operator
+            .pf-c-card__footer
+              i.far.fa-clock(style='padding-right: 5px;')
+              | 0 Minutes
+
     include includes/scripts.pug

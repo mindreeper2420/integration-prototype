@@ -2,19 +2,24 @@
 // add @imports here
 // do not add CSS directly to this file
 //
+// @import '../node_modules/@patternfly/patternfly-next/patternfly.scss';
+// @import '../node_modules/@patternfly/patternfly-next/sass-utilities/_all.scss';
+@import '../node_modules/@patternfly/patternfly-next/patternfly.scss';
+// @import 'fonts';
+// @import 'typography';
+// @import 'layout';
+// @import 'lists';
+// @import 'breadcrumbs';
+// @import 'overrides';
+// @import 'wireframe';
 
-@import '../node_modules/patternfly/dist/css/rcue.css';
-@import '../node_modules/patternfly/dist/css/rcue-additions.css';
-@import '../node_modules/patternfly/dist/sass/patternfly/color-variables.scss';
+.integr8ly-header {
+  background-image: url('../img/landing-page-bck-img.jpg');
+  background-size: cover;
+  background-position: top left;
 
-@import 'fonts';
-@import 'typography';
-
-@import 'layout';
-
-@import 'lists';
-@import 'breadcrumbs';
-
-@import 'overrides';
-
-@import 'wireframe';
+  h1,
+  p {
+    color: $pf-color-white;
+  }
+}

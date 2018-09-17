@@ -2,248 +2,114 @@
 <html lang="en"><!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Integreatly Prototype</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.54.1/css/rcue.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.54.1/css/rcue-additions.min.css">
+    <title>Integreatly Prototype v3.0</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/css/patternfly.min.css">
     <link rel="stylesheet" href="css/site.min.css">
   </head>
   <body>
-    <header class="integr8ly-masthead">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <h1>Welcome to the Red Hat evaluation environment.</h1>
-            <p>The environment contains everything you need to explore common integration scenarios. Get started with an end-to-end tutorial or dig into any of the available application services on your own to create custom integrations. </p>
-            <p>Everything you build will reside on the OpenShift cluster associated with this environment.</p>
-            <ul>
-              <li>End-to-end integration tutorials</li>
-              <li>One-click access to Red Hat application services, all running on the same OpenShift cluster</li>
-            </ul>
-            <button class="btn btn-default">See Application Services</button>
+    <div class="pf-c-background-image"></div>
+  </body>
+</html>
+<div class="pf-l-page" id="page">
+  <header class="pf-l-page__header" role="banner">
+    <div class="pf-l-page__header-brand"><a class="pf-l-page__header-brand-link" href="#">Integreatly</a></div>
+    <div class="pf-l-page__header-tools">
+      <div class="pf-l-toolbar">
+        <div class="pf-l-toolbar__group pf-u-sr-only pf-u-visible-on-lg">
+          <div class="pf-l-toolbar__item">
+            <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-bell"></i></button>
+          </div>
+          <div class="pf-l-toolbar__item">
+            <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-cog"></i></button>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="integr8ly-steel-thread-rows">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2 class="integr8ly-h2-white">Tutorials</h2>
+        <div class="pf-l-toolbar__group">
+          <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
+            <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
           </div>
-        </div>
-        <div class="cards-pf" style="background-color: transparent;">
-          <div class="container-fluid container-cards-pf integr8ly-container-cards-pf">
-            <div class="row row-cards-pf">
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Build a REST-based integration</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Develop an API from beginning to end</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Create a greenfield-brownfield facade</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Build a microservices API gateway</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
+          <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+            <div class="pf-c-dropdown pf-m-plain">
+              <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true" aria-expanded="false">Bob Johnson<i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i></button>
+              <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
+                <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled" role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
+                <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
+                <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item" role="menuitem" href="#">Separated Link</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="cards-pf" style="background-color: transparent;">
-          <div class="container-fluid container-cards-pf integr8ly-container-cards-pf">
-            <div class="row row-cards-pf">
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Create a REST facade to existing SOAP-based web services</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Build a REST-based integration</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Build a REST-based integration</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <div class="card-pf integr8ly-card-pf">
-                  <div class="integr8ly-card-pf-custom"></div>
-                  <h2 class="card-pf-title">Build a REST-based integration</h2>
-                  <div class="card-pf-body">
-                    <p>In this walkthrough, you will lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="row">
-                      <div class="col-xs-5">
-                        <p>Roles</p>
-                      </div>
-                      <div class="col-xs-7">
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></p>
-                        <p><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-pf-footer integr8ly-card-pf-footer">
-                    <h4><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 mins.</span><a class="pull-right" href="steel-thread-0.html">Get Started</a></h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div><img class="pf-c-avatar" src="/img/logo-alt.svg" alt="Avatar image">
+    </div>
+  </header>
+  <aside class="pf-l-page__sidebar">
+    <nav class="pf-c-nav" id="primary-nav" aria-label="Primary Nav Default Example">
+      <ul class="pf-c-nav__list">
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#"><b>Experience application services</b></a></li>
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat OpenShift</a></li>
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat 3scale API Management Platform</a></li>
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat AMQ</a></li>
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat Fuse</a></li>
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat OpenShift Application Runtimes</a></li>
+        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Eclipse Che</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="pf-l-page__main" role="main">
+    <section class="pf-l-page__main-section pf-m-light integr8ly-header">
+      <div class="pf-c-content">
+        <h1>Welcome to the Red Hat solution explorer</h1>
+        <p>Get started with an end-to-end solution walkthrough or<br>use any of the available application services to create custom integrations.</p>
       </div>
     </section>
-    <section class="integr8ly-applications-list">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <h1>Available application services</h1>
+    <section class="pf-l-page__main-section pf-m-light">
+      <div class="pf-l-gallery pf-m-gutter">
+        <div class="pf-l-gallery__item">
+          <div class="pf-c-card">
+            <div class="pf-c-card__header">Integrating two RESTful web services</div>
+            <div class="pf-c-card__body">
+              Build a simple REST-based integration that enables a new fruit type to be added to an inventory list for a fictional grocery list.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator, Developer</div>
+            <div class="pf-c-card__footer"><a class="pf-c-button pf-m-link" href="#"><i class="far fa-arrow-circle-right"></i>Get Started</a><i class="far fa-clock" style="padding-right: 5px;"></i>40 Minutes</div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-3">
-            <div class="list-group integr8ly-list-group--application-list"><a class="list-group-item active" href="#">Red Hat OpenShift Application Runtimes</a><a class="list-group-item" href="#">Red Hat Fuse</a><a class="list-group-item" href="#">Eclipse Che</a><a class="list-group-item" href="#">Red Hat AMQ</a><a class="list-group-item" href="#">Red Hat 3scale API Management Platform</a></div>
-          </div>
-          <div class="col-xs-12 col-sm-5"><img src="img/openshift-logo.svg">
-            <h2>Red Hat OpenShift Application Runtimes</h2>
-            <p>A collection of cloud-native runtimes for developing Java &trade; or JavaScript applications on OpenShift.</p>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <h2>Tutorials that use OpenShift</h2><span class="badge">Build a REST based integration</span><span class="badge">Steel Thread 1</span><span class="badge">Steel Thread 2</span>
+        <div class="pf-l-gallery__item">
+          <div class="pf-c-card">
+            <div class="pf-c-card__header">Develop an API from beginning to end</div>
+            <div class="pf-c-card__body">
+              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Developer</div>
+            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p class="text-right"><a href="#">All Applications</a></p>
+        <div class="pf-l-gallery__item">
+          <div class="pf-c-card">
+            <div class="pf-c-card__header">Create a greenfield-brownfield facade</div>
+            <div class="pf-c-card__body">
+              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator, Developer</div>
+            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
+          </div>
+        </div>
+        <div class="pf-l-gallery__item">
+          <div class="pf-c-card">
+            <div class="pf-c-card__header">Build a microservice API gateway</div>
+            <div class="pf-c-card__body">
+              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator, Developer</div>
+            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
+          </div>
+        </div>
+        <div class="pf-l-gallery__item">
+          <div class="pf-c-card">
+            <div class="pf-c-card__header">Create a REST facade to existing SOAP-based web service</div>
+            <div class="pf-c-card__body">
+              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator</div>
+            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
           </div>
         </div>
       </div>
-      <footer style="min-height: 10vh;"></footer>
     </section>
     <script src="https://use.fontawesome.com/48b81db564.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/js/patternfly.min.js"></script>
     <script src="js/site.js"></script>
-  </body>
-</html>
+  </main>
+</div>
