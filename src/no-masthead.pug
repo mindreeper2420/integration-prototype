@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  include includes/header.pug
+
+  body
+    include includes/navigation.pug
+    section.integr8ly-steel-thread-rows
+      .container-fluid
+        .row
+          .col-xs-12
+            h2.integr8ly-h2-white Solve Problems with Tutorials
+        include includes/steal-thread-row-1.pug
+        include includes/steal-thread-row-2.pug
+    section.integr8ly-applications-list
+      .container-fluid
+        .row
+          .col-xs-12
+            h1 Your installed applications in one place
+        .row
+          .col-xs-12.col-sm-3
+            .list-group.integr8ly-list-group--application-list
+              a.list-group-item.active(href='#') Red Hat OpenShift Application Runtimes
+              a.list-group-item(href='#') Fuse Online
+              a.list-group-item(href='#') Eclipse Che
+              a.list-group-item(href='#') enmasse
+          .col-xs-12.col-sm-5
+            img(src='img/openshift-logo.svg')
+            h2 Red Hat OpenShift Application Runtimes
+            p Cloud-native development made simpler and more flexible.
+            p Red Hat &copy; OpenShift Application Runtimes is a collection of cloud-native runtimes for developing Java &trade; or JavaScript applications on OpenShift. It provides portability across multiple cloud infrastructures, allowing the developer to use microservices, containers, and DevOps automation.
+          .col-xs-12.col-sm-4
+            h2 Tutorials that use OpenShift
+            span.badge Build a REST based integration
+            span.badge Steel Thread 1
+            span.badge Steel Thread 2
+        .row
+          .col-xs-12
+            p.text-right
+              a(href='#') All Applications
+      footer(style='min-height: 10vh;')
+    include includes/scripts.pug

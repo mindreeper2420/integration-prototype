@@ -86,3 +86,8 @@ $('#notification-drawer-accordion').initCollapseHeights('.panel-body');
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
+
+$("#launcher").click(function() {
+  $("#launcherImage").removeClass("hide");
+  $("#contextPanel").addClass("hide");
+});

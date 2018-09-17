@@ -1,6 +1,6 @@
 {
   "name": "integration-prototype",
-  "version": "0.1.1",
+  "version": "3.0.0",
   "description": "Integration Prototype",
   "homepage": "https://www.adamjolicoeur.com/integration-prototype",
   "main": "index.js",
@@ -18,7 +18,6 @@
   "author": "Adam J. Jolicoeur",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
     "autoprefixer": "^8.6.3",
     "browser-sync": "^2.24.6",
     "cssnano": "^3.10.0",
@@ -38,7 +37,6 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "bootstrap": "3.3.7",
-    "patternfly": "^3.54.1"
+    "@patternfly/patternfly-next": "^1.0.42"
   }
 }

@@ -3,38 +3,50 @@ html(lang='en')
   include includes/header.pug
 
   body.integr8ly-container
-    include includes/navigation.pug
     section
       ol.breadcrumb(role='navigtion', aria-label='breadcrumbs')
         li
           a(href='index.html').active
             i.pficon.pficon-home.fa-lg
         li
-          | Steel Thread 0
+          | Build a REST-based integration
+        li.applauncher-pf.dropdown.pull-right
+          button.btn.btn-link.dropdown-toggle.nav-item-iconic(data-toggle='dropdown' href='#')
+            span.fa.fa-th.applauncher-pf-icon(aria-hidden='true')
+            span.dropdown-title
+              span.applauncher-pf-title
+                | Application Launcher
+                span.caret(aria-hidden='true')
+          ul.dropdown-menu(role='menu')
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | Eclipse Che
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | EnMasse
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | Fuse Online
+            li.applauncher-pf-item(role='presentation')
+              a.applauncher-pf-link(href='#' role='menuitem')
+                span.applauncher-pf-link-title
+                | Red Hat OpenShift Application Runtimes
       .container-fluid
         .row
           .col-xs-12.col-sm-8
             h1 What will I accomplish?
-              .small.text-info.pull-right
-                i.fa.fa-clock-o(style='margin-right: 5px;')
-                span 20 minutes
             p In this tutorial, you will build a simple REST-based integration that enables a new fruit type to be added to an inventory list for a fictional grocery store.
             a.btn.btn-primary(href='module1.html', role='button') Get Started
           .col-sm-4.integr8ly-prerequisites
             h3 Prerequisites
-            ul(style='padding-left: 0;').list-unstyled
-              li
-                i.fa.fa-check-square-o(style='margin-right: 5px;')
-                span GitHub account
-              li
-                i.fa.fa-check-square-o(style='margin-right: 5px;')
-                span OpenShift Online account
-              li
-                i.fa.fa-check-square-o(style='margin-right: 5px;')
-                span Existing code to import
-              li
-                i.fa.fa-check-square-o(style='margin-right: 5px;')
-                span Something to prove
+            ul(style='padding-left: 20px;')
+              li GitHub account
+              li OpenShift Online account
+              li Existing code to import
+              li Something to prove
             h3 Roles
             ul(style='padding-left: 0;').list-unstyled
               li
@@ -52,6 +64,9 @@ html(lang='en')
         .row
           .col-xs-12.col-sm-8
             h1 Modules to complete
+              .pull-right
+                i.fa.fa-clock-o(style='margin-right: 5px;')
+                span 20 minutes
             .list-group.list-view-pf
               .list-group-item.list-view-pf-stacked
                 .list-view-pf-main-info
