@@ -1,113 +1,227 @@
 <!DOCTYPE html>
-<html lang="en"><!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+
   <head>
     <meta charset="utf-8">
     <title>Integreatly Prototype v3.0</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/css/patternfly.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.min.css">
   </head>
-  <body class="integr8ly-container">
-    <section>
-      <ol class="breadcrumb" role="navigtion" aria-label="breadcrumbs">
-        <li><a class="active" href="index.html"><i class="pficon pficon-home fa-lg"></i></a></li>
-        <li>Build a REST-based integration</li>
-        <li class="applauncher-pf dropdown pull-right">
-          <button class="btn btn-link dropdown-toggle nav-item-iconic" data-toggle="dropdown" href="#"><span class="fa fa-th applauncher-pf-icon" aria-hidden="true"></span><span class="dropdown-title"><span class="applauncher-pf-title">Application Launcher<span class="caret" aria-hidden="true"></span></span></span></button>
-          <ul class="dropdown-menu" role="menu">
-            <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>Eclipse Che</a></li>
-            <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>EnMasse</a></li>
-            <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>Fuse Online</a></li>
-            <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>Red Hat OpenShift Application Runtimes</a></li>
-          </ul>
-        </li>
-      </ol>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8">
-            <h1>What will I accomplish?</h1>
-            <p>In this tutorial, you will build a simple REST-based integration that enables a new fruit type to be added to an inventory list for a fictional grocery store.</p><a class="btn btn-primary" href="module1.html" role="button">Get Started</a>
-          </div>
-          <div class="col-sm-4 integr8ly-prerequisites">
-            <h3>Prerequisites</h3>
-            <ul style="padding-left: 20px;">
-              <li>GitHub account</li>
-              <li>OpenShift Online account</li>
-              <li>Existing code to import</li>
-              <li>Something to prove</li>
-            </ul>
-            <h3>Roles</h3>
-            <ul class="list-unstyled" style="padding-left: 0;">
-              <li><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Operator</span></li>
-              <li><i class="pficon pficon-user" style="margin-right: 5px;"></i><span>Developer</span></li>
-            </ul>
-            <h3>Installed applications used in this tutorial</h3>
-            <p><span class="badge">Red Hat OpenShift Application Runtimes</span><span class="badge">Eclipse Che</span><span class="badge">Fuse Ignite</span><span class="badge">EnMasse</span></p>
-          </div>
+
+  <body>
+    <div class="pf-c-background-image"></div>
+    <div class="pf-l-page" id="page">
+      <header class="pf-l-page__header" role="banner">
+        <div class="pf-l-page__header-brand">
+          <a class="pf-l-page__header-brand-link" href="/index.html">
+            <img class="pf-c-brand pf-m-sm" src="/img/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer">
+          </a>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-8">
-            <h1>Modules to complete
-              <div class="pull-right"><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>20 minutes</span></div>
-            </h1>
-            <div class="list-group list-view-pf">
-              <div class="list-group-item list-view-pf-stacked">
-                <div class="list-view-pf-main-info">
-                  <div class="list-view-pf-body">
-                    <div class="list-view-pf-description list-view-pf-integreatly-description">
-                      <div class="list-group-item-heading">1. Build your REST endpoint
-                        <div class="small pull-right"><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>6 minutes</span></div>
-                      </div>
-                      <div class="list-group-item-text">Create an HTTP endpoint that will receive requests from a Fuse Ignite integration and add new fruits types to the inventory. You will also customise the endpoint using Eclipse Che.</div>
-                    </div>
-                  </div>
-                </div>
+        <div class="pf-l-page__header-tools">
+          <div class="pf-l-toolbar">
+            <div class="pf-l-toolbar__group">
+              <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
+                <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
               </div>
-              <div class="list-group-item list-view-pf-stacked">
-                <div class="list-view-pf-main-info">
-                  <div class="list-view-pf-body">
-                    <div class="list-view-pf-description list-view-pf-integreatly-description">
-                      <div class="list-group-item-heading">2. Create connections
-                        <div class="small pull-right"><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>4 minutes</span></div>
-                      </div>
-                      <div class="list-group-item-text">Set up connections between your HTTP endpoint and your Enmasse messaging queue in Fuse Ignite.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item list-view-pf-stacked">
-                <div class="list-view-pf-main-info">
-                  <div class="list-view-pf-body">
-                    <div class="list-view-pf-description list-view-pf-integreatly-description">
-                      <div class="list-group-item-heading">3. Set up messaging
-                        <div class="small pull-right"><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>5 minutes</span></div>
-                      </div>
-                      <div class="list-group-item-text">Provision the EnMasse messaging service.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item list-view-pf-stacked">
-                <div class="list-view-pf-main-info">
-                  <div class="list-view-pf-body">
-                    <div class="list-view-pf-description list-view-pf-integreatly-description">
-                      <div class="list-group-item-heading">4. Build integration
-                        <div class="small pull-right"><i class="fa fa-clock-o" style="margin-right: 5px;"></i><span>5 minutes</span></div>
-                      </div>
-                      <div class="list-group-item-text">Invoke the integration to add a new fruit type to the inventory list.</div>
-                    </div>
+              <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+                <div class="pf-c-dropdown pf-m-plain">
+                  <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true"
+                    aria-expanded="false">
+                    Developer
+                    <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                  </button>
+                  <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a
+                      class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled"
+                      role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
+                    <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item"
+                      role="menuitem" href="#">Separated Link</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <img class="pf-c-avatar" src="/img/logo-alt.svg" alt="Avatar image">
         </div>
-      </div>
-    </section>
-    <script src="https://use.fontawesome.com/48b81db564.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/js/patternfly.min.js"></script>
+      </header>
+      <main class="pf-l-page__main" role="main">
+        <nav class="pf-c-nav ig-breadcrumb" aria-label="Tertiary Example">
+          <ul class="pf-c-nav__tertiary-list pf-u-ml-lg">
+            <li class="pf-c-nav__item">
+              <a href="index.html" class="pf-c-nav__link" aria-current="page">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="index.html" class="pf-c-nav__link" aria-current="page">
+                <i class="fas fa-angle-double-right"></i>
+              </a>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link pf-m-current">
+                Configuring the environment
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="pf-l-page__main-section pf-u-pr-0 pf-u-pt-0 pf-m-light">
+          <div class="pf-l-split">
+            <div class="pf-l-split__item pf-m-main pf-u-mt-lg">
+              <div class="pf-l-grid">
+                <div class="pf-l-grid__item pf-m-10-col">
+                  <h1 class="pf-c-title pf-m-2xl">
+                    Configuring the environment
+                  </h1>
+                </div>
+                <div class="pf-l-grid__item pf-m-2-col">
+                  <button type="button" class="pf-c-button pf-m-primary" onclick="window.location.href='module1.html'">Get
+                    Started</button>
+                </div>
+                <div class="pf-l-grid__item pf-m-12-col">
+                  <div class="integr8ly-info-box__default">
+                    <h1 class="pf-c-title pf-m-xl">Prerequisites to complete this walkthrough</h1>
+                    <ul class="fa-ul">
+                      <li>
+                        <span class="fa-li"><i class="fas fa-check-square"></i></span> A GitHub account
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pf-l-grid__item pf-m-12-col">
+                  <div class="pf-c-content">
+                    <p>
+                      Prerequisite configuration tasks for your environment.
+                    </p>
+                    <p>
+                      To complete the walkthroughs in this environment, you need to configure your GitHub account as
+                      described in the following steps.
+                    </p>
+                    <p>
+                      You can also create and add additional users to the environment if you need to.
+                    </p>
+                  </div>
+                </div>
+                <div class="pf-l-grid__item pf-m-12-col">
+                  <div class="pf-l-grid pf-m-gutter" style="align-items: baseline;">
+                    <div class="pf-l-grid__item pf-m-10-col">
+                      <h1 class="pf-c-title pf-m-2xl pf-u-mt-lg">
+                        Tasks to complete this walkthrough
+                      </h1>
+                    </div>
+                    <div class="pf-l-grid__item pf-m-2-col">
+                      <i class="far fa-clock-o"></i> 11 minutes
+                    </div>
+                  </div>
+                  <ul class="pf-c-data-list pf-u-box-shadow-md pf-u-mt-md pf-u-mb-md" role="list" aria-label="Walkthrough Tasks List">
+                    <li class="pf-c-data-list__item" aria-labelledby="simple-item1">
+                      <div class="pf-c-data-list__cell">
+                        <span id="simple-item1">1. Configuring a GitHub OAuth App</span>
+                      </div>
+                      <div class="pf-c-data-list__cell">
+                        <i class="far fa-clock-o"></i> 6 minutes
+                      </div>
+                    </li>
+                    <li class="pf-c-data-list__item" aria-labelledby="simple-item1">
+                      <div class="pf-c-data-list__cell">
+                        <span id="simple-item2">2. Creating user</span>
+                      </div>
+                      <div class="pf-c-data-list__cell">
+                        <i class="far fa-clock-o"></i> 5 minutes
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pf-l-grid__item pf-m-2-col pf-m-offset-10-col">
+                  <button type="button" class="pf-c-button pf-m-primary" onclick="window.location.href='module1.html'">Get
+                    Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="pf-l-split__item">
+              <h1 class="pf-c-title pf-m-2xl pf-u-mt-lg pf-u-mb-lg pf-u-pl-md">Walkthrough Resources</h1>
+              <nav class="pf-c-nav" aria-label="walkthrough resources navigation">
+                <section class="pf-c-nav__section" aria-labelledby="grouped-title1">
+                  <h2 class="pf-c-nav__section-title" id="grouped-title1">
+                    Red Hat OpenShift
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        OpenShift Online Help Center
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        OpenShift Blog
+                      </a>
+                    </li>
+                  </ul>
+                  <h2 class="pf-c-nav__section-title" id="grouped-title2">
+                    Red Hat Fuse
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Fuse Community Q&amp;A
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Fuse Overview
+                      </a>
+                    </li>
+                  </ul>
+                  <h2 class="pf-c-nav__section-title" id="grouped-title3">
+                    Red Hat AMQ
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        AMQ Community Q&amp;A
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        AMQ Videos
+                      </a>
+                    </li>
+                  </ul>
+                  <h2 class="pf-c-nav__section-title" id="grouped-title4">
+                    Eclipse Che
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <script src="js/site.js"></script>
   </body>
+
 </html>

@@ -1,6 +1,7 @@
-.breadcrumb {
-  margin-bottom: 0;
-  padding-left: 25px;
+.ig-breadcrumb {
+  background-color: $pf-color-white;
+  // background-image: url('../img/landing-page-bck-img.jpg');
+  // filter: url('../img/background-filter.svg#image_overlay');
   border-bottom: 1px solid;
   border-bottom-color: $pf-color-black-300;
   box-shadow: 0 1px 1px $pf-color-black-300;

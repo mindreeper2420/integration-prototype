@@ -29,7 +29,7 @@ gulp.task('lint-sass', function lintCssTask() {
     .src('sass/*.scss')
     .pipe(gulpStylelint({
       reporters: [
-        {formatter: 'string', console: true}
+        { formatter: 'string', console: true }
       ]
     }));
 });
@@ -46,7 +46,7 @@ gulp.task('sass', ['lint-sass'], function () {
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 // ensure sass finishes, reload browser
@@ -56,23 +56,23 @@ gulp.task('sass-watch', ['sass'], function (done) {
 });
 
 // compile custom javascript file
-gulp.task('js', function() {
+gulp.task('js', function () {
   return gulp.src("dev/js/*.js")
-  .pipe(header(banner, { pkg: pkg }))
-  .pipe(gulp.dest('js'))
-  .pipe(browserSync.reload({
-    stream: true
-  }));
+    .pipe(header(banner, { pkg: pkg }))
+    .pipe(gulp.dest('js'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 // compile pug templates
 gulp.task('views', function () {
   return gulp.src('./src/*.pug')
-  .pipe(pug({
-    doctype: 'html',
-    pretty: true
-  }))
-  .pipe(gulp.dest('./'));
+    .pipe(pug({
+      doctype: 'html',
+      pretty: true
+    }))
+    .pipe(gulp.dest('./'));
 });
 
 // Configure the browserSync task
