@@ -1,83 +1,228 @@
 <!DOCTYPE html>
-<html lang="en"><!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+
   <head>
     <meta charset="utf-8">
     <title>Integreatly Prototype v3.0</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/css/patternfly.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.min.css">
   </head>
-  <body class="integr8ly-container">
-    <ol class="breadcrumb" role="navigtion" aria-label="breadcrumbs">
-      <li><a class="active" href="index.html"><i class="pficon pficon-home fa-lg"></i></a></li>
-      <li><a href="steel-thread-0.html">Build a REST-based integration</a></li>
-      <li>Module 1 of 4</li>
-      <li class="applauncher-pf dropdown pull-right">
-        <button class="btn btn-link dropdown-toggle nav-item-iconic" data-toggle="dropdown" href="#"><span class="fa fa-th applauncher-pf-icon" aria-hidden="true"></span><span class="dropdown-title"><span class="applauncher-pf-title">Application Launcher<span class="caret" aria-hidden="true"></span></span></span></button>
-        <ul class="dropdown-menu" role="menu">
-          <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>Eclipse Che</a></li>
-          <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>EnMasse</a></li>
-          <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>Fuse Online</a></li>
-          <li class="applauncher-pf-item" role="presentation"><a class="applauncher-pf-link" href="#" role="menuitem"><span class="applauncher-pf-link-title"></span>Red Hat OpenShift Application Runtimes</a></li>
-        </ul>
-      </li>
-    </ol>
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-3 integr8ly-module">
-            <div class="integr8ly-module-column">
-              <div class="integr8ly-module-column--status">
-                <h4>Build your REST endpoint</h4>
-                <div class="progress progress-sm">
-                  <div class="progress-bar" style="width: 0%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="right" title="0%"></div>
-                </div>
-              </div>
-              <div class="integr8ly-module-column--steps">
-                <h3>Create your REST endpoint using Red Hat OpenShift Application Runtimes</h3>
-                <ol class="module-list">
-                  <li>Open the <a id='launcher' href='#'>Application link</a> <i>(this will open in the right panel)</i>.</li>
-                  <li>To open the application launcher console, click <b>Launch Your Project</b>.</li>
-                  <li>From the <b>Create application</b> screen, add a name for your REST endpoint application and click <b>Continue</b>.</li>
-                  <li>From the <b>Target Environment</b> screen, select <b>"Code locally, Build and Deploy"</b>.</li>
-                  <li>From the Mission list, select <b>Health Check</b>.</li>
-                  <li>From the Runtime list, select <b>SpringBoot</b> and click the blue arrow to continue.</li>
-                  <li>Authorize your GitHub provider and click the blue arrow to continue.</li>
-                  <li>Review and click <b>Set Up Application</b>. You'll see a confirmation screen when setup is complete.</li>
-                </ol>
-                <div class="alert alert-info"><span class="pficon pficon-info"></span>Complete the procedure above before procedding.</div>
-                <h3>Use Eclipse Che to view and edit your REST endpoint</h3>
-                <ol class="module-list">
-                  <li>Open <a href='#'>Eclipse Che</a>. You'll see the REST endpoint you just created.</li>
-                  <li>Make your changes...</li>
-                  <li>Click Create PR to commit your changes.</li>
-                </ol>
-                <div class="alert alert-info"><span class="pficon pficon-info"></span>Complete the procedure above before procedding.</div>
-              </div>
-              <div class="integr8ly-module-column--footer">
-                <h4>What's next?</h4>
-                <p>You may still view the next module, but this module should be completed first.</p>
-                <div class="btn-group btn-group-justified" role="group" aria-label="module step progress buttons">
-                  <div class="btn-group" role="group"><a class="btn btn-default" href="module2.html" role="button">Next Module<i class="fa fa-angle-right" style="padding-left: 5px;"></i></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-9 integr8ly-frame">
-            <div class="blank-slate-pf" id="contextPanel">
-              <div class="blank-slate-pf-icon"><span class="fa-stack"><i class="fa fa-columns fa-stack-2x"></i><i class="fa fa-long-arrow-right fa-stack-1x"></i></span></div>
-              <h1>Contextual View Port</h1>
-              <p>As you work through the procedures on the left, live UIs will load here so that you can keep the instructions accessible.</p>
-            </div>
-            <div class="hide" id="launcherImage"><a href="module1b.html"><img src="img/launcher-start.png" style="height: auto; width: 100%;"></a></div>
-          </div>
+
+  <body>
+    <div class="pf-c-background-image"></div>
+    <div class="pf-l-page" id="page">
+      <!-- <header class="pf-l-page__header" role="banner">
+        <div class="pf-l-page__header-brand">
+          <a class="pf-l-page__header-brand-link" href="/index.html">
+            <img class="pf-c-brand pf-m-sm" src="/img/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer">
+          </a>
         </div>
-      </div>
-    </section>
-    <script src="https://use.fontawesome.com/48b81db564.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/js/patternfly.min.js"></script>
+        <div class="pf-l-page__header-tools">
+          <div class="pf-l-toolbar">
+            <div class="pf-l-toolbar__group">
+              <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
+                <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+              <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+                <div class="pf-c-dropdown pf-m-plain">
+                  <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true"
+                    aria-expanded="false">
+                    Developer
+                    <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                  </button>
+                  <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a
+                      class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled"
+                      role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
+                    <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item"
+                      role="menuitem" href="#">Separated Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="pf-c-avatar" src="/img/logo-alt.svg" alt="Avatar image">
+        </div>
+      </header> -->
+      <main class="pf-l-page__main" role="main">
+        <nav class="pf-c-nav ig-breadcrumb" aria-label="Tertiary Example">
+          <ul class="pf-c-nav__tertiary-list pf-u-ml-lg">
+            <li class="pf-c-nav__item">
+              <a href="index.html" class="pf-c-nav__link" aria-current="page">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="pf-c-nav__item" style="position: relative; top: 15px;">
+              <i class="fas fa-angle-double-right"></i>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="steel-thread-0.html" class="pf-c-nav__link" aria-current="page">
+                Configuring the environment
+              </a>
+            </li>
+            <li class="pf-c-nav__item" style="position: relative; top: 15px;">
+              <i class="fas fa-angle-double-right"></i>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link pf-m-current">
+                Task 1 of 2
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="pf-l-page__main-section pf-u-pr-0 pf-u-pt-0 pf-m-light">
+          <div class="pf-l-split">
+            <div class="pf-l-split__item pf-m-main pf-u-mt-lg">
+              <div class="pf-l-grid">
+                <div class="pf-l-grid__item pf-m-10-col">
+                  <h1 class="pf-c-title pf-m-2xl">
+                    Configuring a GitHub OAuth App
+                  </h1>
+                </div>
+                <div class="pf-l-grid__item pf-m-12-col">
+                  <div class="pf-c-content">
+                    <ol>
+                      <li>
+                        Navigate to <a href="#" class="pf-c-link">https://github.com/settings/developers</a>
+                      </li>
+                      <li>
+                        Click <strong>New OAuth App</strong>
+                      </li>
+                      <li>
+                        Enter <code>integration</code> as the name for the app.
+                      </li>
+                      <li>
+                        Enter the URL you received as prt of your onboarding as the <strong>Homepage URL</strong> and <strong>Authorization callback URL</strong>.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="pf-l-grid__item pf-m-12-col">
+                  <div class="integr8ly-info-box__info">
+                    <h1 class="pf-c-title pf-m-lg">
+                      <i class="far fa-question-circle"></i>
+                      Check your work
+                    </h1>
+                    <h1 class="pf-c-title pf-m-lg pf-u-ml-lg">Check <strong>Developer Settings</strong> in your GitHub account to make sure that OAuth app exists. DO you see it?</h1>
+                    <div class="pf-u-ml-lg">
+                      <div class="pf-c-check">
+                        <input class="pf-c-check__input" type="radio" id="radio1" name="exampleRadios">
+                        <label class="pf-c-check__label" for="radio1">
+                          Yes</label>
+                      </div>
+                      <div class="pf-c-check">
+                        <input class="pf-c-check__input" type="radio" id="radio2" name="exampleRadios">
+                        <label class="pf-c-check__label" for="radio2">
+                          No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="integr8ly-l-tasks">
+                <div class="pf-c-content pf-u-text-align-center pf-u-pt-sm">
+                  <p>
+                    Complete and check all work before proceeding.
+                  </p>
+                  <p class="pf-u-mb-sm pf-m-active">
+                    <i class="far fa-circle"></i> 0.0
+                  </p>
+                </div>
+                <div class="integr8ly-c-buttons__tasks">
+                  <button class="pf-c-button pf-m-secondary pf-m-block">
+                    Back to Intro
+                  </button>
+                  <button class="pf-c-button pf-m-secondary pf-m-block pf-m-disabled">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="pf-l-split__item">
+              <h1 class="pf-c-title pf-m-2xl pf-u-mt-lg pf-u-mb-lg pf-u-pl-md">Walkthrough Resources</h1>
+              <nav class="pf-c-nav" aria-label="walkthrough resources navigation">
+                <section class="pf-c-nav__section" aria-labelledby="grouped-title1">
+                  <h2 class="pf-c-nav__section-title" id="grouped-title1">
+                    Red Hat OpenShift
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        OpenShift Online Help Center
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        OpenShift Blog
+                      </a>
+                    </li>
+                  </ul>
+                  <h2 class="pf-c-nav__section-title" id="grouped-title2">
+                    Red Hat Fuse
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Fuse Community Q&amp;A
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Fuse Overview
+                      </a>
+                    </li>
+                  </ul>
+                  <h2 class="pf-c-nav__section-title" id="grouped-title3">
+                    Red Hat AMQ
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        AMQ Community Q&amp;A
+                      </a>
+                    </li>
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        AMQ Videos
+                      </a>
+                    </li>
+                  </ul>
+                  <h2 class="pf-c-nav__section-title" id="grouped-title4">
+                    Eclipse Che
+                  </h2>
+                  <ul class="pf-c-nav__simple-list">
+                    <li class="pf-c-nav__item">
+                      <a href="#" class="pf-c-nav__link">
+                        Open Console
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <script src="js/site.js"></script>
   </body>
+
 </html>

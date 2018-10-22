@@ -1,115 +1,167 @@
 <!DOCTYPE html>
-<html lang="en"><!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+
   <head>
     <meta charset="utf-8">
     <title>Integreatly Prototype v3.0</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/css/patternfly.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.min.css">
   </head>
+
   <body>
     <div class="pf-c-background-image"></div>
-  </body>
-</html>
-<div class="pf-l-page" id="page">
-  <header class="pf-l-page__header" role="banner">
-    <div class="pf-l-page__header-brand"><a class="pf-l-page__header-brand-link" href="#">Integreatly</a></div>
-    <div class="pf-l-page__header-tools">
-      <div class="pf-l-toolbar">
-        <div class="pf-l-toolbar__group pf-u-sr-only pf-u-visible-on-lg">
-          <div class="pf-l-toolbar__item">
-            <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-bell"></i></button>
-          </div>
-          <div class="pf-l-toolbar__item">
-            <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-cog"></i></button>
-          </div>
+    <div class="pf-l-page" id="page">
+      <header class="pf-l-page__header" role="banner">
+        <div class="pf-l-page__header-brand">
+          <a class="pf-l-page__header-brand-link" href="/index.html">
+            <img class="pf-c-brand pf-m-sm" src="/img/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer">
+          </a>
         </div>
-        <div class="pf-l-toolbar__group">
-          <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
-            <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
-          </div>
-          <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
-            <div class="pf-c-dropdown pf-m-plain">
-              <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true" aria-expanded="false">Bob Johnson<i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i></button>
-              <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
-                <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled" role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
-                <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
-                <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item" role="menuitem" href="#">Separated Link</a>
+        <div class="pf-l-page__header-tools">
+          <div class="pf-l-toolbar">
+            <div class="pf-l-toolbar__group">
+              <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
+                <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+              <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+                <div class="pf-c-dropdown pf-m-plain">
+                  <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true"
+                    aria-expanded="false">
+                    Developer
+                    <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                  </button>
+                  <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a
+                      class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled"
+                      role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
+                    <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item"
+                      role="menuitem" href="#">Separated Link</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <img class="pf-c-avatar" src="/img/logo-alt.svg" alt="Avatar image">
         </div>
-      </div><img class="pf-c-avatar" src="/img/logo-alt.svg" alt="Avatar image">
+      </header>
+      <main class="pf-l-page__main" role="main">
+        <section class="pf-l-page__main-section pf-m-light integr8ly-header">
+          <div class="pf-c-content">
+            <h1>Welcome to the <b>Red Hat Solution Explorer</b></h1>
+            <p>Get started with an end-to-end solution walkthrough or<br>use any of the available application services
+              to
+              create custom integrations.</p>
+          </div>
+        </section>
+        <section class="pf-l-page__main-section pf-m-light">
+          <div class="pf-l-split">
+            <div class="pf-l-split__item pf-m-main">
+              <h1 class="pf-c-title pf-m-2xl">Start with a walkthrough</h1>
+              <div class="pf-l-gallery pf-m-gutter">
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card">
+                    <div class="pf-c-card__header">Configuring the environment</div>
+                    <div class="pf-c-card__body">
+                      Complete these configuration tasks to ensure that you can complete all walkthroughs.
+                    </div>
+                    <div class="pf-c-card__footer">
+                      <a class="pf-c-button pf-m-link" href="steel-thread-0.html">
+                        <i class="fas fa-arrow-circle-right"></i>Get Started
+                      </a>
+                      <i class="far fa-clock" style="padding-right: 5px;"></i>40 Minutes
+                    </div>
+                  </div>
+                </div>
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card">
+                    <div class="pf-c-card__header">Integrating event-driven and API-driven applications (AMQ)</div>
+                    <div class="pf-c-card__body">
+                      Build a simple integration that enables a new fruit type to be added to an inventory list for a
+                      fictional
+                      grocery using Red Hat AMQ.
+                      <span class="pf-c-badge pf-m-read">
+                        preview
+                      </span>
+                    </div>
+                    <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
+                  </div>
+                </div>
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card">
+                    <div class="pf-c-card__header">Integrating API-driven applications</div>
+                    <div class="pf-c-card__body">
+                      Build a simple integration that enables a new fruit type to be added to an inventory list for a
+                      fictional
+                      grocery using EnMasse.
+                      <span class="pf-c-badge pf-m-read">
+                        preview
+                      </span>
+                    </div>
+                    <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pf-l-split__item">
+              <nav class="pf-c-nav" id="primary-nav" aria-label="Primary Nav Default Example">
+                <ul class="pf-c-nav__list">
+                  <li class="pf-c-nav__item">
+                    <h2><b>Applications</b></h2>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat OpenShift
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat 3scale API Management Platform
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat AMQ
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Eclipse Che
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      EnMasse
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat Developer Launcher
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a class="pf-c-nav__link" href="#">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat Fuse
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <script src="https://use.fontawesome.com/48b81db564.js"></script>
+        <script src="js/site.js"></script>
+      </main>
     </div>
-  </header>
-  <aside class="pf-l-page__sidebar">
-    <nav class="pf-c-nav" id="primary-nav" aria-label="Primary Nav Default Example">
-      <ul class="pf-c-nav__list">
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#"><b>Experience application services</b></a></li>
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat OpenShift</a></li>
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat 3scale API Management Platform</a></li>
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat AMQ</a></li>
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat Fuse</a></li>
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Red Hat OpenShift Application Runtimes</a></li>
-        <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#">Eclipse Che</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <main class="pf-l-page__main" role="main">
-    <section class="pf-l-page__main-section pf-m-light integr8ly-header">
-      <div class="pf-c-content">
-        <h1>Welcome to the Red Hat solution explorer</h1>
-        <p>Get started with an end-to-end solution walkthrough or<br>use any of the available application services to create custom integrations.</p>
-      </div>
-    </section>
-    <section class="pf-l-page__main-section pf-m-light">
-      <div class="pf-l-gallery pf-m-gutter">
-        <div class="pf-l-gallery__item">
-          <div class="pf-c-card">
-            <div class="pf-c-card__header">Integrating two RESTful web services</div>
-            <div class="pf-c-card__body">
-              Build a simple REST-based integration that enables a new fruit type to be added to an inventory list for a fictional grocery list.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator, Developer</div>
-            <div class="pf-c-card__footer"><a class="pf-c-button pf-m-link" href="#"><i class="far fa-arrow-circle-right"></i>Get Started</a><i class="far fa-clock" style="padding-right: 5px;"></i>40 Minutes</div>
-          </div>
-        </div>
-        <div class="pf-l-gallery__item">
-          <div class="pf-c-card">
-            <div class="pf-c-card__header">Develop an API from beginning to end</div>
-            <div class="pf-c-card__body">
-              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Developer</div>
-            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
-          </div>
-        </div>
-        <div class="pf-l-gallery__item">
-          <div class="pf-c-card">
-            <div class="pf-c-card__header">Create a greenfield-brownfield facade</div>
-            <div class="pf-c-card__body">
-              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator, Developer</div>
-            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
-          </div>
-        </div>
-        <div class="pf-l-gallery__item">
-          <div class="pf-c-card">
-            <div class="pf-c-card__header">Build a microservice API gateway</div>
-            <div class="pf-c-card__body">
-              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator, Developer</div>
-            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
-          </div>
-        </div>
-        <div class="pf-l-gallery__item">
-          <div class="pf-c-card">
-            <div class="pf-c-card__header">Create a REST facade to existing SOAP-based web service</div>
-            <div class="pf-c-card__body">
-              Coming soon.<br><i class="far fa-user" style="padding-right: 5px;"></i>Operator</div>
-            <div class="pf-c-card__footer"><i class="far fa-clock" style="padding-right: 5px;"></i>0 Minutes</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="https://use.fontawesome.com/48b81db564.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.0.0-rc.1/js/patternfly.min.js"></script>
-    <script src="js/site.js"></script>
-  </main>
-</div>
+  </body>
+
+</html>

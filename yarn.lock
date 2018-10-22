@@ -30,9 +30,9 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
-"@patternfly/patternfly-next@^1.0.42":
-  version "1.0.42"
-  resolved "https://registry.yarnpkg.com/@patternfly/patternfly-next/-/patternfly-next-1.0.42.tgz#2c7831c655e15f4bc118bb8019b8f0f7f1b3801d"
+"@patternfly/patternfly-next@^1.0.59":
+  version "1.0.59"
+  resolved "https://registry.yarnpkg.com/@patternfly/patternfly-next/-/patternfly-next-1.0.59.tgz#a213dc2fe6d30f7b20c1f405f6b160a67719981c"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.4"

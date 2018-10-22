@@ -1,8 +1,14 @@
 .integr8ly {
+  &-header {
+    background-image: url('../img/landing-page-bck-img.jpg');
+    background-size: cover;
+    background-position: top left;
 
-  // &-container {
-  //   background-color: $pf-color-black-200;
-  // }
+    h1,
+    p {
+      color: $pf-color-white;
+    }
+  }
   &-module {
     position: fixed;
     top: 40px;
