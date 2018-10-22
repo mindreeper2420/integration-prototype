@@ -1,0 +1,35 @@
+.integr8ly-info-box__default {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  background-color: $pf-color-black-150;
+  border: var(--pf-global--BorderWidth--md) solid var(--pf-global--Color--light-200);
+}
+.integr8ly-info-box__info {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  background-color: $pf-color-blue-100;
+  border: var(--pf-global--BorderWidth--md) solid var(--pf-global--Color--light-200);
+}
+.integr8ly-l-tasks {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: 280px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: $pf-color-black-150;
+}
+.integr8ly-c-buttons__tasks {
+  display: inline-flex;
+}
+.ig-background-color__grey {
+  background-color: $pf-color-black-200;
+}

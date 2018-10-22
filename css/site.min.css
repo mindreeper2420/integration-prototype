@@ -1,5 +1,5 @@
 /*!
- * Prototype Template -  v4.2.0 (https://www.adamjolicoeur.com/integration-prototype)
+ * Prototype Template -  v4.2.1 (https://www.adamjolicoeur.com/integration-prototype)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
 @charset "UTF-8";
@@ -8012,6 +8012,49 @@ button::-moz-focus-inner,
     background-image: var(--pf-c-background-image--backgroundimage--lg);
     background-image: var(--pf-c-background-image--backgroundimage--xl); }
 
+.pf-c-data-list__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-right: 32px;
+  padding-left: 32px; }
+
+.pf-c-data-list__cell {
+  flex: 1;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.pf-c-data-list__cell + .pf-c-data-list__cell {
+  flex: 1;
+  order: 0;
+  padding-top: 32px;
+  margin-left: 32px; }
+
+.pf-c-data-list__item + .pf-c-data-list__item {
+  border-top: var(--pf-global--BorderWidth--sm) solid var(--pf-global--Color--light-200); }
+
+.pf-c-data-list {
+  --pf-c-data-list--BackgroundColor: var(--pf-global--BackgroundColor--light-100);
+  --pf-c-data-list__item--PaddingTop: var(--pf-global--spacer--xl);
+  --pf-c-data-list__item--PaddingRight: var(--pf-global--spacer--xl);
+  --pf-c-data-list__item--PaddingBottom: var(--pf-global--spacer--xl);
+  --pf-c-data-list__item--PaddingLeft: var(--pf-global--spacer--xl);
+  --pf-c-data-list__item--MarginLeft: var(--pf-global--spacer--xl);
+  --pf-c-data-list__item--BorderColor: var(--pf-global--Color--light-200);
+  --pf-c-data-list__item--BorderWidth: var(--pf-global--BorderWidth--sm);
+  --pf-c-data-list__toggle--MarginRight: var(--pf-global--spacer--md);
+  --pf-c-data-list__toggle--MarginLeft: calc(var(--pf-global--spacer--sm) * -1);
+  --pf-c-data-list__toggle--Transition: var(--pf-global--Transition);
+  --pf-c-data-list__check--MarginRight: var(--pf-global--spacer--xl);
+  --pf-c-data-list__action--MarginLeft: var(--pf-global--spacer--lg);
+  --pf-c-data-list__item--before--BackgroundColor: transparent;
+  --pf-c-data-list__item--before--Width: var(--pf-global--BorderWidth--lg);
+  --pf-c-data-list__item--before--Transition: var(--pf-global--Transition);
+  --pf-c-data-list__item--before--ZIndex: var(--pf-global--ZIndex--xl);
+  list-style-type: disc;
+  background-color: var(--pf-c-data-list--BackgroundColor); }
+
 .integr8ly-header {
   background-image: url("../img/landing-page-bck-img.jpg");
   background-size: cover;
@@ -8122,46 +8165,3 @@ button::-moz-focus-inner,
 
 .ig-background-color__grey {
   background-color: #ededed; }
-
-.pf-c-data-list__item {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  padding-right: 32px;
-  padding-left: 32px; }
-
-.pf-c-data-list__cell {
-  flex: 1;
-  padding-top: 32px;
-  padding-bottom: 32px; }
-
-.pf-c-data-list__cell + .pf-c-data-list__cell {
-  flex: 1;
-  order: 0;
-  padding-top: 32px;
-  margin-left: 32px; }
-
-.pf-c-data-list__item + .pf-c-data-list__item {
-  border-top: var(--pf-global--BorderWidth--sm) solid var(--pf-global--Color--light-200); }
-
-.pf-c-data-list {
-  --pf-c-data-list--BackgroundColor: var(--pf-global--BackgroundColor--light-100);
-  --pf-c-data-list__item--PaddingTop: var(--pf-global--spacer--xl);
-  --pf-c-data-list__item--PaddingRight: var(--pf-global--spacer--xl);
-  --pf-c-data-list__item--PaddingBottom: var(--pf-global--spacer--xl);
-  --pf-c-data-list__item--PaddingLeft: var(--pf-global--spacer--xl);
-  --pf-c-data-list__item--MarginLeft: var(--pf-global--spacer--xl);
-  --pf-c-data-list__item--BorderColor: var(--pf-global--Color--light-200);
-  --pf-c-data-list__item--BorderWidth: var(--pf-global--BorderWidth--sm);
-  --pf-c-data-list__toggle--MarginRight: var(--pf-global--spacer--md);
-  --pf-c-data-list__toggle--MarginLeft: calc(var(--pf-global--spacer--sm) * -1);
-  --pf-c-data-list__toggle--Transition: var(--pf-global--Transition);
-  --pf-c-data-list__check--MarginRight: var(--pf-global--spacer--xl);
-  --pf-c-data-list__action--MarginLeft: var(--pf-global--spacer--lg);
-  --pf-c-data-list__item--before--BackgroundColor: transparent;
-  --pf-c-data-list__item--before--Width: var(--pf-global--BorderWidth--lg);
-  --pf-c-data-list__item--before--Transition: var(--pf-global--Transition);
-  --pf-c-data-list__item--before--ZIndex: var(--pf-global--ZIndex--xl);
-  list-style-type: disc;
-  background-color: var(--pf-c-data-list--BackgroundColor); }
