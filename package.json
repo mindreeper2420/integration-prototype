@@ -1,6 +1,6 @@
 {
   "name": "integration-prototype",
-  "version": "3.0.0",
+  "version": "4.2.0",
   "description": "Integration Prototype",
   "homepage": "https://www.adamjolicoeur.com/integration-prototype",
   "main": "index.js",

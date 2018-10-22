@@ -65,16 +65,6 @@ gulp.task('js', function () {
     }));
 });
 
-// compile pug templates
-gulp.task('views', function () {
-  return gulp.src('./src/*.pug')
-    .pipe(pug({
-      doctype: 'html',
-      pretty: true
-    }))
-    .pipe(gulp.dest('./'));
-});
-
 // Configure the browserSync task
 gulp.task('browserSync', function () {
   browserSync.init({
@@ -100,4 +90,4 @@ gulp.task('serve', ['sass'], function () {
 });
 
 // Run everything
-gulp.task('default', ['sass', 'js', 'views']);
+gulp.task('default', ['sass', 'js']);
