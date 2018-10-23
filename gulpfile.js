@@ -22,6 +22,14 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
+gulp.task('copy-fonts', function () {
+  return gulp.src("assets/fonts/**")
+    .pipe(gulp.dest('css/assets/fonts'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
 gulp.task('lint-sass', function lintCssTask() {
   const gulpStylelint = require('gulp-stylelint');
 
@@ -83,11 +91,11 @@ gulp.task('serve', ['sass'], function () {
     reloadOnRestart: true,
     notify: false // prevent the browserSync notification from appearing
   });
+  gulp.watch('assets/fonts/**', ['copy-fonts']);
   gulp.watch('sass/*.scss', ['sass-watch']);
-  gulp.watch('src/**/*.pug', ['views']);
   gulp.watch('dev/js/*.js', ['js']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 // Run everything
-gulp.task('default', ['sass', 'js']);
+gulp.task('default', ['copy-fonts', 'sass', 'js']);

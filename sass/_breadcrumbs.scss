@@ -1,8 +1,15 @@
 .ig-breadcrumb {
-  background-color: $pf-color-white;
+  // background-color: $pf-color-white;
   // background-image: url('../img/landing-page-bck-img.jpg');
   // filter: url('../img/background-filter.svg#image_overlay');
+  background-color: rgba(0, 0, 0, .7);
   border-bottom: 1px solid;
   border-bottom-color: $pf-color-black-300;
   box-shadow: 0 1px 1px $pf-color-black-300;
+  li {
+    color: $pf-color-white;
+    a {
+      color: $pf-color-white !important; /* stylelint-disable-line declaration-no-important */
+    }
+  }
 }

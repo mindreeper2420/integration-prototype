@@ -10,7 +10,7 @@ This is for the integration prototype.
 
 - Compile SCSS to CSS
 - Browsersync for local development
-- Notifications on successful builds (you can turn this off)
+- Notifications on successful builds (off by default)
 - Automatic headers for CSS/JS files
   - this is configured in the `gulpfile.js` file
 
@@ -21,6 +21,7 @@ This is for the integration prototype.
 - Gulp
 - Stylelint
 - Travis-ci
-- PatternFly 3
+- PatternFly 3 (version 3.0 and below)
+- PatternFly 4 (version 4.0 and above)
 - Sass
 - JS

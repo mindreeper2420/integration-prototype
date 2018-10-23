@@ -1,5 +1,5 @@
 /*!
- * Prototype Template -  v4.3.1 (https://www.adamjolicoeur.com/integration-prototype)
+ * Prototype Template -  v4.4.0 (https://www.adamjolicoeur.com/integration-prototype)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
 @charset "UTF-8";
@@ -8126,10 +8126,15 @@ button::-moz-focus-inner,
   padding-left: 15px; }
 
 .ig-breadcrumb {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom: 1px solid;
   border-bottom-color: #d1d1d1;
   box-shadow: 0 1px 1px #d1d1d1; }
+  .ig-breadcrumb li {
+    color: #fff; }
+    .ig-breadcrumb li a {
+      color: #fff !important;
+      /* stylelint-disable-line declaration-no-important */ }
 
 .integr8ly-info-box__default {
   margin-top: 10px;
@@ -8151,11 +8156,6 @@ button::-moz-focus-inner,
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-right: 280px;
   padding-right: 10px;
   padding-left: 10px;
   background-color: #f5f5f5; }
