@@ -1,5 +1,5 @@
 /*!
- * Prototype Template -  v4.3.0 (https://www.adamjolicoeur.com/integration-prototype)
+ * Prototype Template -  v4.3.1 (https://www.adamjolicoeur.com/integration-prototype)
  * Copyright 2018-2018 Adam J. Jolicoeur
  */
 @charset "UTF-8";
@@ -8165,3 +8165,6 @@ button::-moz-focus-inner,
 
 .ig-background-color__grey {
   background-color: #ededed; }
+
+.integr8ly-c-card:hover {
+  cursor: pointer; }

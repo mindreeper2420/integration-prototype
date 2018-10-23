@@ -33,3 +33,8 @@
 .ig-background-color__grey {
   background-color: $pf-color-black-200;
 }
+.integr8ly-c-card {
+  &:hover {
+    cursor: pointer;
+  }
+}
