@@ -8136,6 +8136,9 @@ button::-moz-focus-inner,
       color: #fff !important;
       /* stylelint-disable-line declaration-no-important */ }
 
+:root {
+  --pf-c-alert--m-success__icon--Color: #486b00; }
+
 .integr8ly-info-box__default {
   margin-top: 10px;
   margin-right: 10px;
@@ -8157,8 +8160,7 @@ button::-moz-focus-inner,
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   padding-right: 10px;
-  padding-left: 10px;
-  background-color: #f5f5f5; }
+  padding-left: 10px; }
 
 .integr8ly-c-buttons__tasks {
   display: inline-flex; }
@@ -8168,3 +8170,6 @@ button::-moz-focus-inner,
 
 .integr8ly-c-card:hover {
   cursor: pointer; }
+
+.integr8ly-m-success {
+  color: var(--pf-c-alert--m-success__icon--Color); }

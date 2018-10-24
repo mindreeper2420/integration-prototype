@@ -1,3 +1,6 @@
+:root {
+  --pf-c-alert--m-success__icon--Color: #486b00;
+}
 .integr8ly-info-box__default {
   margin-top: 10px;
   margin-right: 10px;
@@ -25,7 +28,7 @@
   // margin-right: 280px;
   padding-right: 10px;
   padding-left: 10px;
-  background-color: $pf-color-black-150;
+  // background-color: $pf-color-black-150;
 }
 .integr8ly-c-buttons__tasks {
   display: inline-flex;
@@ -37,4 +40,7 @@
   &:hover {
     cursor: pointer;
   }
+}
+.integr8ly-m-success {
+  color: var(--pf-c-alert--m-success__icon--Color);
 }
