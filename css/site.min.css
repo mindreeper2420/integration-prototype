@@ -8153,15 +8153,15 @@ button::-moz-focus-inner,
     padding-bottom: var(--pf-global--spacer--3xl) !important; } }
 
 .pf-c-background-image {
-  --pf-c-background-image--backgroundimage--xs: url('../img/pfbg_576.jpg');
-  --pf-c-background-image--backgroundimage--xs-2x: url('../img/pfbg_576@2x.jpg');
-  --pf-c-background-image--backgroundimage--sm: url('../img/pfbg_768.jpg');
-  --pf-c-background-image--backgroundimage--sm-2x: url('../img/pfbg_768@2x.jpg');
-  --pf-c-background-image--backgroundimage--md: url('../img/pfbg_992.jpg');
-  --pf-c-background-image--backgroundimage--md-2x: url('../img/pfbg_992@2x.jpg');
-  --pf-c-background-image--backgroundimage--lg: url('../img/pfbg_1200.jpg');
-  --pf-c-background-image--backgroundimage--xl: url('../img/pfbg_2000.jpg');
-  --pf-c-background-image--filter: url('../img/background-filter.svg#image_overlay'); }
+  --pf-c-background-image--backgroundimage--xs: url('../css/assets/images/curtain_576.jpeg');
+  --pf-c-background-image--backgroundimage--xs-2x: url('../css/assets/images/curtain_576.jpeg');
+  --pf-c-background-image--backgroundimage--sm: url('../css/assets/images/curtain_768.jpeg');
+  --pf-c-background-image--backgroundimage--sm-2x: url('../css/assets/images/curtain_768.jpeg');
+  --pf-c-background-image--backgroundimage--md: url('../css/assets/images/curtain_992.jpeg');
+  --pf-c-background-image--backgroundimage--md-2x: url('../css/assets/images/curtain_992.jpeg');
+  --pf-c-background-image--backgroundimage--lg: url('../css/assets/images/curtain_1200.jpeg');
+  --pf-c-background-image--backgroundimage--xl: url('../css/assets/images/curtain_2000.jpeg');
+  --pf-c-background-image--filter: url('../css/assets/images/background-filter.svg#image_overlay'); }
   .pf-c-background-image::before {
     background-image: var(--pf-c-background-image--backgroundimage--xs);
     background-image: var(--pf-c-background-image--backgroundimage--xs-2x);
@@ -8218,13 +8218,9 @@ button::-moz-focus-inner,
 .pf-c-card.integr8ly-c-card {
   min-height: 365px; }
 
-.integr8ly-header {
-  background-image: url("../img/landing-page-bck-img.jpg");
-  background-size: cover;
-  background-position: top left; }
-  .integr8ly-header h1,
-  .integr8ly-header p {
-    color: #fff; }
+.integr8ly-header h1,
+.integr8ly-header p {
+  color: #fff; }
 
 .integr8ly-module {
   position: fixed;
@@ -8337,3 +8333,8 @@ button::-moz-focus-inner,
 
 .integr8ly-m-success {
   color: var(--pf-c-alert--m-success__icon--Color); }
+
+/*
+** "Curtain" images provided by Adi kavazovic from Pexels
+** https://www.pexels.com/photo/curtain-wall-buildinsg-near-water-at-golden-hour-1471294/
+*/

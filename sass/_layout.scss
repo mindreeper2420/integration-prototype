@@ -1,8 +1,9 @@
 .integr8ly {
   &-header {
-    background-image: url('../img/landing-page-bck-img.jpg');
-    background-size: cover;
-    background-position: top left;
+    // background-color: $pf-color-white;
+    // background-image: url('../css/assets/images/landing-page-bck-img.jpg');
+    // background-size: cover;
+    // background-position: top left;
 
     h1,
     p {
@@ -82,16 +83,6 @@
   &-container-cards-pf {
     margin-top: 0;
   }
-
-  // &-card-pf {
-
-  //   // &-custom {
-  //   // }
-  //   &-footer {
-  //     background-color: $pf-color-white;
-  //     border-top: none;
-  //   }
-  // }
 }
 
 .module-list {
