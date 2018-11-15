@@ -6,6 +6,8 @@
 // @import '../node_modules/@patternfly/patternfly-next/sass-utilities/_all.scss';
 @import '../node_modules/@patternfly/patternfly-next/patternfly-base.scss';
 // @import '../node_modules/@patternfly/patternfly-next/patternfly-utilities.scss';
+
+// Components
 @import '../node_modules/@patternfly/patternfly-next/components/AboutModalBox/about-modal-box.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Alert/alert.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Avatar/avatar.scss';
@@ -17,10 +19,12 @@
 @import '../node_modules/@patternfly/patternfly-next/components/Card/card.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Check/check.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Content/content.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/DataList/styles.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Dropdown/dropdown.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Form/form.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/FormControl/form-control.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/InputGroup/input-group.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Label/styles.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/List/list.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/LoginBox/login-box.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/ModalBox/modal-box.scss';
@@ -31,6 +35,8 @@
 @import '../node_modules/@patternfly/patternfly-next/components/Table/table.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Title/title.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Tooltip/tooltip.scss';
+
+// Layouts
 @import '../node_modules/@patternfly/patternfly-next/layouts/Bullseye/bullseye.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Gallery/gallery.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Grid/grid.scss';
@@ -40,6 +46,8 @@
 @import '../node_modules/@patternfly/patternfly-next/layouts/Split/split.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Stack/stack.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Toolbar/toolbar.scss';
+
+// Utilities
 @import '../node_modules/@patternfly/patternfly-next/utilities/Accessibility/accessibility.scss';
 @import '../node_modules/@patternfly/patternfly-next/utilities/Alignment/alignment.scss';
 @import '../node_modules/@patternfly/patternfly-next/utilities/BoxShadow/box-shadow.scss';
