@@ -31,6 +31,8 @@
   background-color: $pf-color-black-200;
 }
 .integr8ly-c-card {
+  border-top: 2px solid;
+  border-color: transparent;
   &:hover {
     cursor: pointer;
   }
@@ -66,4 +68,8 @@
 }
 .integr8ly-m-success {
   color: var(--pf-c-alert--m-success__icon--Color);
+}
+.integr8ly-c-label {
+  // padding: var(--pf-global--spacer--sm);
+  border-radius: var(--pf-global--BorderRadius--sm);
 }

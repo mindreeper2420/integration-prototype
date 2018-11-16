@@ -8328,37 +8328,39 @@ button::-moz-focus-inner,
 .ig-background-color__grey {
   background-color: #ededed; }
 
-.integr8ly-c-card:hover {
-  cursor: pointer; }
-
-.integr8ly-c-card__status--in-progress {
+.integr8ly-c-card {
   border-top: 2px solid;
-  border-color: var(--pf-global--info-color--100); }
-
-.integr8ly-c-card__status--complete {
-  border-top: 2px solid;
-  border-color: var(--pf-global--success-color--100); }
-
-.integr8ly-c-card__status--error {
-  border-top: 2px solid;
-  border-color: var(--pf-global--danger-color--100); }
-
-.integr8ly-c-card .pf-c-card__footer {
-  display: flex;
-  justify-content: space-between; }
-  .integr8ly-c-card .pf-c-card__footer .integr8ly-c-card__info {
-    flex-basis: 50%;
-    margin-top: 7px; }
-  .integr8ly-c-card .pf-c-card__footer .integr8ly-c-card__time {
-    flex-basis: 50%;
-    margin-top: 10px;
-    text-align: right; }
-    .integr8ly-c-card .pf-c-card__footer .integr8ly-c-card__time--progress {
+  border-color: transparent; }
+  .integr8ly-c-card:hover {
+    cursor: pointer; }
+  .integr8ly-c-card__status--in-progress {
+    border-top: 2px solid;
+    border-color: var(--pf-global--info-color--100); }
+  .integr8ly-c-card__status--complete {
+    border-top: 2px solid;
+    border-color: var(--pf-global--success-color--100); }
+  .integr8ly-c-card__status--error {
+    border-top: 2px solid;
+    border-color: var(--pf-global--danger-color--100); }
+  .integr8ly-c-card .pf-c-card__footer {
+    display: flex;
+    justify-content: space-between; }
+    .integr8ly-c-card .pf-c-card__footer .integr8ly-c-card__info {
       flex-basis: 50%;
-      text-align: left; }
+      margin-top: 7px; }
+    .integr8ly-c-card .pf-c-card__footer .integr8ly-c-card__time {
+      flex-basis: 50%;
+      margin-top: 10px;
+      text-align: right; }
+      .integr8ly-c-card .pf-c-card__footer .integr8ly-c-card__time--progress {
+        flex-basis: 50%;
+        text-align: left; }
 
 .integr8ly-m-success {
   color: var(--pf-c-alert--m-success__icon--Color); }
+
+.integr8ly-c-label {
+  border-radius: var(--pf-global--BorderRadius--sm); }
 
 /*
 ** "Curtain" images provided by Adi kavazovic from Pexels
