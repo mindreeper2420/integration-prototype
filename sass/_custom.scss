@@ -21,14 +21,8 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  // position: fixed;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
-  // margin-right: 280px;
   padding-right: 10px;
   padding-left: 10px;
-  // background-color: $pf-color-black-150;
 }
 .integr8ly-c-buttons__tasks {
   display: inline-flex;
@@ -39,6 +33,35 @@
 .integr8ly-c-card {
   &:hover {
     cursor: pointer;
+  }
+  &__status--in-progress {
+    border-top: 2px solid;
+    border-color: var(--pf-global--info-color--100);
+  }
+  &__status--complete {
+    border-top: 2px solid;
+    border-color: var(--pf-global--success-color--100);
+  }
+  &__status--error {
+    border-top: 2px solid;
+    border-color: var(--pf-global--danger-color--100);
+  }
+  .pf-c-card__footer {
+    display: flex;
+    justify-content: space-between;
+    .integr8ly-c-card__info {
+      flex-basis: 50%;
+      margin-top: 7px;
+    }
+    .integr8ly-c-card__time {
+      flex-basis: 50%;
+      margin-top: 10px;
+      text-align: right;
+      &--progress {
+        flex-basis: 50%;
+        text-align: left;
+      }
+    }
   }
 }
 .integr8ly-m-success {
