@@ -36,6 +36,16 @@
   &:hover {
     cursor: pointer;
   }
+  &__label {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -24px;
+    padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+    &--community {
+      background-color: $pf-color-black-150;
+      color: $pf-color-black-600;
+    }
+  }
   &__status--in-progress {
     border-top: 2px solid;
     border-color: var(--pf-global--info-color--100);
