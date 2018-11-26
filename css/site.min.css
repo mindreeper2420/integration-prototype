@@ -8333,6 +8333,15 @@ button::-moz-focus-inner,
   border-color: transparent; }
   .integr8ly-c-card:hover {
     cursor: pointer; }
+  .integr8ly-c-card__label {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -24px;
+    padding-top: 0 !important;
+    /* stylelint-disable-line declaration-no-important */ }
+    .integr8ly-c-card__label--community {
+      background-color: #f5f5f5;
+      color: #72767b; }
   .integr8ly-c-card__status--in-progress {
     border-top: 2px solid;
     border-color: var(--pf-global--info-color--100); }
