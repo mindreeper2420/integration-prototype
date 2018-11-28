@@ -25,7 +25,8 @@
   padding-left: 10px;
 }
 .integr8ly-c-buttons__tasks {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 .ig-background-color__grey {
   background-color: $pf-color-black-200;

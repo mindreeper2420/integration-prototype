@@ -152,31 +152,33 @@
         </nav>
       </aside>
       <main class="pf-l-page__main" role="main">
-        <nav class="pf-c-nav ig-breadcrumb" aria-label="Tertiary Example">
-          <ul class="pf-c-nav__tertiary-list pf-u-ml-lg">
-            <li class="pf-c-nav__item">
-              <a href="index.html" class="pf-c-nav__link" aria-current="page">
-                Dashboard
-              </a>
-            </li>
-            <li class="pf-c-nav__item pf-u-mt-md">
-              <i class="fas fa-angle-right"></i>
-            </li>
-            <li class="pf-c-nav__item">
-              <a href="steel-thread-0.html" class="pf-c-nav__link" aria-current="page">
-                Configuring the environment
-              </a>
-            </li>
-            <li class="pf-c-nav__item pf-u-mt-md">
-              <i class="fas fa-angle-right"></i>
-            </li>
-            <li class="pf-c-nav__item">
-              <a href="#" class="pf-c-nav__link ig-breadcrumb-current">
-                Task 1 of 2
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <section class="pf-l-page__main-section pf-m-light pf-u-pb-0">
+          <nav class="pf-c-breadcrumb" aria-label="breadcrumb">
+            <ol class="pf-c-breadcrumb__list">
+              <li class="pf-c-breadcrumb__item">
+                <a href="index.html" class="pf-c-breadcrumb__link">
+                  Dashboard
+                </a>
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <a href="steel-thread-0.html" class="pf-c-breadcrumb__link">
+                  Configuring the environment
+                </a>
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <a href="#" class="pf-c-breadcrumb__link pf-m-current">
+                  Task 1 of 2
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </section>
         <section class="pf-l-page__main-section pf-m-light">
           <h1 class="pf-c-title pf-m-2xl">
             Configuring a GitHub OAuth App
@@ -224,7 +226,7 @@
                   </div>
                 </div>
               </div>
-              <div class="integr8ly-l-tasks">
+              <div class="integr8ly-l-tasks pf-u-mb-md">
                 <div class="pf-c-content pf-u-text-align-center pf-u-pt-sm">
                   <p>
                     Complete and check all work before proceeding.
@@ -234,10 +236,10 @@
                   </p>
                 </div>
                 <div class="integr8ly-c-buttons__tasks">
-                  <button class="pf-c-button pf-m-secondary pf-m-block" onclick="window.location.href='steel-thread-0.html'">
+                  <button class="pf-c-button pf-m-secondary" onclick="window.location.href='steel-thread-0.html'">
                     Back to Intro
                   </button>
-                  <button class="pf-c-button pf-m-secondary pf-m-block pf-m-disabled">
+                  <button class="pf-c-button pf-m-secondary pf-m-disabled">
                     Next
                   </button>
                 </div>

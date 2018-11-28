@@ -152,23 +152,25 @@
         </nav>
       </aside>
       <main class="pf-l-page__main" role="main">
-        <nav class="pf-c-nav ig-breadcrumb" aria-label="Tertiary Example">
-          <ul class="pf-c-nav__tertiary-list pf-u-ml-lg">
-            <li class="pf-c-nav__item">
-              <a href="index.html" class="pf-c-nav__link" aria-current="page">
-                Dashboard
-              </a>
-            </li>
-            <li class="pf-c-nav__item pf-u-mt-md">
-              <i class="fas fa-angle-right"></i>
-            </li>
-            <li class="pf-c-nav__item">
-              <a href="#" class="pf-c-nav__link ig-breadcrumb-current">
-                Configuring the environment
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <section class="pf-l-page__main-section pf-m-light pf-u-pb-0">
+          <nav class="pf-c-breadcrumb" aria-label="breadcrumb">
+            <ol class="pf-c-breadcrumb__list">
+              <li class="pf-c-breadcrumb__item">
+                <a href="index.html" class="pf-c-breadcrumb__link">
+                  Dashboard
+                </a>
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <a href="#" class="pf-c-breadcrumb__link pf-m-current">
+                  Configuring the environment
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </section>
         <section class="pf-l-page__main-section pf-m-light">
           <div class="pf-l-grid">
             <div class="pf-l-grid__item pf-m-10-col">
@@ -242,7 +244,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="pf-l-grid__item pf-m-offset-10-col">
+                  <div class="pf-l-grid__item pf-m-offset-10-col pf-u-mb-md">
                     <button type="button" class="pf-c-button pf-m-primary" onclick="window.location.href='module1.html'">Get
                       Started</button>
                   </div>

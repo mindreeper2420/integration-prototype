@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "@patternfly/patternfly-next": "^1.0.59"
+    "@patternfly/patternfly-next": "1.0.84"
   }
 }
