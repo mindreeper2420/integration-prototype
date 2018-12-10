@@ -43,7 +43,7 @@ gulp.task('lint-sass', function lintCssTask() {
 });
 
 gulp.task('sass', ['lint-sass'], function () {
-  return gulp.src("sass/*.scss")
+  return gulp.src("sass/**/*.scss")
     .pipe(sass().on('error', sass.logError))
     .pipe(header(banner, {
       pkg: pkg
@@ -92,7 +92,7 @@ gulp.task('serve', ['sass'], function () {
     notify: false // prevent the browserSync notification from appearing
   });
   gulp.watch('assets/fonts/**', ['copy-fonts']);
-  gulp.watch('sass/*.scss', ['sass-watch']);
+  gulp.watch('sass/**/*.scss', ['sass-watch']);
   gulp.watch('dev/js/*.js', ['js']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
