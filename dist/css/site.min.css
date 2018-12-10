@@ -8,9 +8,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.37.10/css/patternfly-additions.min.css");
 /* stylelint-enable */
 @import url("https://fonts.googleapis.com/css?family=Overpass|Overpass+Mono");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.37.10/css/patternfly.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.37.10/css/patternfly-additions.min.css");
 .pf-t-light {
   --pf-global--Color--100: var(--pf-global--Color--dark-100);
   --pf-global--Color--200: var(--pf-global--Color--dark-200);
@@ -600,26 +597,6 @@ html {
 
 .pf-t-light.pf-m-opaque-300 {
   background-color: #ededed; }
-
-/* stylelint-enable */
-.pf-t-light {
-  --pf-global--Color--100: var(--pf-global--Color--dark-100);
-  --pf-global--Color--200: var(--pf-global--Color--dark-200);
-  --pf-global--BorderColor: var(--pf-global--BorderColor--dark);
-  --pf-global--primary-color--100: var(--pf-global--primary-color--dark-100);
-  --pf-global--link--Color: var(--pf-global--primary-color--dark-100);
-  --pf-global--BackgroundColor--100: var(--pf-global--BackgroundColor--light-100); }
-
-.pf-t-dark {
-  --pf-global--Color--100: var(--pf-global--Color--light-100);
-  --pf-global--Color--200: var(--pf-global--Color--light-200);
-  --pf-global--BorderColor: var(--pf-global--BorderColor--light);
-  --pf-global--primary-color--100: var(--pf-global--primary-color--light-100);
-  --pf-global--link--Color: var(--pf-global--primary-color--light-100);
-  --pf-global--link--Color--hover: var(--pf-global--link--Color--light-hover);
-  --pf-global--BackgroundColor--100: var(--pf-global--BackgroundColor--dark-100); }
-  .pf-t-dark .pf-c-card {
-    --pf-c-card--BackgroundColor: var(--pf-global--BackgroundColor--dark-transparent-200); }
 
 .pf-c-title {
   --pf-c-title--m-4xl--LineHeight: var(--pf-global--LineHeight--sm);

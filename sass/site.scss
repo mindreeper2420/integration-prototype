@@ -19,7 +19,6 @@ $pf-global--load-pf-3: true !default;
 $pf-global--enable-reset: false !default;
 
 @import '../node_modules/@patternfly/patternfly-next/patternfly-base.scss';
-@import '../node_modules/@patternfly/patternfly-next/patternfly-utilities.scss';
 
 // Components
 // @import '../node_modules/@patternfly/patternfly-next/components/AboutModalBox/about-modal-box.scss';
