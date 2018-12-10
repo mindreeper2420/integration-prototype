@@ -27,6 +27,8 @@ gulp.task('build', ['copy-fonts', 'sass', 'js']);
 gulp.task('build-tmp', function () {
   gulp.src('./css/*.css')
   .pipe(gulp.dest('./tmp'));
+  gulp.src('./js/*.js')
+  .pipe(gulp.dest('./tmp'));
 });
 
 gulp.task('copy-fonts', function () {
