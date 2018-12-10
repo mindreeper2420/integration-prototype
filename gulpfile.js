@@ -22,6 +22,13 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
+gulp.task('build', ['copy-fonts', 'sass', 'js']);
+
+gulp.task('build-tmp', function () {
+  gulp.src('./css/*.css')
+  .pipe(gulp.dest('./tmp'));
+});
+
 gulp.task('copy-fonts', function () {
   return gulp.src("assets/fonts/**")
     .pipe(gulp.dest('css/assets/fonts'))
@@ -80,6 +87,15 @@ gulp.task('browserSync', function () {
       baseDir: ''
     },
   })
+});
+
+gulp.task('copy-source', ['copy-fonts', 'build-tmp'], function () {
+  gulp.src('./README.md').pipe(gulp.dest('./dist'));
+  gulp.src('./package.json').pipe(gulp.dest('./dist'));
+  gulp.src('./tmp/*.css').pipe(gulp.dest('./dist/css'));
+  gulp.src('./css/assets/images/**/*.*').pipe(gulp.dest('./dist/css/assets/images/'));
+  gulp.src('./css/assets/fonts/**/*.*').pipe(gulp.dest('./dist/css/assets/fonts/'));
+  gulp.src('./*.html').pipe(gulp.dest('./dist'));
 });
 
 // Dev task with browserSync
