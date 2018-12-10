@@ -5,7 +5,6 @@
   "homepage": "https://www.adamjolicoeur.com/integration-prototype",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
     "start": "gulp serve"
   },
   "keywords": [
