@@ -76,7 +76,7 @@ $pf-global--enable-reset: false !default;
 @import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 
 // Utilized to overwrite PF3 typography settings
-@import '././application/patternfly4';
+@import './application/patternfly4';
 
 @import './application/typography';
 @import './application/alerts';
