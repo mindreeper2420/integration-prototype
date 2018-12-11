@@ -22,7 +22,7 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
-gulp.task('build', ['copy-fonts', 'sass', 'js']);
+gulp.task('build', ['copy-dist']);
 
 gulp.task('build-tmp', function () {
   gulp.src('./css/*.css')
