@@ -9231,8 +9231,8 @@ ol {
       .integr8ly-module-column--steps_alert-red i {
         color: var(--pf-global--danger-color--100); }
     .integr8ly-module-column--steps_alert-green {
-      background-color: #c5e8c1;
-      border-color: #88d080;
+      background-color: #e8f6e6;
+      border-color: #c8eb79;
       color: #030303; }
       .integr8ly-module-column--steps_alert-green i {
         color: #519149; }
@@ -9257,12 +9257,8 @@ ol {
       .integr8ly-module-column--footer_status .far {
         padding-right: 5px; }
       .integr8ly-module-column--footer_status-checked {
-        margin-bottom: 10px;
-        padding-right: 15px;
         color: #519149; }
       .integr8ly-module-column--footer_status-unchecked {
-        margin-bottom: 10px;
-        padding-right: 15px;
         color: var(--pf-global--danger-color--100); }
       .integr8ly-module-column--footer_status-step {
         margin-right: 15px; }
@@ -9424,7 +9420,7 @@ ol {
       width: 33.3%; } }
   .integr8ly-installed-apps-view-panel-title {
     display: flex; }
-    .integr8ly-installed-apps-view-panel-title h1 {
+    .integr8ly-installed-apps-view-panel-title h3 {
       flex-basis: 70%;
       margin-top: 9px;
       color: #393f44; }
@@ -9446,8 +9442,7 @@ ol {
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
       padding: 15px; }
       .integr8ly-installed-apps-view-list li p {
-        margin-bottom: 0;
-        color: #282d33; }
+        margin-bottom: 0; }
     .integr8ly-installed-apps-view-list li:hover {
       background-color: #def3ff;
       cursor: pointer; }

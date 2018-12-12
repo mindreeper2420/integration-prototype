@@ -74,8 +74,8 @@
         }
 
         &_alert-green {
-          background-color: lighten($pf-color-green-100, 10%);
-          border-color: $pf-color-green-200;
+          background-color: lighten($pf-color-green-100, 20%);
+          border-color: $pf-color-light-green-200;
           color: $pf-color-black-1000;
 
           i {
@@ -109,14 +109,10 @@
           }
 
           &-checked {
-            margin-bottom: 10px;
-            padding-right: 15px;
             color: $pf-color-green-400;
           }
 
           &-unchecked {
-            margin-bottom: 10px;
-            padding-right: 15px;
             color: var(--pf-global--danger-color--100);
           }
 
