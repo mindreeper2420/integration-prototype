@@ -15,52 +15,52 @@ $img-path: '~patternfly/dist/img/';
 // do not add CSS directly to this file
 //
 $pf-global--enable-font-overpass-cdn: true !default;
-$pf-global--load-pf-3: true !default;
-$pf-global--enable-reset: false !default;
+$pf-global--load-pf-3: false !default;
+$pf-global--enable-reset: true !default;
 
 @import '../node_modules/@patternfly/patternfly-next/patternfly-base.scss';
 
 // Components
-// @import '../node_modules/@patternfly/patternfly-next/components/AboutModalBox/about-modal-box.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Alert/alert.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Avatar/avatar.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Backdrop/backdrop.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/BackgroundImage/background-image.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Badge/badge.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Brand/brand.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Breadcrumb/breadcrumb.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Button/button.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Card/card.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Check/check.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Content/content.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/DataList/styles.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Dropdown/dropdown.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/EmptyState/empty-state.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Form/form.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/FormControl/form-control.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/InputGroup/input-group.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Label/styles.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/List/list.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Login/login.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/ModalBox/modal-box.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Nav/nav.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Popover/popover.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Progress/progress.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Switch/switch.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Table/table.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Tabs/tabs.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/AboutModalBox/about-modal-box.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Alert/alert.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Avatar/avatar.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Backdrop/backdrop.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/BackgroundImage/background-image.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Badge/badge.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Brand/brand.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Breadcrumb/breadcrumb.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Button/button.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Card/card.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Check/check.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Content/content.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/DataList/styles.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Dropdown/dropdown.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/EmptyState/empty-state.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Form/form.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/FormControl/form-control.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/InputGroup/input-group.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Label/styles.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/List/list.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Login/login.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/ModalBox/modal-box.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Nav/nav.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Popover/popover.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Progress/progress.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Switch/switch.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Table/table.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Tabs/tabs.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Title/title.scss';
-// @import '../node_modules/@patternfly/patternfly-next/components/Tooltip/tooltip.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Tooltip/tooltip.scss';
 
 // Layouts
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Bullseye/bullseye.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Gallery/gallery.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Grid/grid.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Level/level.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Page/page.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Split/split.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Stack/stack.scss';
-// @import '../node_modules/@patternfly/patternfly-next/layouts/Toolbar/toolbar.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Bullseye/bullseye.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Gallery/gallery.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Grid/grid.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Level/level.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Page/page.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Split/split.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Stack/stack.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Toolbar/toolbar.scss';
 
 // Utilities
 @import '../node_modules/@patternfly/patternfly-next/utilities/Accessibility/accessibility.scss';
@@ -71,33 +71,10 @@ $pf-global--enable-reset: false !default;
 @import '../node_modules/@patternfly/patternfly-next/utilities/Sizing/sizing.scss';
 @import '../node_modules/@patternfly/patternfly-next/utilities/Spacing/spacing.scss';
 
-// Font Awesome 5 icons
-@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import 'pf4';
 
-// Utilized to overwrite PF3 typography settings
-@import './application/patternfly4';
-
-@import './application/typography';
-@import './application/alerts';
-@import './application/lists';
-@import './application/labels';
-@import './application/breadcrumbs';
-@import './application/overrides';
-@import './application/landingPage';
-@import './application/landingPageMastHead';
-@import './application/loading';
-@import './application/errorScreen';
-@import './application/nav';
-@import './application/sidePanel';
-@import './application/tutorialDashboard';
-@import './application/tutorialCard';
-@import './application/taskLayout';
-@import './application/taskDashboard';
-@import './application/congratulations';
-@import './application/modules';
-@import './application/installedAppsView';
-@import './application/copyField';
+@import 'layout';
+@import 'custom';
 
 /*
 ** 'Curtain' images provided by Adi kavazovic from Pexels
