@@ -10,76 +10,103 @@
   <link rel="stylesheet" href="css/site.min.css">
 </head>
 
-<body>
-  <div class="integr8ly-container">
-    <nav class="navbar navbar-pf-vertical">
-      <div class="navbar-header">
-        <a href="/" role="button" class="navbar-brand">
-          <img class="navbar-brand-name" src="assets/images/brand-alt-solutions-explorer.svg" alt="">
-        </a>
-      </div>
-      <nav class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right navbar-iconic navbar-utility">
-          <li class="dropdown">
-            <button id="app-user-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="nav-item-iconic dropdown-toggle btn btn-link"><span aria-hidden="true" class="pficon pficon-user"></span> <span class="dropdown-title">mockuser  </span> <span class="caret"></span></button>
-            <ul role="menu" class="dropdown-menu" aria-labelledby="app-user-dropdown">
-              <li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </nav>
-    <header class="row integr8ly-landing-page-masthead">
-      <div class="col-xs-12">
-        <div class="pf-c-content">
-          <h3 class="pf-u-mt-md">
-            Welcome to the <b>Red Hat Solution Explorer</b>
-          </h3>
-          <p>Get started with an end-to-end solution walkthrough or
-            <br>use any of the available application services to create custom integrations.
-          </p>
+  <body>
+    <div class="pf-c-background-image"></div>
+    <div class="pf-l-page" id="page">
+      <header class="pf-l-page__header" role="banner">
+        <div class="pf-l-page__header-brand">
+          <a class="pf-l-page__header-brand-link" href="/index.html">
+            <img class="pf-c-brand pf-m-sm" src="css/assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer">
+          </a>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="integr8ly-landing-page-tutorial-dashboard-section">
-        <div class="integr8ly-tutorial-dashboard panel panel-default">
-          <div class="panel-heading panel-title">
-            <h2 class="pf-c-title pf-m-3xl">Start with a walkthrough</h2>
-            <div class="walkthrough-counter pf-u-mt-sm">3 walkthroughs</div>
+        <div class="pf-l-page__header-tools">
+          <div class="pf-l-toolbar">
+            <div class="pf-l-toolbar__group">
+              <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
+                <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+              <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+                <div class="pf-c-dropdown pf-m-plain">
+                  <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true"
+                    aria-expanded="false">
+                    Developer
+                    <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                  </button>
+                  <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a
+                      class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled"
+                      role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
+                    <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item"
+                      role="menuitem" href="#">Separated Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="panel-content cards-pf">
-            <div class="container-cards-pf container" style="width: calc(100% - 40px);">
-              <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                  <div class="card-pf card-pf-match-height integr8ly-tutorial-card" style="position: relative; height: 341px;" onclick="window.location.href='walkthrough1.html'">
-                    <h5 class="card-pf-title pf-c-title pf-m-md">
-                      Integrating event-driven and API-driven applications (AMQ)
-                    </h5>
-                    <div class="card-pf-body">
-                      <p>Build a simple integration that connects a message queue with an API.</p>
-                      <div class="integr8ly-walkthrough-labels"></div>
+          <img class="pf-c-avatar" src="css/assets/images/headshot.jpg" alt="Avatar image">
+        </div>
+      </header>
+      <main class="pf-l-page__main" role="main">
+        <section class="pf-l-page__main-section pf-m-dark-200 integr8ly-header">
+          <div class="pf-c-content">
+            <h1>Welcome to the <b>Red Hat Solution Explorer</b></h1>
+            <p>Get started with an end-to-end solution walkthrough or use any of the available application services to create custom integrations.</p>
+          </div>
+        </section>
+        <section class="pf-l-page__main-section pf-m-dark">
+          <div class="pf-l-split">
+            <div class="pf-l-split__item pf-m-main">
+              <h1 class="pf-c-title pf-m-2xl pf-u-mb-md">Start with a walkthrough</h1>
+              <div class="pf-l-gallery pf-m-gutter">
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card integr8ly-c-card" onclick="window.location.href='steel-thread-0.html'">
+                    <div class="pf-c-card__header">
+                      <h4 class="pf-c-title pf-m-xl">
+                        Configuring the environment
+                      </h4>
                     </div>
-                    <div class="card-pf-footer integr8ly-tutorial-card-pf-footer">
-                      <a class="integr8ly-tutorial-card-pf-footer-get-started" href="#">
-                        <span aria-hidden="true" class="fa fa-arrow-circle-right fa-lg"></span>
-                        <span>Get Started</span>
-                      </a>
-                      <div class="integr8ly-tutorial-card-pf-footer-time-to-complete">
-                        <span arrow-alt-circle-right="true" aria-hidden="true" class="fa fa-clock fa-lg"></span>
-                        15 <span>min</span>
-                      </div>
+                    <div class="pf-c-card__body">
+                      Complete these configuration tasks to ensure that you can complete all walkthroughs.
                     </div>
-                    <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
-                      <div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
-                        <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 290px; height: 351px;"></div>
+                    <div class="pf-c-card__footer">
+                      <div class="integr8ly-c-card__info">
+                        <a class="pf-c-button pf-m-link pf-u-pl-0" href="steel-thread-0.html">
+                          <i class="fas fa-arrow-circle-right pf-u-mr-xs"></i>Get Started
+                        </a>
                       </div>
-                      <div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
-                        <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                      <div class="integr8ly-c-card__time">
+                        <i class="far fa-clock pf-u-mr-xs"></i>40 mins
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card integr8ly-c-card">
+                    <div class="pf-c-card__header">
+                      <h4 class="pf-c-title pf-m-xl">
+                        Integrating event-driven and API-driven applications (AMQ)
+                      </h4>
+                    </div>
+                    <div class="pf-c-card__body">
+                      Build a simple integration that enables a new fruit type to be added to an inventory list for a fictional grocery using Red Hat AMQ.
+                      <span class="pf-c-badge pf-m-unread integr8ly-c-label">
+                        preview
+                      </span>
+                    </div>
+                    <div class="pf-c-card__footer">
+                      <div class="integr8ly-c-card__info">
+                        <a class="pf-c-button pf-m-link pf-u-pl-0" href="iframe.html">
+                          <i class="fas fa-arrow-circle-right pf-u-mr-xs"></i>Get Started
+                        </a>
+                      </div>
+                      <div class="integr8ly-c-card__time">
+                        <i class="far fa-clock pf-u-mr-xs"></i>10 mins
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<<<<<<< HEAD
                 <div class="col-sm-4 col-xs-12">
                   <div class="card-pf card-pf-match-height integr8ly-tutorial-card integr8ly-card-complete" style="position: relative; height: 341px;">
                     <h5 class="card-pf-title pf-c-title pf-m-md">
@@ -98,6 +125,23 @@
                         <div class="progress">
                           <div role="progressbar" class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                         </div><span class="progress-label">100% </span></div>
+=======
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card integr8ly-c-card integr8ly-c-card__status--complete" onclick="window.location.href='iframe.html'">
+                    <div class="pf-c-card__header">
+                      <h4 class="pf-c-title pf-m-xl">
+                        Integrating API-driven applications
+                      </h4>
+                    </div>
+                    <div class="pf-c-card__body">
+                      Duis at congue mauris. Fusce eu nunc vitae orci bibendum tempor in ut elit. Nunc enim turpis, vehicula in nunc eu, imperdiet tempus sapien.
+                    </div>
+                    <div class="pf-c-card__footer">
+                      <div class="integr8ly-c-card__info">
+                        <a class="pf-c-button pf-m-link pf-u-pl-0" href="#">
+                          <i class="fas fa-check-circle pf-u-mr-xs"></i>Complete
+                        </a>
+>>>>>>> update layout to use splits
                       </div>
                       <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
                         <div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
@@ -109,6 +153,7 @@
                       </div>
                     </div>
                   </div>
+<<<<<<< HEAD
                   <div class="col-sm-4 col-xs-12">
                     <div class="card-pf card-pf-match-height integr8ly-tutorial-card" style="position: relative; height: 341px;">
                       <h5 class="card-pf-title pf-c-title pf-m-md">
@@ -122,24 +167,150 @@
                         <a class="integr8ly-tutorial-card-pf-footer-get-started" href="#">
                           <span aria-hidden="true" class="fa fa-arrow-circle-right fa-lg"></span>
                           <span>Get Started</span>
+=======
+                </div>
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card integr8ly-c-card">
+                    <div class="pf-c-card__header">
+                      <h4 class="pf-c-title pf-m-xl">
+                        Integrating services into an existing environment
+                      </h4>
+                    </div>
+                    <div class="pf-c-card__body">
+                      Integer bibendum lectus non justo hendrerit, et ornare odio rutrum. Donec non faucibus nulla, eget placerat velit.
+                      <span class="pf-c-badge pf-m-read integr8ly-c-label">
+                        community
+                      </span>
+                    </div>
+                    <div class="pf-c-card__footer">
+                      <div class="integr8ly-c-card__info">
+                        <a class="pf-c-button pf-m-link pf-u-pl-0" href="#">
+                          <i class="fas fa-arrow-circle-right pf-u-mr-xs"></i>Get Started
+                        </a>
+                      </div>
+                      <div class="integr8ly-c-card__time">
+                        <i class="far fa-clock pf-u-mr-xs"></i>25 mins
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card integr8ly-c-card integr8ly-c-card__status--in-progress">
+                    <div class="pf-c-card__header">
+                      <h4 class="pf-c-title pf-m-xl">
+                        Creating an integration
+                      </h4>
+                    </div>
+                    <div class="pf-c-card__body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam enim ac tellus faucibus pellentesque.
+                      <span class="pf-c-badge pf-m-unread integr8ly-c-label">
+                        preview
+                      </span>
+                    </div>
+                    <div class="pf-c-card__footer">
+                      <div class="integr8ly-c-card__info">
+                        <a class="pf-c-button pf-m-link pf-u-pl-0" href="#">
+                          <i class="fas fa-arrow-circle-right pf-u-mr-xs"></i>Continue
+>>>>>>> update layout to use splits
                         </a>
                         <div class="integr8ly-tutorial-card-pf-footer-time-to-complete">
                           <span arrow-alt-circle-right="true" aria-hidden="true" class="fa fa-clock fa-lg"></span>
                           60 <span>min</span>
                         </div>
                       </div>
+<<<<<<< HEAD
                       <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
                         <div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
                           <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 290px; height: 351px;"></div>
                         </div>
                         <div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
                           <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+=======
+                    </div>
+                  </div>
+                </div>
+                <div class="pf-l-gallery__item">
+                  <div class="pf-c-card integr8ly-c-card integr8ly-c-card__status--in-progress">
+                    <div class="pf-c-card__header">
+                      <h4 class="pf-c-title pf-m-xl">
+                        Integrating environments
+                      </h4>
+                    </div>
+                    <div class="pf-c-card__body">
+                      Vestibulum vehicula sapien at aliquet semper. Donec vitae leo sapien. Suspendisse elit massa, ultrices nec neque non, gravida consectetur metus.
+                    </div>
+                    <div class="pf-c-card__footer">
+                      <div class="integr8ly-c-card__info">
+                        <a class="pf-c-button pf-m-link pf-u-pl-0" href="#">
+                          <i class="fas fa-arrow-circle-right pf-u-mr-xs"></i>Continue
+                        </a>
+                      </div>
+                      <div class="integr8ly-c-card__time--progress">
+                        <div class="pf-c-progress" id="progress-no-measure-example4" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="33" aria-describedby="progress-no-measure-example-description">
+                          <div class="pf-c-progress__status">
+                          </div>
+                          <div class="pf-c-progress__bar">
+                            <div class="pf-c-progress__indicator" style="width: 33%;">
+                            </div>
+                          </div>
+>>>>>>> update layout to use splits
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="pf-l-split__item pf-m-secondary">
+              <h3 class="pf-c-title pf-m-2xl">
+                Applications
+              </h3>
+              <nav class="pf-c-nav pf-u-ml-lg" id="nav-primary-simple" aria-label="Primary Nav, Simple List Example">
+                <ul class="pf-c-nav__simple-list">
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat OpenShift
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat 3scale API Management Platform
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat AMQ
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Eclipse Che
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      EnMasse
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat Developer Launcher
+                    </a>
+                  </li>
+                  <li class="pf-c-nav__item">
+                    <a href="#" class="pf-c-nav__link">
+                      <i class="fas fa-power-off pf-u-mr-sm"></i>
+                      Red Hat Fuse
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
           <div class="panel panel-default integr8ly-installed-apps-view">
