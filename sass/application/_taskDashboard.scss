@@ -30,11 +30,3 @@
   margin-top: 5px;
   font-size: var(--pf-global--FontSize--xl);
 }
-
-/* stylelint-disable selector-class-pattern */
-/* override PF3 styles */
-.list-view-pf-stacked .list-group-item-heading {
-  font-size: var(--pf-global--FontSize--xl);
-  font-weight: var(--pf-global--FontWeight--normal);
-}
-/* stylelint-enable */
