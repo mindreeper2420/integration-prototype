@@ -23,19 +23,11 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
-gulp.task('build', ['clean-dist', 'copy-source']);
+gulp.task('build', ['copy-source']);
 
 gulp.task('clean-dist', function () {
   return gulp.src("dist/", {read: false})
     .pipe(clean());
-});
-
-gulp.task('copy-fonts', function () {
-  return gulp.src("assets/fonts/**")
-    .pipe(gulp.dest('css/assets/fonts'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
 });
 
 gulp.task('lint-sass', function lintCssTask() {
@@ -90,13 +82,13 @@ gulp.task('browserSync', function () {
   })
 });
 
-gulp.task('copy-source', ['copy-fonts'], function () {
+gulp.task('copy-source', ['clean-dist'], function () {
   gulp.src('./README.md').pipe(gulp.dest('./dist'));
   gulp.src('./package.json').pipe(gulp.dest('./dist'));
   gulp.src('./css/*.*').pipe(gulp.dest('./dist/css'));
   gulp.src('./js/*.*').pipe(gulp.dest('./dist/js'));
-  gulp.src('./css/assets/images/**/*.*').pipe(gulp.dest('./dist/css/assets/images/'));
-  gulp.src('./css/assets/fonts/**/*.*').pipe(gulp.dest('./dist/css/assets/fonts/'));
+  gulp.src('./assets/images/**/*.*').pipe(gulp.dest('./dist/assets/images/'));
+  gulp.src('./assets/fonts/**/*.*').pipe(gulp.dest('./dist/assets/fonts/'));
   gulp.src('./*.html').pipe(gulp.dest('./dist'));
 });
 
@@ -109,11 +101,10 @@ gulp.task('serve', ['sass'], function () {
     reloadOnRestart: true,
     notify: false // prevent the browserSync notification from appearing
   });
-  gulp.watch('assets/fonts/**', ['copy-fonts']);
   gulp.watch('sass/**/*.scss', ['sass-watch']);
   gulp.watch('js/*.js', ['js']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 // Run everything
-gulp.task('default', ['copy-fonts', 'sass', 'js']);
+gulp.task('default', ['sass', 'js']);

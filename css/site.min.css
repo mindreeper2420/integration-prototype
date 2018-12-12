@@ -80,7 +80,7 @@
   --pf-global--BoxShadow--lg-bottom: 0 0.75rem 0.625rem -0.25rem rgba(3, 3, 3, 0.07);
   --pf-global--BoxShadow--lg-top: 0 -0.75rem 0.625rem -0.25rem rgba(3, 3, 3, 0.07);
   --pf-global--BoxShadow--inset: inset 0 0 0.625rem 0 rgba(3, 3, 3, 0.25);
-  --pf-global--font-path: /css/assets/fonts;
+  --pf-global--font-path: ../assets/fonts;
   --pf-global--spacer--xs: 0.25rem;
   --pf-global--spacer--sm: 0.5rem;
   --pf-global--spacer--md: 1rem;
@@ -544,8 +544,8 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  src: url("/css/assets/fonts/webfonts/fa-solid-900.eot");
-  src: url("/css/assets/fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/css/assets/fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("/css/assets/fonts/webfonts/fa-solid-900.woff") format("woff"), url("/css/assets/fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("/css/assets/fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../assets/fonts/webfonts/fa-solid-900.eot");
+  src: url("../assets/fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../assets/fonts/webfonts/fa-solid-900.woff") format("woff"), url("../assets/fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../assets/fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -8430,8 +8430,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  src: url("/css/assets/fonts/webfonts/fa-regular-400.eot");
-  src: url("/css/assets/fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/css/assets/fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("/css/assets/fonts/webfonts/fa-regular-400.woff") format("woff"), url("/css/assets/fonts/webfonts/fa-regular-400.ttf") format("truetype"), url("/css/assets/fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../assets/fonts/webfonts/fa-regular-400.eot");
+  src: url("../assets/fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("../assets/fonts/webfonts/fa-regular-400.woff") format("woff"), url("../assets/fonts/webfonts/fa-regular-400.ttf") format("truetype"), url("../assets/fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -8851,7 +8851,7 @@ ol {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
-  --integr8ly-c-masthead-image--BackgroundImage--md: url("/css/assets/images/Web_RH_Banner.png");
+  --integr8ly-c-masthead-image--BackgroundImage--md: url("../assets/images/Web_RH_Banner.png");
   /* stylelint-disable */
   /* stylelint-enable */ }
   @media (min-width: 768px) {
@@ -8882,14 +8882,14 @@ ol {
   height: 100%;
   width: 100%;
   z-index: 5;
-  --integr8ly-c-loading-image--BackgroundImage--xs: url("/css/assets/images/loading_576.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--xs-2x: url("/css/assets/images/loading_576@2x.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--sm: url("/css/assets/images/loading_768.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--sm-2x: url("/css/assets/images/loading_768@2x.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--md: url("/css/assets/images/loading_992.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--md-2x: url("/css/assets/images/loading_992@2x.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--lg: url("/css/assets/images/loading_1200.jpg");
-  --integr8ly-c-loading-image--BackgroundImage--xl: url("/css/assets/images/loading_2000.jpg"); }
+  --integr8ly-c-loading-image--BackgroundImage--xs: url("../assets/images/loading_576.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--xs-2x: url("../assets/images/loading_576@2x.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--sm: url("../assets/images/loading_768.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--sm-2x: url("../assets/images/loading_768@2x.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--md: url("../assets/images/loading_992.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--md-2x: url("../assets/images/loading_992@2x.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--lg: url("../assets/images/loading_1200.jpg");
+  --integr8ly-c-loading-image--BackgroundImage--xl: url("../assets/images/loading_2000.jpg"); }
   .integr8ly-loadingscreen::before {
     position: fixed;
     top: 0;
@@ -9306,14 +9306,14 @@ ol {
   height: calc(100vh - 40px);
   margin-bottom: 0;
   text-align: center;
-  --integr8ly-c-congratulations-image--BackgroundImage--xs: url("/css/assets/images/congrats_576.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--xs-2x: url("/css/assets/images/congrats_576@2x.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--sm: url("/css/assets/images/congrats_768.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--sm-2x: url("/css/assets/images/congrats_768@2x.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--md: url("/css/assets/images/congrats_992.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--md-2x: url("/css/assets/images/congrats_992@2x.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--lg: url("/css/assets/images/congrats_1200.jpg");
-  --integr8ly-c-congratulations-image--BackgroundImage--xl: url("/css/assets/images/congrats_2000.jpg"); }
+  --integr8ly-c-congratulations-image--BackgroundImage--xs: url("../assets/images/congrats_576.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--xs-2x: url("../assets/images/congrats_576@2x.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--sm: url("../assets/images/congrats_768.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--sm-2x: url("../assets/images/congrats_768@2x.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--md: url("../assets/images/congrats_992.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--md-2x: url("../assets/images/congrats_992@2x.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--lg: url("../assets/images/congrats_1200.jpg");
+  --integr8ly-c-congratulations-image--BackgroundImage--xl: url("../assets/images/congrats_2000.jpg"); }
   .integr8ly-congratulations::before {
     position: fixed;
     top: 0;
