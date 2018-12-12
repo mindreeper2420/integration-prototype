@@ -24,7 +24,7 @@ var banner = ['/*!\n',
 
 gulp.task('build', ['copy-source']);
 
-gulp.task('build-tmp', function () {
+gulp.task('build-tmp', ['sass'],  function () {
   gulp.src('./css/*.css')
   .pipe(gulp.dest('./tmp'));
   gulp.src('./js/*.js')
@@ -95,16 +95,17 @@ gulp.task('copy-source', ['copy-fonts', 'build-tmp'], function () {
   gulp.src('./README.md').pipe(gulp.dest('./dist'));
   gulp.src('./package.json').pipe(gulp.dest('./dist'));
   gulp.src('./tmp/*.css').pipe(gulp.dest('./dist/css'));
+  gulp.src('./tmp/*.js').pipe(gulp.dest('./dist/js'));
   gulp.src('./css/assets/images/**/*.*').pipe(gulp.dest('./dist/css/assets/images/'));
   gulp.src('./css/assets/fonts/**/*.*').pipe(gulp.dest('./dist/css/assets/fonts/'));
   gulp.src('./*.html').pipe(gulp.dest('./dist'));
 });
 
 // Dev task with browserSync
-gulp.task('serve', ['sass'], function () {
+gulp.task('serve', ['copy-source'], function () {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./dist"
     },
     reloadOnRestart: true,
     notify: false // prevent the browserSync notification from appearing
