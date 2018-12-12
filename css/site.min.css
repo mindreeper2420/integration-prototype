@@ -8865,8 +8865,7 @@ ol {
     right: 25px;
     height: 38px;
     width: 115px; }
-  .integr8ly-landing-page-masthead h1 {
-    margin-top: 22px;
+  .integr8ly-landing-page-masthead h3 {
     color: #fff; }
   .integr8ly-landing-page-masthead p:first-of-type {
     color: #fff;
@@ -9091,9 +9090,8 @@ ol {
     /* stylelint-disable-line selector-class-pattern */
     display: flex;
     border: none; }
-    .integr8ly-tutorial-dashboard .panel-title h1 {
+    .integr8ly-tutorial-dashboard .panel-title h2 {
       flex-basis: 50%;
-      margin-top: 5px;
       color: #282d33; }
     .integr8ly-tutorial-dashboard .panel-title .walkthrough-counter {
       /* stylelint-disable-line selector-class-pattern */
@@ -9391,10 +9389,6 @@ ol {
     .integr8ly-congratulations_buttons button:first-of-type {
       margin-right: 20px; }
 
-.integr8ly-card-title {
-  font-size: var(--pf-global--FontSize--md);
-  font-weight: var(--pf-global--FontWeight--bold); }
-
 /* stylelint-disable selector-class-pattern */
 .olist .arabic {
   padding-left: 15px; }
@@ -9422,11 +9416,9 @@ ol {
     display: flex; }
     .integr8ly-installed-apps-view-panel-title h3 {
       flex-basis: 70%;
-      margin-top: 9px;
       color: #393f44; }
     .integr8ly-installed-apps-view-panel-title div {
       flex-basis: 30%;
-      margin-top: 10px;
       color: #393f44;
       font-size: var(--pf-global--FontSize--sm);
       font-weight: var(--pf-global--FontWeight--bold);

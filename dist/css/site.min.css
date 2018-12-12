@@ -9093,7 +9093,6 @@ ol {
     border: none; }
     .integr8ly-tutorial-dashboard .panel-title h1 {
       flex-basis: 50%;
-      margin-top: 5px;
       color: #282d33; }
     .integr8ly-tutorial-dashboard .panel-title .walkthrough-counter {
       /* stylelint-disable-line selector-class-pattern */
@@ -9422,7 +9421,6 @@ ol {
     display: flex; }
     .integr8ly-installed-apps-view-panel-title h3 {
       flex-basis: 70%;
-      margin-top: 9px;
       color: #393f44; }
     .integr8ly-installed-apps-view-panel-title div {
       flex-basis: 30%;

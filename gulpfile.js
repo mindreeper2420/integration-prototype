@@ -102,10 +102,10 @@ gulp.task('copy-source', ['copy-fonts', 'build-tmp'], function () {
 });
 
 // Dev task with browserSync
-gulp.task('serve', ['copy-source'], function () {
+gulp.task('serve', ['sass'], function () {
   browserSync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: "./"
     },
     reloadOnRestart: true,
     notify: false // prevent the browserSync notification from appearing
