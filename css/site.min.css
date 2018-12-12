@@ -8858,7 +8858,7 @@ ol {
     .integr8ly-landing-page-masthead {
       background-image: var(--integr8ly-c-masthead-image--BackgroundImage--md); } }
   .integr8ly-landing-page-masthead::after {
-    background-image: url("assets/images/RedHatLogo.png");
+    background-image: url("../assets/images/RedHatLogo.png");
     background-repeat: no-repeat;
     position: absolute;
     top: 85px;
