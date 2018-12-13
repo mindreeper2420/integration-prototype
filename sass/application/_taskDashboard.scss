@@ -1,0 +1,32 @@
+.integr8ly-task-dashboard {
+  &-time-to-completion {
+    margin-top: 5px;
+    color: $pf-color-black-600;
+    font-size: var(--pf-global--FontSize--lg);
+    font-weight: var(--pf-global--FontWeight--normal);
+
+    &_minutes {
+      padding-left: 5px;
+    }
+  }
+
+  &-estimated-time {
+    color: $pf-color-black-600;
+    font-weight: var(--pf-global--FontWeight--normal);
+
+    &_minutes {
+      padding-left: 5px;
+    }
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.integr8ly-tutorial-prereqs {
+  margin-top: 5px;
+  font-size: var(--pf-global--FontSize--xl);
+}

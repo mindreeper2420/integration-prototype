@@ -1,3 +1,12 @@
+.pf-l-page--fix {
+  grid-template-columns: 1fr;
+}
+
+.pf-c-nav__horizontal-list,
+.pf-c-nav__tertiary-list {
+  list-style: none;
+}
+
 :root {
   --pf-c-alert--m-success__icon--Color: #486b00;
 }
