@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Integreatly Prototype v4</title>
+    <title>Integreatly Prototype - PF4 POC</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.min.css">
@@ -12,39 +12,48 @@
 
   <body>
     <div class="pf-c-background-image"></div>
-    <div class="pf-l-page" id="page">
-      <header class="pf-l-page__header" role="banner">
+    <div class="pf-l-page" id="page-layout-horizontal-nav">
+      <header role="banner" class="pf-l-page__header">
         <div class="pf-l-page__header-brand">
-          <a class="pf-l-page__header-brand-link" href="/index.html">
-            <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer">
+          <a class="pf-l-page__header-brand-link">
+            <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer logo">
           </a>
         </div>
+        <!-- <div class="pf-l-page__header-nav">
+          <nav class="pf-c-nav" id="page-layout-horizontal-nav-horizontal-nav" aria-label="Horizontal Nav Example">
+            <ul class="pf-c-nav__horizontal-list">
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link pf-m-current" aria-current="page">
+                  Dashboard
+                </a>
+              </li>
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">
+                  Nav Item 2
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div> -->
         <div class="pf-l-page__header-tools">
           <div class="pf-l-toolbar">
             <div class="pf-l-toolbar__group">
-              <div class="pf-l-toolbar__item pf-u-hidden-on-lg pf-u-mr-0">
-                <button class="pf-c-button pf-m-plain" aria-label="Overflow actions"><i class="fas fa-ellipsis-v"></i></button>
-              </div>
               <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
-                <div class="pf-c-dropdown pf-m-plain">
-                  <button class="pf-c-dropdown__toggle" id="dropdown-example-collapsed" aria-haspopup="true"
-                    aria-expanded="false">
-                    Developer
+                <div class="pf-c-dropdown" pf-m-plain>
+                  <button id="page-layout-horizontal-nav-dropdown-button" class="pf-c-dropdown__toggle pf-m-plain" aria-expanded="false">
+                    <span class="pf-c-dropdown__toggle-text">
+                      admin@example.com
+                    </span>
                     <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
                   </button>
-                  <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden"><a
-                      class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
-                    <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button><a class="pf-c-dropdown__menu-item pf-m-disabled"
-                      role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
-                    <button class="pf-c-dropdown__menu-item" role="menuitem" disabled="">Disabled Action</button>
-                    <div class="pf-c-dropdown__separator" role="separator"></div><a class="pf-c-dropdown__menu-item"
-                      role="menuitem" href="#">Separated Link</a>
+                  <div class="pf-c-dropdown__menu" hidden>
+                    admin@example.com
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar image">
+          <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar Image">
         </div>
       </header>
       <main class="pf-l-page__main" role="main">
