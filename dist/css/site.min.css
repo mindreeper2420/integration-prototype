@@ -9394,15 +9394,16 @@ ol {
       width: auto; }
 
 .pf-c-background-image {
-  --pf-c-background-image--backgroundimage--xs: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--xs-2x: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--sm: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--sm-2x: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--md: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--md-2x: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--lg: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--backgroundimage--xl: url('../assets/images/mountain-2.jpg');
-  --pf-c-background-image--filter: url('../assets/images/background-filter.svg#image_overlay'); }
+  --pf-c-background-image--backgroundimage--xs: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--xs-2x: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--sm: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--sm-2x: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--md: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--md-2x: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--lg: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--backgroundimage--xl: url('../assets/images/building-bg.jpg');
+  --pf-c-background-image--filter: url('../assets/images/background-filter.svg#image_overlay');
+  /* Photo by Jorik Kleen on Unsplash */ }
   .pf-c-background-image::before {
     background-image: var(--pf-c-background-image--backgroundimage--xs);
     background-image: var(--pf-c-background-image--backgroundimage--xs-2x);
@@ -9412,6 +9413,7 @@ ol {
     background-image: var(--pf-c-background-image--backgroundimage--md-2x);
     background-image: var(--pf-c-background-image--backgroundimage--lg);
     background-image: var(--pf-c-background-image--backgroundimage--xl);
+    -webkit-filter: grayscale(1);
     filter: grayscale(1); }
 
 .pf-l-page__header-brand {
