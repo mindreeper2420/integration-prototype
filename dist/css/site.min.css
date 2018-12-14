@@ -9412,7 +9412,7 @@ ol {
     background-image: var(--pf-c-background-image--backgroundimage--md-2x);
     background-image: var(--pf-c-background-image--backgroundimage--lg);
     background-image: var(--pf-c-background-image--backgroundimage--xl);
-    filter: greyscale(1); }
+    filter: grayscale(1); }
 
 .pf-l-page__header-brand {
   background-color: transparent; }
