@@ -35,7 +35,7 @@
 }
 .integr8ly-c-buttons__tasks {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .ig-background-color__grey {
   background-color: $pf-color-black-200;
@@ -92,4 +92,11 @@
 .integr8ly-c-label {
   // padding: var(--pf-global--spacer--sm);
   border-radius: var(--pf-global--BorderRadius--sm);
+}
+.integr8ly-congrats-static {
+  width: 250px;
+}
+.integr8ly-congrats-static__buttons {
+  display: flex;
+  justify-content: space-evenly;
 }
