@@ -6,7 +6,7 @@
   }
 
   &module {
-    margin-top: 45px;
+    margin-top: 110px;
     padding-bottom: 60px;
 
     &-congratulations {
@@ -129,15 +129,25 @@
       top: 0;
       right: 0;
       bottom: 0;
-      padding-top: 60px;
+      padding-top: 125px;
       overflow-y: auto;
-      background-color: $pf-color-black-150;
-      border-left: var(--pf-global--BorderWidth--sm) solid;
-      border-left-color: $pf-color-black-300;
+      // background-color: $pf-color-black-150;
+      // border-left: var(--pf-global--BorderWidth--sm) solid;
+      // border-left-color: $pf-color-black-300;
 
       @media (max-width: var(--pf-global--breakpoint--md)) {
         display: none;
       }
+    }
+    &-content-frame {
+      right: 0;
+      overflow-y: hidden;
+      background-color: $pf-color-white;
+      float: right;
+      height: 90vh;
+      margin-top: -22px;
+      // border-left: var(--pf-global--BorderWidth--sm) solid;
+      // border-left-color: $pf-color-black-300;
     }
   }
 }

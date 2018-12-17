@@ -8793,7 +8793,7 @@ ol {
 
 .integr8ly-breadcrumb {
   position: fixed;
-  top: 0;
+  top: 76px;
   right: 0;
   left: 0;
   margin-bottom: 0;
@@ -9097,7 +9097,7 @@ ol {
   max-width: 100%; }
 
 .integr8ly-module {
-  margin-top: 45px;
+  margin-top: 110px;
   padding-bottom: 60px; }
   .integr8ly-module-congratulations {
     margin-top: 0; }
@@ -9180,14 +9180,18 @@ ol {
     top: 0;
     right: 0;
     bottom: 0;
-    padding-top: 60px;
-    overflow-y: auto;
-    background-color: #f5f5f5;
-    border-left: var(--pf-global--BorderWidth--sm) solid;
-    border-left-color: #d1d1d1; }
+    padding-top: 125px;
+    overflow-y: auto; }
     @media (max-width: var(--pf-global--breakpoint--md)) {
       .integr8ly-module-frame {
         display: none; } }
+  .integr8ly-module-content-frame {
+    right: 0;
+    overflow-y: hidden;
+    background-color: #fff;
+    float: right;
+    height: 90vh;
+    margin-top: -22px; }
 
 .integr8ly-task-dashboard-time-to-completion {
   margin-top: 5px;
@@ -9393,28 +9397,9 @@ ol {
     .integr8ly-copy > .input-group .input-group-btn {
       width: auto; }
 
-.pf-c-background-image {
-  --pf-c-background-image--backgroundimage--xs: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--xs-2x: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--sm: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--sm-2x: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--md: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--md-2x: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--lg: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--backgroundimage--xl: url('../assets/images/building-bg.jpg');
-  --pf-c-background-image--filter: url('../assets/images/background-filter.svg#image_overlay');
-  /* Photo by Jorik Kleen on Unsplash */ }
-  .pf-c-background-image::before {
-    background-image: var(--pf-c-background-image--backgroundimage--xs);
-    background-image: var(--pf-c-background-image--backgroundimage--xs-2x);
-    background-image: var(--pf-c-background-image--backgroundimage--sm);
-    background-image: var(--pf-c-background-image--backgroundimage--sm-2x);
-    background-image: var(--pf-c-background-image--backgroundimage--md);
-    background-image: var(--pf-c-background-image--backgroundimage--md-2x);
-    background-image: var(--pf-c-background-image--backgroundimage--lg);
-    background-image: var(--pf-c-background-image--backgroundimage--xl);
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
+.pf-c-background-image::before {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
 
 .pf-l-page__header-brand {
   background-color: transparent; }
