@@ -14,74 +14,59 @@
   <link rel="stylesheet" href="css/site.min.css">
 </head>
 
-<body>
-  <div class="pf-c-background-image"></div>
-  <div class="pf-l-page">
-    <header class="pf-l-page__header">
-      <div class="pf-l-page__header-brand">
-        <a class="pf-l-page__header-brand-link">
-          <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer logo">
-        </a>
-      </div>
-      <div class="pf-l-page__header-tools">
-        <div class="pf-l-toolbar">
-          <div class="pf-l-toolbar__group">
-            <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
-              <div class="pf-c-dropdown" pf-m-plain="">
-                <button id="page-layout-horizontal-nav-dropdown-button" class="pf-c-dropdown__toggle pf-m-plain" aria-expanded="false">
-                  <span class="pf-c-dropdown__toggle-text">
+  <body>
+    <!-- Define the symbols, these are invisible on the page -->
+    <i data-fa-symbol="clock" class="fa fa-clock"></i>
+    <div class="pf-c-background-image"></div>
+    <div class="pf-c-page">
+      <header class="pf-c-page__header">
+        <div class="pf-c-page__header-brand">
+          <a href="index.html" class="pf-c-page__header-brand-link">
+            <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer logo">
+          </a>
+        </div>
+        <div class="pf-c-page__header-nav">
+          <nav class="pf-c-nav">
+            <ul class="pf-c-nav__horizontal-list">
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">Milestone 2</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="pf-c-page__header-tools">
+          <div class="pf-l-toolbar">
+            <div class="pf-l-toolbar__group">
+              <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+                <div class="pf-c-dropdown" pf-m-plain="">
+                  <button id="page-layout-horizontal-nav-dropdown-button" class="pf-c-dropdown__toggle pf-m-plain"
+                    aria-expanded="false">
+                    <span class="pf-c-dropdown__toggle-text">
+                      admin@example.com
+                    </span>
+                    <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                  </button>
+                  <div class="pf-c-dropdown__menu" hidden="">
                     admin@example.com
-                  </span>
-                  <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
-                </button>
-                <div class="pf-c-dropdown__menu" hidden="">
-                  admin@example.com
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar Image">
         </div>
-        <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar Image">
-      </div>
-    </header>
-    <main class="pf-l-page__main" role="main">
-      <section class="pf-l-page__main-section pf-u-p-0">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="integr8ly-task-container pf-u-mt-lg col-sm-9 col-xs-12">
-              <div class="pf-c-content">
-<<<<<<< HEAD
-                <h2 class="pf-u-mt-lg">
-                  Tasks to complete this walkthrough
-                  <div class="pull-right integr8ly-task-dashboard-time-to-completion">
-                    <svg
-                      height="16px"
-                      width="16px"
-                      fill="#000"
-                    >
-                      <use xlink:href="assets/images/fa-solid.svg#clock"></use>
-                    </svg>
-                    <span class="integr8ly-task-dashboard-time-to-completion_minutes pf-u-ml-xs">15 minutes</span>
-                  </div>
-                </h2>
-                <div class="list-group list-view-pf list-view-pf-view integr8ly-list-view-pf">
-                  <div class="list-group-item list-view-pf-stacked">
-                    <div class="list-view-pf-actions">
-                      <div class="integr8ly-task-dashboard-estimated-time">
-                        <svg
-                          height="16px"
-                          width="16px"
-                          fill="#000"
-                        >
-                          <use xlink:href="assets/images/fa-solid.svg#clock"></use>
-                        </svg>
-                        <span class="pf-u-ml-xs">5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
-=======
+      </header>
+      <main class="pf-c-page__main" role="main">
+        <section class="pf-c-page__main-section pf-m-light pf-u-p-0">
+          <div class="pf-l-split pf-m-gutter">
+            <div class="pf-l-split__item pf-m-main integr8ly-task-container">
+              <div class="pf-c-content pf-u-pt-lg pf-u-pl-lg">
                 <div class="integr8ly-task-dashboard-header">
                   <h2>
                     Integrating event-driven and API-driven applications
                   </h2>
-                  <button type="button" class="btn btn-primary" onclick="window.location.href='task1.html'">Get Started</button>
+                  <button type="button" class="btn btn-primary" onclick="window.location.href='task1.html'">Get
+                    Started</button>
                 </div>
                 <p>Build a simple integration that connects a message queue with an API.</p>
                 <p>In a multi-application system, you often find:</p>
@@ -96,7 +81,8 @@
                     <p>custom solutions require custom monitoring</p>
                   </li>
                   <li>
-                    <p>understanding the relationship between the applications requires deep technical insight to the overall architecture</p>
+                    <p>understanding the relationship between the applications requires deep technical insight to the
+                      overall architecture</p>
                   </li>
                 </ul>
                 <p>A more structured approach involves:</p>
@@ -111,71 +97,55 @@
                     <p>built-in monitoring</p>
                   </li>
                 </ul>
-                <p>This walkthrough describes how to create such an integration, using OpenShift, Red Hat AMQ Online and API connectors in Fuse.</p>
+                <p>This walkthrough describes how to create such an integration, using OpenShift, Red Hat AMQ Online
+                  and API connectors in Fuse.</p>
                 <img src="/assets/images/arch.png" class="img-responsive" alt="integration">
-              </div>
-              <div class="integr8ly-module-frame col-sm-3">
-                <h4 class="pf-c-title pf-m-xl">Walkthrough Resources</h4>
-                <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
-                  <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat OpenShift&nbsp;<span></span><span></span>
-                </h4>
-                <ul class="pf-c-list pf-u-ml-lg">
-                  <li><a href="https://cluster-lfa3xlh.opentry.me/console" target="top">Open Console</a></li>
-                  <li><a href="https://help.openshift.com/" target="top">OpenShift Online Help Center</a></li>
-                  <li><a href="https://blog.openshift.com/" target="top">OpenShift Blog</a></li>
-                </ul>
-                <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
-                  <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat Fuse&nbsp;<span></span><span></span>
-                </h4>
-                <ul class="pf-c-list pf-u-ml-lg">
-                  <li><a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="top">Open Console</a></li>
-                  <li><a href="https://developers.redhat.com/products/fuse/help/" target="top">Fuse Community Q&amp;A</a></li>
-                  <li><a href="https://developers.redhat.com/videos/vimeo/95497167/" target="top">Fuse Overview</a></li>
-                </ul>
-                <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
-                  <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat AMQ&nbsp;<span></span><span></span>
-                </h4>
-                <ul class="pf-c-list pf-u-ml-lg">
-                  <li><a href="http://console-admin-example-com-walkthrough-projects.cluster-lfa3xlh.opentry.me" target="top">Open Console</a></li>
-                  <li><a href="https://developers.redhat.com/products/amq/help/" target="top">AMQ Community Q&amp;A</a></li>
-                  <li><a href="https://access.redhat.com/products/red-hat-amq" target="top">AMQ Videos</a></li>
-                </ul>
-                <div class="hidden">No resources available.</div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="pf-c-content">
-                    <h2 class="pf-u-mt-lg">
-                      Tasks to complete this walkthrough
-                      <div class="pull-right integr8ly-task-dashboard-time-to-completion">
-                        <span aria-hidden="true" class="fa fa-clock"></span>
-                        <span class="integr8ly-task-dashboard-time-to-completion_minutes">15minutes</span>
->>>>>>> Add Masthead/Nav to Walkthrough intro
-                      </div>
-                    </h2>
-                    <div class="list-group list-view-pf list-view-pf-view integr8ly-list-view-pf">
-                      <div class="list-group-item list-view-pf-stacked">
-                        <div class="list-view-pf-actions">
-                          <div class="integr8ly-task-dashboard-estimated-time">
-                            <span aria-hidden="true" class="fa fa-clock-o" style="margin-right: 5px;"></span>
-                            <span>5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
-                          </div>
-                        </div>
-<<<<<<< HEAD
-                      </div>
-                    </div>
+                <h2 class="pf-u-mt-lg">
+                  Tasks to complete this walkthrough
+                  <div class="pull-right integr8ly-task-dashboard-time-to-completion">
+                    <svg class="icon"
+                      height="18px"
+                      width="18px"
+                      fill="#000"
+                    >
+                      <use xlink:href="assets/images/fa-solid.svg#clock"></use>
+                    </svg>
+                    <span class="integr8ly-task-dashboard-time-to-completion_minutes">15minutes</span>
                   </div>
+                </h2>
+                <div class="list-group list-view-pf list-view-pf-view integr8ly-list-view-pf">
                   <div class="list-group-item list-view-pf-stacked">
                     <div class="list-view-pf-actions">
                       <div class="integr8ly-task-dashboard-estimated-time">
-                        <svg
+                        <svg class="icon"
                           height="16px"
                           width="16px"
                           fill="#000"
                         >
                           <use xlink:href="assets/images/fa-solid.svg#clock"></use>
                         </svg>
-                        <span class="pf-u-ml-xs">5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
+                        <span>5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
+                      </div>
+                    </div>
+                    <div class="list-view-pf-main-info">
+                      <div class="list-view-pf-body">
+                        <div class="list-view-pf-description">
+                          <div class="list-group-item-heading">1. Creating Connections</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item list-view-pf-stacked">
+                    <div class="list-view-pf-actions">
+                      <div class="integr8ly-task-dashboard-estimated-time">
+                        <svg class="icon"
+                          height="16px"
+                          width="16px"
+                          fill="#000"
+                        >
+                          <use xlink:href="assets/images/fa-solid.svg#clock"></use>
+                        </svg>
+                        <span>5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
                       </div>
                     </div>
                     <div class="list-view-pf-main-info">
@@ -189,68 +159,72 @@
                   <div class="list-group-item list-view-pf-stacked">
                     <div class="list-view-pf-actions">
                       <div class="integr8ly-task-dashboard-estimated-time">
-                        <svg
+                        <svg class="icon"
                           height="16px"
                           width="16px"
                           fill="#000"
                         >
                           <use xlink:href="assets/images/fa-solid.svg#clock"></use>
                         </svg>
-                        <span class="pf-u-ml-xs">5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
-=======
-                        <div class="list-view-pf-main-info">
-                          <div class="list-view-pf-body">
-                            <div class="list-view-pf-description">
-                              <div class="list-group-item-heading">1. Creating Connections</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="list-group-item list-view-pf-stacked">
-                        <div class="list-view-pf-actions">
-                          <div class="integr8ly-task-dashboard-estimated-time">
-                            <span aria-hidden="true" class="fa fa-clock-o" style="margin-right: 5px;"></span>
-                            <span>5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
-                          </div>
-                        </div>
-                        <div class="list-view-pf-main-info">
-                          <div class="list-view-pf-body">
-                            <div class="list-view-pf-description">
-                              <div class="list-group-item-heading">2. Creating an integration</div>
-                            </div>
-                          </div>
-                        </div>
->>>>>>> Add Masthead/Nav to Walkthrough intro
-                      </div>
-                      <div class="list-group-item list-view-pf-stacked">
-                        <div class="list-view-pf-actions">
-                          <div class="integr8ly-task-dashboard-estimated-time">
-                            <span aria-hidden="true" class="fa fa-clock-o" style="margin-right: 5px;"></span>
-                            <span>5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
-                          </div>
-                        </div>
-                        <div class="list-view-pf-main-info">
-                          <div class="list-view-pf-body">
-                            <div class="list-view-pf-description">
-                              <div class="list-group-item-heading">3. Using the application integration</div>
-                            </div>
-                          </div>
-                        </div>
+                        <span>5<span class="integr8ly-task-dashboard-estimated-time_minutes">minutes</span></span>
                       </div>
                     </div>
-                    <div class="pull-right integr8ly-task-dashboard-time-to-completion pf-u-mb-lg">
-                      <button type="button" class="btn btn-primary" onclick="window.location.href='task1.html'">Get Started</button>
+                    <div class="list-view-pf-main-info">
+                      <div class="list-view-pf-body">
+                        <div class="list-view-pf-description">
+                          <div class="list-group-item-heading">3. Using the application integration</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="pull-right integr8ly-task-dashboard-time-to-completion pf-u-mb-lg">
+                  <button type="button" class="btn btn-primary" onclick="window.location.href='task1.html'">Get
+                    Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="pf-l-split__item pf-u-pt-lg pf-u-pr-lg pf-u-pl-lg integr8ly-walkthrough-resources">
+              <div class="integr8ly-module-frame">
+                <h4 class="pf-c-title pf-m-xl">Walkthrough Resources</h4>
+                <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
+                  <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red
+                  Hat OpenShift&nbsp;<span></span><span></span>
+                </h4>
+                <ul class="pf-c-list pf-u-ml-lg">
+                  <li><a href="https://cluster-lfa3xlh.opentry.me/console" target="top">Open Console</a></li>
+                  <li><a href="https://help.openshift.com/" target="top">OpenShift Online Help Center</a></li>
+                  <li><a href="https://blog.openshift.com/" target="top">OpenShift Blog</a></li>
+                </ul>
+                <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
+                  <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red
+                  Hat Fuse&nbsp;<span></span><span></span>
+                </h4>
+                <ul class="pf-c-list pf-u-ml-lg">
+                  <li><a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="top">Open
+                      Console</a></li>
+                  <li><a href="https://developers.redhat.com/products/fuse/help/" target="top">Fuse Community Q&amp;A</a></li>
+                  <li><a href="https://developers.redhat.com/videos/vimeo/95497167/" target="top">Fuse Overview</a></li>
+                </ul>
+                <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
+                  <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red
+                  Hat AMQ&nbsp;<span></span><span></span>
+                </h4>
+                <ul class="pf-c-list pf-u-ml-lg">
+                  <li><a href="http://console-admin-example-com-walkthrough-projects.cluster-lfa3xlh.opentry.me" target="top">Open
+                      Console</a></li>
+                  <li><a href="https://developers.redhat.com/products/amq/help/" target="top">AMQ Community Q&amp;A</a></li>
+                  <li><a href="https://access.redhat.com/products/red-hat-amq" target="top">AMQ Videos</a></li>
+                </ul>
+                <div class="hidden">No resources available.</div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <script src="js/site.js"></script>
-    </main>
-  </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 
-  </html>
+</html>

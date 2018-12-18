@@ -473,9 +473,13 @@ ol {
       grid-column: 2;
     }
   }
-
   .btn-primary {
     color: $pf-color-white;
+    .fa,
+    .fas,
+    .far {
+      color: $pf-color-white;
+    }
   }
 }
 

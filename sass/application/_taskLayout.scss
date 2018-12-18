@@ -5,9 +5,12 @@
     }
   }
 
+  &walkthrough-resources {
+    background-color: var(--pf-global--BackgroundColor--light-300);
+  }
+
   &module {
-    margin-top: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 150px;
 
     &-congratulations {
       margin-top: 0;
@@ -50,7 +53,7 @@
         margin-right: -20px;
         margin-bottom: 56px;
         margin-left: -20px;
-        padding: 15px 20px 0;
+        padding: 0 20px;
         background-color: $pf-color-white;
 
         &_alert-blue {
@@ -91,7 +94,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 74.4%;
+        // width: 74.4%;
         text-align: center;
         z-index: 3;
 
@@ -125,14 +128,14 @@
     }
 
     &-frame {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
+      // position: fixed;
+      // top: 0;
+      // right: 0;
+      // bottom: 0;
       // padding-top: 60px;
-      padding-top: 105px;
-      overflow-y: auto;
-      // background-color: $pf-color-black-150;
+      // padding-top: 105px;
+      // overflow-y: auto;
+      // background-color: var(--pf-global--BackgroundColor--light-300);
       // border-left: var(--pf-global--BorderWidth--sm) solid;
       // border-left-color: $pf-color-black-300;
 
@@ -141,7 +144,7 @@
       }
     }
     &-frame-alt {
-      padding-top: 140px;
+      padding-top: 70px;
     }
   }
 }

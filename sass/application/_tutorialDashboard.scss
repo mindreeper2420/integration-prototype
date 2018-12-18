@@ -2,12 +2,13 @@
   // height: 100vh;
   // height: calc(100vh - 226px); // View port height - mastheads
   margin-bottom: 0;
-  background-color: $pf-color-black-150;
+  // background-color: $pf-color-black-150;
+  background-color: var(--pf-global--BackgroundColor--light-300);
   border: 0;
   box-shadow: none;
 
   @media (max-width: 1091px) {
-    width: 100%;
+    // width: 100%;
 
     .card-pf-body { /* stylelint-disable-line selector-class-pattern */
       min-height: 270px;
@@ -15,11 +16,15 @@
   }
 
   @media (min-width: 1092px) {
-    width: 66.6%;
+    // width: 66.6%;
 
     .card-pf-body { /* stylelint-disable-line selector-class-pattern */
       min-height: 250px;
     }
+  }
+
+  &.panel-default > .panel-heading {
+    background-color: var(--pf-global--BackgroundColor--light-300);
   }
 
   & .panel-title { /* stylelint-disable-line selector-class-pattern */
@@ -28,7 +33,7 @@
 
     & h2 {
       flex-basis: 50%;
-      color: #282d33;
+      // color: #282d33;
     }
 
     .walkthrough-counter { /* stylelint-disable-line selector-class-pattern */
@@ -42,6 +47,7 @@
   }
 
   & .panel-content { /* stylelint-disable-line selector-class-pattern */
+    background-color: var(--pf-global--BackgroundColor--light-300);
     .container-cards-pf { /* stylelint-disable-line selector-class-pattern */
       margin-top: 0;
       padding-right: 0;
