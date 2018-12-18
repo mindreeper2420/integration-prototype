@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Integreatly Prototype - PF4 POC</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.min.css">
+  </head>
+
+  <body>
+    <div class="pf-c-background-image"></div>
+    <div class="pf-l-page" id="page-layout-horizontal-nav">
+      <header role="banner" class="pf-l-page__header">
+        <div class="pf-l-page__header-brand">
+          <a class="pf-l-page__header-brand-link">
+            <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer logo">
+          </a>
+        </div>
+        <!-- <div class="pf-l-page__header-nav">
+          <nav class="pf-c-nav" id="page-layout-horizontal-nav-horizontal-nav" aria-label="Horizontal Nav Example">
+            <ul class="pf-c-nav__horizontal-list">
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link pf-m-current" aria-current="page">
+                  Dashboard
+                </a>
+              </li>
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">
+                  Nav Item 2
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div> -->
+        <div class="pf-l-page__header-tools">
+          <div class="pf-l-toolbar">
+            <div class="pf-l-toolbar__group">
+              <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+                <div class="pf-c-dropdown" pf-m-plain>
+                  <button id="page-layout-horizontal-nav-dropdown-button" class="pf-c-dropdown__toggle pf-m-plain" aria-expanded="false">
+                    <span class="pf-c-dropdown__toggle-text">
+                      admin@example.com
+                    </span>
+                    <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                  </button>
+                  <div class="pf-c-dropdown__menu" hidden>
+                    admin@example.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar Image">
+        </div>
+      </header>
+      <main class="pf-l-page__main" role="main">
+        <section class="pf-l-page__main-section pf-m-light pf-u-pb-0">
+          <nav class="pf-c-breadcrumb" aria-label="breadcrumb">
+            <ol class="pf-c-breadcrumb__list">
+              <li class="pf-c-breadcrumb__item">
+                <a href="index.html" class="pf-c-breadcrumb__link">
+                  Dashboard
+                </a>
+                <span class="pf-c-breadcrumb__item-divider">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="pf-c-breadcrumb__item">
+                <a href="#" class="pf-c-breadcrumb__link pf-m-current">
+                  Configuring the environment
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </section>
+        <section class="pf-l-page__main-section pf-m-light">
+          <div class="pf-l-grid">
+            <div class="pf-l-grid__item pf-m-12-col-on-sm pf-m-9-col-on-md">
+              <h1 class="pf-c-title pf-m-2xl">
+                Configuring the environment
+              </h1>
+            </div>
+            <div class="pf-l-grid__item pf-m-2-col">
+              <button type="button" class="pf-c-button pf-m-primary" onclick="window.location.href='module1.html'">Get
+                Started</button>
+            </div>
+          </div>
+          <div class="pf-l-grid">
+            <div class="pf-l-grid__item pf-m-12-col-on-sm">
+              <div class="pf-c-content">
+                <blockquote>
+                  To complete the walkthroughs in this environment, you need to configure your GitHub account as
+                  described in the following steps.
+                  <br />
+                  You can also create and add additional users to the environment if you need to.
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pf-l-page__main-section pf-m-dark">
+          <!-- <div class="pf-c-card"> -->
+            <div class="pf-l-grid">
+              <div class="pf-l-grid__item pf-m-12-col-on-sm pf-m-9-col-on-md pf-m-main">
+                <div class="pf-l-grid">
+                  <div class="pf-l-grid__item pf-m-12-col">
+                    <div class="pf-l-grid pf-m-gutter" style="align-items: baseline;">
+                      <div class="pf-l-grid__item pf-m-6-col">
+                        <h1 class="pf-c-title pf-m-2xl pf-u-m-lg">
+                          Tasks to complete this walkthrough
+                        </h1>
+                      </div>
+                      <div class="pf-l-grid__item pf-m-2-col">
+                        <i class="far fa-clock-o"></i> 11 minutes
+                      </div>
+                    </div>
+                    <ul class="pf-c-data-list pf-u-box-shadow-md pf-u-m-lg" role="list" aria-label="Walkthrough Tasks List">
+                      <li class="pf-c-data-list__item" aria-labelledby="simple-item1">
+                        <div class="pf-c-data-list__cell">
+                          <span id="simple-item1">1. Configuring a GitHub OAuth App</span>
+                        </div>
+                        <div class="pf-c-data-list__cell">
+                          <i class="far fa-clock-o"></i> 6 minutes
+                        </div>
+                      </li>
+                      <li class="pf-c-data-list__item" aria-labelledby="simple-item1">
+                        <div class="pf-c-data-list__cell">
+                          <span id="simple-item2">2. Creating user</span>
+                        </div>
+                        <div class="pf-c-data-list__cell">
+                          <i class="far fa-clock-o"></i> 5 minutes
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pf-l-grid__item pf-m-offset-10-col-on-md pf-m-2-col-on-md">
+                    <button type="button" class="pf-c-button pf-m-primary" onclick="window.location.href='module1.html'">Get
+                      Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-l-grid__item pf-m-12-col-on-sm pf-m-3-col-on-md pf-m-secondary">
+                <h3 class="pf-c-title pf-m-2xl">
+                  Walkthrough Resources
+                </h3>
+                <nav class="pf-c-nav" id="primary-nav" aria-label="Primary Nav Default Example">
+                  <section class="pf-c-nav__section" aria-labelledby="nav-mixed-link2">
+                    <h2 class="pf-c-nav__section-title" id="grouped-RHOpenShift">
+                      Red Hat OpenShift
+                    </h2>
+                    <ul class="pf-c-nav__simple-list">
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          Console
+                        </a>
+                      </li>
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          OpenShift Online Help Center
+                        </a>
+                      </li>
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          OpenShift Blog
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="pf-c-nav__section" aria-labelledby="nav-mixed-link2">
+                    <h2 class="pf-c-nav__section-title" id="grouped-RHFuse">
+                      Red Hat Fuse
+                    </h2>
+                    <ul class="pf-c-nav__simple-list">
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          Console
+                        </a>
+                      </li>
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          Fuse Community Q&amp;A
+                        </a>
+                      </li>
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          Fuse Overview
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="pf-c-nav__section" aria-labelledby="nav-mixed-link2">
+                    <h2 class="pf-c-nav__section-title" id="grouped-RHAMQ">
+                      Red Hat AMQ
+                    </h2>
+                    <ul class="pf-c-nav__simple-list">
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          Console
+                        </a>
+                      </li>
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          AMQ Community Q&amp;A
+                        </a>
+                      </li>
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          AMQ Videos
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="pf-c-nav__section" aria-labelledby="nav-mixed-link2">
+                    <h2 class="pf-c-nav__section-title" id="grouped-RHAMQ">
+                      Eclipse Che
+                    </h2>
+                    <ul class="pf-c-nav__simple-list">
+                      <li class="pf-c-nav__item">
+                        <a href="#" class="pf-c-nav__link">
+                          Console
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                </nav>
+              </div>
+            </div>
+          <!-- </div> -->
+        </section>
+      </main>
+    </div>
+    <script src="js/site.js"></script>
+  </body>
+
+</html>

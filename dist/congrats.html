@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Integreatly Prototype - PF4 POC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.min.css">
+  </head>
+
+  <body>
+    <div class="pf-c-background-image"></div>
+    <div class="pf-l-page" id="page">
+      <header class="pf-l-page__header" role="banner">
+        <div class="pf-l-page__header-brand">
+          <a class="pf-l-page__header-brand-link" href="/index.html">
+            <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer">
+          </a>
+        </div>
+        <div class="pf-l-page__header-tools">
+        <div class="pf-l-toolbar">
+          <div class="pf-l-toolbar__group">
+            <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+              <div class="pf-c-dropdown" pf-m-plain>
+                <button id="page-layout-horizontal-nav-dropdown-button" class="pf-c-dropdown__toggle pf-m-plain" aria-expanded="false">
+                  <span class="pf-c-dropdown__toggle-text">
+                    admin@example.com
+                  </span>
+                  <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                </button>
+                <div class="pf-c-dropdown__menu" hidden>
+                  admin@example.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar Image">
+      </div>
+    </header>
+      <main class="pf-l-page__main" role="main">
+        <section class="pf-l-page__main-section pf-m-dark-100 integr8ly-loadingscreen">
+          <div class="pf-l-bullseye">
+            <div class="pf-l-bullseye__item">
+              <div class="integr8ly-loadingscreen-logo"></div>
+              <div class="integr8ly-loadingscreen-loading">
+                <img
+                  src="assets/images/congratulations.svg"
+                  class="integr8ly-congrats-static"
+                  alt="Static loading animation"
+                />
+              </div>
+              <div class="pf-c-content">
+                <h2 class="integr8ly-loadingscreen-text integr8ly-congratulations-heading pf-u-mt-lg">
+                  Congratulations, you completed the
+                  <br />
+                  "Integrating event-driven and API-driven applications"
+                  <br />
+                  walkthrough!
+                </h2>
+                <p>
+                  Return to your homepage to explore more walkthroughs or go to your OpenShift console to utilize what you just built!
+                </p>
+                <div class="integr8ly-congrats-static__buttons">
+                  <button class="pf-c-button pf-m-primary" onclick="window.location.href='index.html'">
+                    Return to homepage
+                  </button>
+                  <button class="pf-c-button pf-m-primary" onclick="window.location.href='#'">
+                    Launch OpenShift Console
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/site.js"></script>
+  </body>
+
+</html>
