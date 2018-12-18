@@ -91,7 +91,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 75%;
+        width: 74.4%;
         text-align: center;
         z-index: 3;
 
@@ -139,6 +139,9 @@
       @media (max-width: var(--pf-global--breakpoint--md)) {
         display: none;
       }
+    }
+    &-frame-alt {
+      padding-top: 140px;
     }
   }
 }

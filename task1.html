@@ -17,390 +17,417 @@
 <body>
   <!-- Define the symbols, these are invisible on the page -->
   <i data-fa-symbol="check-circle" class="fa fa-check-circle"></i>
-  <div class="integr8ly-container">
-    <ol role="navigation" aria-label="breadcrumbs" class="integr8ly-breadcrumb breadcrumb">
-      <li class="">
-        <a href="index.html" role="button">
-          <span aria-hidden="true" class="fas fa-home fa-lg"></span>
+  <div class="pf-c-background-image"></div>
+  <div class="pf-l-page">
+    <header class="pf-l-page__header">
+      <div class="pf-l-page__header-brand">
+        <a class="pf-l-page__header-brand-link">
+          <img class="pf-c-brand pf-m-sm" src="assets/images/brand-alt-solutions-explorer.svg" alt="Red Hat Solution Explorer logo">
         </a>
-      </li>
-      <li class="">
-        <a href="walkthrough1.html">Integrating event-driven and API-driven applications</a>
-      </li>
-      <li class="active">
-        <span>Task 1 of 1</span>
-      </li>
-    </ol>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="integr8ly-module col-sm-9 col-xs-12">
-          <div class="integr8ly-module-column">
-            <div class="integr8ly-module-column--steps">
-              <div class="pf-c-content">
-                <div class="sect4 integr8ly-docs-header">
-                  <h2 id="creating-api-connector_{context}">1.1 Creating an API Connector</h2>
-                  <ol>
-                    <li>
-                      <p>Log in to the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console.</p>
-                    </li>
-                    <li>
-                      <p>Select <strong>Customizations</strong> from the left hand menu.</p>
-                    </li>
-                    <li>
-                      <p>Select the <strong>Create API Connector</strong> button to start the <strong>API Client Connector</strong> wizard.</p>
-                    </li>
-                    <li>
-                      <p>When prompted to <strong>Upload OpenAPI Specification</strong>, select <strong>Use a URL</strong>:</p>
-                      <ol type="a">
-                        <li>
-                          <p>Enter the following in the URL field:</p>
-                          <div class="listingblock">
-                            <div class="content">
-                              <div aria-live="polite" class="integr8ly-copy form-group">
-                                <span class="input-group">
-                                  <input readonly="" type="text" id="generatedid-47238" class="integr8ly-copy-input false form-control" value="http://spring-boot-rest-http-crud-admin-example-com-walkthrough-one.cluster-lfa3xlh.opentry.me/v2/api-docs">
-                                  <span class="input-group-btn">
-                                    <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
-                                      <span aria-hidden="true" class="fa fa-paste"></span>
-                                    </button>
-                                  </span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <p>Click <strong>Next</strong>.</p>
-                        </li>
-                      </ol>
-                    </li>
-                    <li>
-                      <p>When prompted with <strong>Review Actions</strong>, select <strong>Next</strong>.</p>
-                    </li>
-                    <li>
-                      <p>When prompted with <strong>Specify Security</strong>, select <strong>Next</strong>.</p>
-                    </li>
-                    <li>
-                      <p>When prompted with <strong>Review/Edit Connector Details</strong>:</p>
-                      <ol type="a">
-                        <li>
-                          <p>Enter the following in the <strong>Connector Name</strong> field:</p>
-                          <div class="listingblock">
-                            <div class="content"><div aria-live="polite" class="integr8ly-copy form-group"><span class="input-group"><input readonly="" type="text" id="generatedid-50949" class="integr8ly-copy-input false form-control" value="Walkthrough 1 CRUD Connector"><span class="input-group-btn"><button aria-label="Copy to Clipboard" type="button" class="btn btn-default"><span aria-hidden="true" class="fa fa-paste"></span></button></span></span></div></div>
-                          </div>
-                        </li>
-                        <li>
-                          <p>Click <strong>Create API Connector</strong>.</p>
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-              <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
-                <div class="pf-c-content">
-                    <svg title="testing" class="icon integr8ly-alert-icon">
-                      <use xlink:href="#check-circle"></use>
-                    </svg>
-                  <strong>Check your work</strong>
-                  <p>Check the <strong>Customizations</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connector exists.</p>
-                  <div class="btn-group">
-                    <div class="radio">
-                      <label title="">
-                        <input name="creating-api-connector.adoc" type="radio" checked="checked">Yes
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label title="">
-                        <input name="creating-api-connector.adoc" type="radio">No
-                      </label>
-                    </div>
-                  </div>
-                  <span class="hidden">
-                    <p>Verify that you followed each step in the procedure above.  If you are still having issues, contact your administrator.</p>
+      </div>
+      <div class="pf-l-page__header-tools">
+        <div class="pf-l-toolbar">
+          <div class="pf-l-toolbar__group">
+            <div class="pf-l-toolbar__item pf-u-sr-only pf-u-visible-on-md">
+              <div class="pf-c-dropdown" pf-m-plain="">
+                <button id="page-layout-horizontal-nav-dropdown-button" class="pf-c-dropdown__toggle pf-m-plain" aria-expanded="false">
+                  <span class="pf-c-dropdown__toggle-text">
+                    admin@example.com
                   </span>
-                </div>
-              </div>
-              <div class="pf-c-content">
-                <div class="sect4 integr8ly-docs-header">
-                  <h2 id="creating-amqp-connection-in-fuse_{context}">1.2 Creating an AMQ connection</h2>
-                  <ol>
-                    <li>
-                      Log in to the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console.
-                    </li>
-                    <li>
-                      Select <strong>Connections</strong> from the left hand menu.
-                    </li>
-                    <li>
-                      Select the <strong>Create Connection</strong> button to start the <strong>Create Connection</strong> wizard.
-                    </li>
-                    <li>
-                      When prompted with <strong>Select Connector</strong>, select <strong>AMQ Message Broker</strong>.
-                    </li>
-                    <li>
-                        When prompted with <strong>AMQ Message Broker Configuration</strong>:
-                      <ol type="a">
-                        <li>
-                          Enter the following into the <strong>Broker URL</strong> field:
-                          <div class="listingblock">
-                            <div class="content">
-                              <div aria-live="polite" class="integr8ly-copy form-group">
-                                <span class="input-group">
-                                  <input readonly="" type="text" id="generatedid-81214" class="integr8ly-copy-input false form-control" value="tcp://broker-amq-tcp.admin-example-com-walkthrough-projects.svc:61616">
-                                  <span class="input-group-btn">
-                                    <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
-                                      <span aria-hidden="true" class="fa fa-paste"></span>
-                                    </button>
-                                  </span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          Enter the following into the <strong>User Name</strong> field:
-                          <div class="listingblock">
-                            <div class="content">
-                              <div aria-live="polite" class="integr8ly-copy form-group">
-                                <span class="input-group">
-                                  <input readonly="" type="text" id="generatedid-22782" class="integr8ly-copy-input false form-control" value="userckN">
-                                  <span class="input-group-btn">
-                                    <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
-                                      <span aria-hidden="true" class="fas fa-paste"></span>
-                                    </button>
-                                  </span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          Enter the following into the <strong>Password</strong> field:
-                          <div class="listingblock">
-                            <div class="content">
-                              <div aria-live="polite" class="integr8ly-copy form-group">
-                                <span class="input-group">
-                                  <input readonly="" type="text" id="generatedid-16760" class="integr8ly-copy-input false form-control" value="FTaTvGNW">
-                                  <span class="input-group-btn">
-                                    <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
-                                      <span aria-hidden="true" class="fas fa-paste"></span>
-                                    </button>
-                                  </span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          Select <strong>Disable</strong> from the <strong>Check Certificates</strong> list.
-                        </li>
-                        <li>
-                          Click <strong>Validate</strong>.
-                        </li>
-                        <li>
-                          Click <strong>Next</strong>.
-                        </li>
-                      </ol>
-                    </li>
-                    <li>
-                      When prompted for <strong>Add Connection Details</strong>:
-                      <ol type="a">
-                        <li>
-                          Enter the following in the <strong>Connection Name</strong> field:
-                          <div class="listingblock">
-                            <div class="content">
-                              <div aria-live="polite" class="integr8ly-copy form-group">
-                                <span class="input-group">
-                                  <input readonly="" type="text" id="generatedid-56847" class="integr8ly-copy-input false form-control" value="Walkthrough 1 Messaging App">
-                                  <span class="input-group-btn">
-                                    <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
-                                      <span aria-hidden="true" class="fas fa-paste"></span>
-                                    </button>
-                                  </span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          Click <strong>Create</strong>.
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-              <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
-                <div class="pf-c-content">
-                  <span class="integr8ly-alert-icon">
-                    <svg
-                      height="24px"
-                      width="24px"
-                      fill="#519149"
-                    >
-                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
-                    </svg>
-                  </span>
-                  <strong>Check your work</strong>
-                  <div>
-                    <div class="paragraph">
-                      <p>Check the <strong>Connections</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connection exists.</p>
-                    </div>
-                  </div>
-                  <div class="btn-group">
-                    <div class="radio">
-                      <label title="">
-                        <input name="creating-amq-connection-in-fuse.adoc" type="radio" checked="checked">Yes
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label title="">
-                        <input name="creating-amq-connection-in-fuse.adoc" type="radio">No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="pf-c-content">
-                <div class="sect4 integr8ly-docs-header">
-                  <h2 id="creating-http-connection-in-fuse_{context}">1.3 Creating HTTP connection to CRUD App</h2>
-                  <ol>
-                    <li>
-                      Log in to the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console.
-
-                    </li>
-                    <li>
-                      Select <strong>Connections</strong> from the left hand menu.
-                    </li>
-                    <li>
-                      Select the <strong>Create Connection</strong> button to start the <strong>Create Connection</strong> wizard.
-                    </li>
-                    <li>
-                      When prompted with <strong>Select Connector</strong>, select <strong>Walkthrough 1 CRUD Connector</strong>.
-                    </li>
-                    <li>
-                      When prompted with <strong>Walkthrough 1 CRUD Configuration</strong>, click <strong>Next</strong>.
-                    </li>
-                    <li>
-                      When prompted with <strong>Add Connection Details</strong>:
-                      <ol type="a">
-                        <li>
-                          Enter the following in the <strong>Connection Name</strong> field:
-                          <div class="listingblock">
-                            <div class="content"><div aria-live="polite" class="integr8ly-copy form-group"><span class="input-group"><input readonly="" type="text" id="generatedid-18132" class="integr8ly-copy-input false form-control" value="Walkthrough 1 CRUD App"><span class="input-group-btn"><button aria-label="Copy to Clipboard" type="button" class="btn btn-default"><span aria-hidden="true" class="fa fa-paste"></span></button></span></span></div></div>
-                          </div>
-                        </li>
-                        <li>
-                          Click <strong>Create</strong>.
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-              <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
-                <div class="pf-c-content">
-                  <span class="integr8ly-alert-icon">
-                    <svg
-                      height="24px"
-                      width="24px"
-                      fill="#519149"
-                    >
-                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
-                    </svg>
-                  </span>
-                  <strong>Check your work</strong>
-                  <p>Check the <strong>Connections</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connection exists.</p>
-                  <div class="btn-group">
-                    <div class="radio">
-                      <label title="">
-                        <input name="creating-http-connection.adoc" type="radio" value="yes" checked="checked">Yes
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label title="">
-                        <input name="creating-http-connection.adoc" type="radio" value="no">No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="integr8ly-module-column--footer">
-              <h6 class="pf-c-title pf-m-sm">Complete and check all work before proceeding</h6>
-              <div class="integr8ly-module-column--footer_status">
-                <svg
-                  height="16px"
-                  width="16px"
-                  fill="#519149"
-                >
-                  <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
-                </svg>
-                <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.1</span>
-                <svg
-                  height="16px"
-                  width="16px"
-                  fill="#519149"
-                >
-                  <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
-                </svg>
-                <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.2</span>
-                <svg
-                  height="16px"
-                  width="16px"
-                  fill="#519149"
-                  title="Status Complete"
-                >
-                  <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
-                </svg>
-                <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.3</span>
-              </div>
-              <div class="btn-group btn-group-justified" role="group" aria-label="module step progress buttons">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default" onclick="window.location.href='walkthrough1.html'">
-                    <span aria-hidden="true" class="fas fa-angle-left" style="padding-right: 5px;"></span>
-                    Back to Intro
-                  </button>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" onclick="window.location.href='congratulations.html'">Next
-                    <span aria-hidden="true" class="fas fa-angle-right" style="padding-left: 5px;"></span>
-                  </button>
+                  <i class="fas fa-caret-down pf-c-dropdown__toggle-icon" aria-hidden="true"></i>
+                </button>
+                <div class="pf-c-dropdown__menu" hidden="">
+                  admin@example.com
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="integr8ly-module-frame col-sm-3">
-          <h4 class="pf-c-title pf-m-xl">Walkthrough Resources</h4>
-          <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
-            <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat OpenShift&nbsp;<span></span><span></span>
-          </h4>
-          <ul class="pf-c-list pf-u-ml-lg">
-            <li><a href="https://cluster-lfa3xlh.opentry.me/console" target="top">Open Console</a></li>
-            <li><a href="https://help.openshift.com/" target="top">OpenShift Online Help Center</a></li>
-            <li><a href="https://blog.openshift.com/" target="top">OpenShift Blog</a></li>
-          </ul>
-          <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
-            <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat Fuse&nbsp;<span></span><span></span>
-          </h4>
-          <ul class="pf-c-list pf-u-ml-lg">
-            <li><a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="top">Open Console</a></li>
-            <li><a href="https://developers.redhat.com/products/fuse/help/" target="top">Fuse Community Q&amp;A</a></li>
-            <li><a href="https://developers.redhat.com/videos/vimeo/95497167/" target="top">Fuse Overview</a></li>
-          </ul>
-          <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
-            <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat AMQ&nbsp;<span></span><span></span>
-          </h4>
-          <ul class="pf-c-list pf-u-ml-lg">
-            <li><a href="http://console-admin-example-com-walkthrough-projects.cluster-lfa3xlh.opentry.me" target="top">Open Console</a></li>
-            <li><a href="https://developers.redhat.com/products/amq/help/" target="top">AMQ Community Q&amp;A</a></li>
-            <li><a href="https://access.redhat.com/products/red-hat-amq" target="top">AMQ Videos</a></li>
-          </ul>
-          <div class="hidden">No resources available.</div>
-        </div>
+        <img class="pf-c-avatar" src="assets/images/headshot.jpg" alt="Avatar Image">
       </div>
-    </div>
+    </header>
+    <main class="pf-l-page__main" role="main">
+      <section class="pf-l-page__main-section pf-u-p-0">
+        <ol role="navigation" aria-label="breadcrumbs" class="integr8ly-breadcrumb breadcrumb">
+          <li class="">
+            <a href="index.html" role="button">
+              <span aria-hidden="true" class="fas fa-home fa-lg"></span>
+            </a>
+          </li>
+          <li class="">
+            <a href="walkthrough1.html">Integrating event-driven and API-driven applications</a>
+          </li>
+          <li class="active">
+            <span>Task 1 of 1</span>
+          </li>
+        </ol>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="integr8ly-module col-sm-9 col-xs-12">
+              <div class="integr8ly-module-column">
+                <div class="integr8ly-module-column--steps">
+                  <div class="pf-c-content">
+                    <div class="sect4 integr8ly-docs-header">
+                      <h2 id="creating-api-connector_{context}">1.1 Creating an API Connector</h2>
+                      <ol>
+                        <li>
+                          <p>Log in to the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console.</p>
+                        </li>
+                        <li>
+                          <p>Select <strong>Customizations</strong> from the left hand menu.</p>
+                        </li>
+                        <li>
+                          <p>Select the <strong>Create API Connector</strong> button to start the <strong>API Client Connector</strong> wizard.</p>
+                        </li>
+                        <li>
+                          <p>When prompted to <strong>Upload OpenAPI Specification</strong>, select <strong>Use a URL</strong>:</p>
+                          <ol type="a">
+                            <li>
+                              <p>Enter the following in the URL field:</p>
+                              <div class="listingblock">
+                                <div class="content">
+                                  <div aria-live="polite" class="integr8ly-copy form-group">
+                                    <span class="input-group">
+                                      <input readonly="" type="text" id="generatedid-47238" class="integr8ly-copy-input false form-control" value="http://spring-boot-rest-http-crud-admin-example-com-walkthrough-one.cluster-lfa3xlh.opentry.me/v2/api-docs">
+                                      <span class="input-group-btn">
+                                        <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
+                                          <span aria-hidden="true" class="fa fa-paste"></span>
+                                        </button>
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Click <strong>Next</strong>.</p>
+                            </li>
+                          </ol>
+                        </li>
+                        <li>
+                          <p>When prompted with <strong>Review Actions</strong>, select <strong>Next</strong>.</p>
+                        </li>
+                        <li>
+                          <p>When prompted with <strong>Specify Security</strong>, select <strong>Next</strong>.</p>
+                        </li>
+                        <li>
+                          <p>When prompted with <strong>Review/Edit Connector Details</strong>:</p>
+                          <ol type="a">
+                            <li>
+                              <p>Enter the following in the <strong>Connector Name</strong> field:</p>
+                              <div class="listingblock">
+                                <div class="content"><div aria-live="polite" class="integr8ly-copy form-group"><span class="input-group"><input readonly="" type="text" id="generatedid-50949" class="integr8ly-copy-input false form-control" value="Walkthrough 1 CRUD Connector"><span class="input-group-btn"><button aria-label="Copy to Clipboard" type="button" class="btn btn-default"><span aria-hidden="true" class="fa fa-paste"></span></button></span></span></div></div>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Click <strong>Create API Connector</strong>.</p>
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
+                    <div class="pf-c-content">
+                      <svg title="testing" class="icon integr8ly-alert-icon">
+                        <use xlink:href="#check-circle"></use>
+                      </svg>
+                      <strong>Check your work</strong>
+                      <p>Check the <strong>Customizations</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connector exists.</p>
+                      <div class="btn-group">
+                        <div class="radio">
+                          <label title="">
+                            <input name="creating-api-connector.adoc" type="radio" checked="checked">Yes
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label title="">
+                            <input name="creating-api-connector.adoc" type="radio">No
+                          </label>
+                        </div>
+                      </div>
+                      <span class="hidden">
+                        <p>Verify that you followed each step in the procedure above.  If you are still having issues, contact your administrator.</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="pf-c-content">
+                    <div class="sect4 integr8ly-docs-header">
+                      <h2 id="creating-amqp-connection-in-fuse_{context}">1.2 Creating an AMQ connection</h2>
+                      <ol>
+                        <li>
+                          Log in to the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console.
+                        </li>
+                        <li>
+                          Select <strong>Connections</strong> from the left hand menu.
+                        </li>
+                        <li>
+                          Select the <strong>Create Connection</strong> button to start the <strong>Create Connection</strong> wizard.
+                        </li>
+                        <li>
+                          When prompted with <strong>Select Connector</strong>, select <strong>AMQ Message Broker</strong>.
+                        </li>
+                        <li>
+                            When prompted with <strong>AMQ Message Broker Configuration</strong>:
+                          <ol type="a">
+                            <li>
+                              Enter the following into the <strong>Broker URL</strong> field:
+                              <div class="listingblock">
+                                <div class="content">
+                                  <div aria-live="polite" class="integr8ly-copy form-group">
+                                    <span class="input-group">
+                                      <input readonly="" type="text" id="generatedid-81214" class="integr8ly-copy-input false form-control" value="tcp://broker-amq-tcp.admin-example-com-walkthrough-projects.svc:61616">
+                                      <span class="input-group-btn">
+                                        <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
+                                          <span aria-hidden="true" class="fa fa-paste"></span>
+                                        </button>
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              Enter the following into the <strong>User Name</strong> field:
+                              <div class="listingblock">
+                                <div class="content">
+                                  <div aria-live="polite" class="integr8ly-copy form-group">
+                                    <span class="input-group">
+                                      <input readonly="" type="text" id="generatedid-22782" class="integr8ly-copy-input false form-control" value="userckN">
+                                      <span class="input-group-btn">
+                                        <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
+                                          <span aria-hidden="true" class="fas fa-paste"></span>
+                                        </button>
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              Enter the following into the <strong>Password</strong> field:
+                              <div class="listingblock">
+                                <div class="content">
+                                  <div aria-live="polite" class="integr8ly-copy form-group">
+                                    <span class="input-group">
+                                      <input readonly="" type="text" id="generatedid-16760" class="integr8ly-copy-input false form-control" value="FTaTvGNW">
+                                      <span class="input-group-btn">
+                                        <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
+                                          <span aria-hidden="true" class="fas fa-paste"></span>
+                                        </button>
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              Select <strong>Disable</strong> from the <strong>Check Certificates</strong> list.
+                            </li>
+                            <li>
+                              Click <strong>Validate</strong>.
+                            </li>
+                            <li>
+                              Click <strong>Next</strong>.
+                            </li>
+                          </ol>
+                        </li>
+                        <li>
+                          When prompted for <strong>Add Connection Details</strong>:
+                          <ol type="a">
+                            <li>
+                              Enter the following in the <strong>Connection Name</strong> field:
+                              <div class="listingblock">
+                                <div class="content">
+                                  <div aria-live="polite" class="integr8ly-copy form-group">
+                                    <span class="input-group">
+                                      <input readonly="" type="text" id="generatedid-56847" class="integr8ly-copy-input false form-control" value="Walkthrough 1 Messaging App">
+                                      <span class="input-group-btn">
+                                        <button aria-label="Copy to Clipboard" type="button" class="btn btn-default">
+                                          <span aria-hidden="true" class="fas fa-paste"></span>
+                                        </button>
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              Click <strong>Create</strong>.
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
+                    <div class="pf-c-content">
+                      <span class="integr8ly-alert-icon">
+                        <svg
+                          height="24px"
+                          width="24px"
+                          fill="#519149"
+                        >
+                          <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                        </svg>
+                      </span>
+                      <i class="integr8ly-alert-icon fas fa-check-circle"></i>
+                      <strong>Check your work</strong>
+                      <div>
+                        <div class="paragraph">
+                          <p>Check the <strong>Connections</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connection exists.</p>
+                        </div>
+                      </div>
+                      <div class="btn-group">
+                        <div class="radio">
+                          <label title="">
+                            <input name="creating-amq-connection-in-fuse.adoc" type="radio" checked="checked">Yes
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label title="">
+                            <input name="creating-amq-connection-in-fuse.adoc" type="radio">No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pf-c-content">
+                    <div class="sect4 integr8ly-docs-header">
+                      <h2 id="creating-http-connection-in-fuse_{context}">1.3 Creating HTTP connection to CRUD App</h2>
+                      <ol>
+                        <li>
+                          Log in to the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console.
+
+                        </li>
+                        <li>
+                          Select <strong>Connections</strong> from the left hand menu.
+                        </li>
+                        <li>
+                          Select the <strong>Create Connection</strong> button to start the <strong>Create Connection</strong> wizard.
+                        </li>
+                        <li>
+                          When prompted with <strong>Select Connector</strong>, select <strong>Walkthrough 1 CRUD Connector</strong>.
+                        </li>
+                        <li>
+                          When prompted with <strong>Walkthrough 1 CRUD Configuration</strong>, click <strong>Next</strong>.
+                        </li>
+                        <li>
+                          When prompted with <strong>Add Connection Details</strong>:
+                          <ol type="a">
+                            <li>
+                              Enter the following in the <strong>Connection Name</strong> field:
+                              <div class="listingblock">
+                                <div class="content"><div aria-live="polite" class="integr8ly-copy form-group"><span class="input-group"><input readonly="" type="text" id="generatedid-18132" class="integr8ly-copy-input false form-control" value="Walkthrough 1 CRUD App"><span class="input-group-btn"><button aria-label="Copy to Clipboard" type="button" class="btn btn-default"><span aria-hidden="true" class="fa fa-paste"></span></button></span></span></div></div>
+                              </div>
+                            </li>
+                            <li>
+                              Click <strong>Create</strong>.
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
+                    <div class="pf-c-content">
+                      <i class="integr8ly-alert-icon fas fa-check-circle"></i>
+                      <strong>Check your work</strong>
+                      <p>Check the <strong>Connections</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connection exists.</p>
+                      <div class="btn-group">
+                        <div class="radio">
+                          <label title="">
+                            <input name="creating-http-connection.adoc" type="radio" value="yes" checked="checked">Yes
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label title="">
+                            <input name="creating-http-connection.adoc" type="radio" value="no">No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="integr8ly-module-column--footer">
+                  <h6 class="pf-c-title pf-m-sm">Complete and check all work before proceeding</h6>
+                  <div class="integr8ly-module-column--footer_status">
+                    <svg
+                      height="16px"
+                      width="16px"
+                      fill="#519149"
+                      title="Status Complete"
+                    >
+                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                    </svg>
+                    <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.1</span>
+                    <svg
+                      height="16px"
+                      width="16px"
+                      fill="#519149"
+                      title="Status Complete"
+                    >
+                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                    </svg>
+                    <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.2</span>
+                    <svg
+                      height="16px"
+                      width="16px"
+                      fill="#519149"
+                      title="Status Complete"
+                    >
+                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                    </svg>
+                    <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.3</span>
+                  </div>
+                  <div class="btn-group btn-group-justified" role="group" aria-label="module step progress buttons">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default" onclick="window.location.href='walkthrough1.html'">
+                        <span aria-hidden="true" class="fas fa-angle-left" style="padding-right: 5px;"></span>
+                        Back to Intro
+                      </button>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='congratulations.html'">Next
+                        <span aria-hidden="true" class="fas fa-angle-right" style="padding-left: 5px;"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="integr8ly-module-frame integr8ly-module-frame-alt col-sm-3">
+              <h4 class="pf-c-title pf-m-xl">Walkthrough Resources</h4>
+              <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
+                <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat OpenShift&nbsp;<span></span><span></span>
+              </h4>
+              <ul class="pf-c-list pf-u-ml-lg">
+                <li><a href="https://cluster-lfa3xlh.opentry.me/console" target="top">Open Console</a></li>
+                <li><a href="https://help.openshift.com/" target="top">OpenShift Online Help Center</a></li>
+                <li><a href="https://blog.openshift.com/" target="top">OpenShift Blog</a></li>
+              </ul>
+              <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
+                <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat Fuse&nbsp;<span></span><span></span>
+              </h4>
+              <ul class="pf-c-list pf-u-ml-lg">
+                <li><a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="top">Open Console</a></li>
+                <li><a href="https://developers.redhat.com/products/fuse/help/" target="top">Fuse Community Q&amp;A</a></li>
+                <li><a href="https://developers.redhat.com/videos/vimeo/95497167/" target="top">Fuse Overview</a></li>
+              </ul>
+              <h4 class="pf-c-title pf-m-xl pf-u-mt-lg">
+                <span aria-hidden="true" class="pficon pficon-on-running integr8ly-state-ready"></span>&nbsp;Red Hat AMQ&nbsp;<span></span><span></span>
+              </h4>
+              <ul class="pf-c-list pf-u-ml-lg">
+                <li><a href="http://console-admin-example-com-walkthrough-projects.cluster-lfa3xlh.opentry.me" target="top">Open Console</a></li>
+                <li><a href="https://developers.redhat.com/products/amq/help/" target="top">AMQ Community Q&amp;A</a></li>
+                <li><a href="https://access.redhat.com/products/red-hat-amq" target="top">AMQ Videos</a></li>
+              </ul>
+              <div class="hidden">No resources available.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
   <script src="js/all.min.js"></script>
   <script src="js/site.js"></script>
