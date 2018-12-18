@@ -32,6 +32,8 @@ $pf-global--enable-reset: false !default;
 @import '../node_modules/@patternfly/patternfly-next/components/Button/button.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Card/card.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Check/check.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Chip/chip.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/ChipGroup/chip-group.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Content/content.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/DataList/styles.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Dropdown/dropdown.scss';
