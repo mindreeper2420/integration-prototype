@@ -129,11 +129,12 @@
       top: 0;
       right: 0;
       bottom: 0;
-      padding-top: 60px;
+      // padding-top: 60px;
+      padding-top: 105px;
       overflow-y: auto;
-      background-color: $pf-color-black-150;
-      border-left: var(--pf-global--BorderWidth--sm) solid;
-      border-left-color: $pf-color-black-300;
+      // background-color: $pf-color-black-150;
+      // border-left: var(--pf-global--BorderWidth--sm) solid;
+      // border-left-color: $pf-color-black-300;
 
       @media (max-width: var(--pf-global--breakpoint--md)) {
         display: none;

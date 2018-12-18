@@ -13617,11 +13617,8 @@ ol {
     top: 0;
     right: 0;
     bottom: 0;
-    padding-top: 60px;
-    overflow-y: auto;
-    background-color: #f5f5f5;
-    border-left: var(--pf-global--BorderWidth--sm) solid;
-    border-left-color: #d1d1d1; }
+    padding-top: 105px;
+    overflow-y: auto; }
     @media (max-width: var(--pf-global--breakpoint--md)) {
       .integr8ly-module-frame {
         display: none; } }
