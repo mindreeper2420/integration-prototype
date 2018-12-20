@@ -17,7 +17,8 @@ var sourcemaps = require('gulp-sourcemaps');
 // remove this if you do not want banners automatically added to your compiled files
 //
 var banner = ['/*!\n',
-  ' * Prototype Template - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+  ' * <%= pkg.description %> (v<%= pkg.version %>)\n',
+  ' * <%= pkg.homepage %>\n',
   ' * Copyright 2018-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' */\n',
   ''
