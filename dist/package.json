@@ -1,7 +1,7 @@
 {
   "name": "integration-prototype",
   "version": "5.0.0",
-  "description": "Integration Prototype",
+  "description": "Integration Prototype - Milestone 1",
   "homepage": "https://www.adamjolicoeur.com/integration-prototype",
   "main": "index.js",
   "scripts": {
