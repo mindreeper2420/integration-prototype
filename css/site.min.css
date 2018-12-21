@@ -9259,9 +9259,20 @@ ol {
     /* stylelint-disable-line selector-class-pattern */
     display: flex;
     border: none; }
-    .integr8ly-tutorial-dashboard .panel-title h2 {
+    .integr8ly-tutorial-dashboard .panel-title .nav-tabs {
       flex-basis: 50%;
-      color: #282d33; }
+      border-bottom: 0;
+      color: #282d33;
+      font-size: 16px; }
+      .integr8ly-tutorial-dashboard .panel-title .nav-tabs > li > a {
+        border: 3px solid transparent; }
+      .integr8ly-tutorial-dashboard .panel-title .nav-tabs > li.active > a {
+        background-color: transparent;
+        border: 3px solid;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #00659c; }
     .integr8ly-tutorial-dashboard .panel-title .walkthrough-counter {
       /* stylelint-disable-line selector-class-pattern */
       flex-basis: 50%;

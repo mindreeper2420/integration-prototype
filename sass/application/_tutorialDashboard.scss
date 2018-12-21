@@ -25,9 +25,23 @@
     display: flex;
     border: none;
 
-    & h2 {
+    & .nav-tabs {
       flex-basis: 50%;
+      border-bottom: 0;
       color: #282d33;
+      font-size: 16px;
+
+      & > li > a {
+        border: 3px solid transparent;
+      }
+      & > li.active > a {
+        background-color: transparent;
+        border: 3px solid;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: $pf-color-blue-500;
+      }
     }
 
     .walkthrough-counter { /* stylelint-disable-line selector-class-pattern */
