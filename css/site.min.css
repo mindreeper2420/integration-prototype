@@ -9273,6 +9273,8 @@ ol {
         border-left-color: transparent;
         border-right-color: transparent;
         border-bottom-color: #00659c; }
+    .integr8ly-tutorial-dashboard .panel-title h2 {
+      flex-basis: 50%; }
     .integr8ly-tutorial-dashboard .panel-title .walkthrough-counter {
       /* stylelint-disable-line selector-class-pattern */
       flex-basis: 50%;
@@ -9298,10 +9300,17 @@ ol {
   margin-right: 10px; }
 
 .integr8ly-tutorial-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   min-width: 100px; }
   .integr8ly-tutorial-card:hover {
     box-shadow: 0 1px 6px rgba(3, 3, 3, 0.35);
     cursor: pointer; }
+  .integr8ly-tutorial-card-empty {
+    align-items: center; }
+  .integr8ly-tutorial-card .pf-c-empty-state {
+    padding: 0; }
   .integr8ly-tutorial-card-rectangle {
     background-color: #d1d1d1;
     width: 100%;
@@ -9581,7 +9590,7 @@ ol {
   box-shadow: none; }
   @media (max-width: 1091px) {
     .integr8ly-installed-apps-view {
-      width: 100%; } }
+      display: none; } }
   @media (min-width: 1092px) {
     .integr8ly-installed-apps-view {
       width: 33.3%; } }
