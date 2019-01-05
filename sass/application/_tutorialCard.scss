@@ -11,6 +11,15 @@
 
   &-empty {
     align-items: center;
+    i {
+      margin-bottom: var(--pf-c-empty-state__icon--MarginBottom);
+      font-size: var(--pf-c-empty-state__icon--FontSize);
+      color: $pf-color-black-400;
+    }
+    .pf-c-title,
+    .pf-c-empty-state__body {
+      color: $pf-color-black-500;
+    }
   }
 
   .pf-c-empty-state {
