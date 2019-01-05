@@ -1,9 +1,29 @@
 .integr8ly-tutorial-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   min-width: 100px;
 
   &:hover {
     box-shadow: 0 1px 6px rgba(3, 3, 3, .35);
     cursor: pointer;
+  }
+
+  &-empty {
+    align-items: center;
+    i {
+      margin-bottom: var(--pf-c-empty-state__icon--MarginBottom);
+      font-size: var(--pf-c-empty-state__icon--FontSize);
+      color: $pf-color-black-400;
+    }
+    .pf-c-title,
+    .pf-c-empty-state__body {
+      color: $pf-color-black-500;
+    }
+  }
+
+  .pf-c-empty-state {
+    padding: 0;
   }
 
   &-rectangle {
