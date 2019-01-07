@@ -23,7 +23,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "autoprefixer": "^8.6.3",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.26.3",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
@@ -41,7 +41,7 @@
     "stylelint": "^9.2.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.4.2",
-    "@patternfly/patternfly-next": "^1.0.84"
+    "@fortawesome/fontawesome-free": "5.6.3",
+    "@patternfly/patternfly-next": "1.0.110"
   }
 }
