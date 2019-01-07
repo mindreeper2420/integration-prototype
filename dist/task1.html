@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +8,8 @@
 </head>
 
 <body>
+  <!-- Define the symbols, these are invisible on the page -->
+  <i data-fa-symbol="check-circle" class="fa fa-check-circle"></i>
   <div class="integr8ly-container">
     <ol role="navigation" aria-label="breadcrumbs" class="integr8ly-breadcrumb breadcrumb">
       <li class="">
@@ -89,7 +92,9 @@
               </div>
               <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
                 <div class="pf-c-content">
-                  <i class="integr8ly-alert-icon fas fa-check-circle"></i>
+                    <svg title="testing" class="icon integr8ly-alert-icon">
+                      <use xlink:href="#check-circle"></use>
+                    </svg>
                   <strong>Check your work</strong>
                   <p>Check the <strong>Customizations</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connector exists.</p>
                   <div class="btn-group">
@@ -220,7 +225,15 @@
               </div>
               <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
                 <div class="pf-c-content">
-                  <i class="integr8ly-alert-icon fas fa-check-circle"></i>
+                  <span class="integr8ly-alert-icon">
+                    <svg
+                      height="24px"
+                      width="24px"
+                      fill="#519149"
+                    >
+                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                    </svg>
+                  </span>
                   <strong>Check your work</strong>
                   <div>
                     <div class="paragraph">
@@ -280,7 +293,15 @@
               </div>
               <div class="alert integr8ly-alert integr8ly-module-column--steps_alert-green">
                 <div class="pf-c-content">
-                  <i class="integr8ly-alert-icon fas fa-check-circle"></i>
+                  <span class="integr8ly-alert-icon">
+                    <svg
+                      height="24px"
+                      width="24px"
+                      fill="#519149"
+                    >
+                      <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                    </svg>
+                  </span>
                   <strong>Check your work</strong>
                   <p>Check the <strong>Connections</strong> screen of the <a href="https://fuse-6a4f303d-d850-11e8-85aa-0a580a800006.cluster-lfa3xlh.opentry.me" target="_blank" rel="noopener">Red Hat Fuse Online</a> console to make sure the new connection exists.</p>
                   <div class="btn-group">
@@ -301,11 +322,30 @@
             <div class="integr8ly-module-column--footer">
               <h6 class="pf-c-title pf-m-sm">Complete and check all work before proceeding</h6>
               <div class="integr8ly-module-column--footer_status">
-                <span aria-hidden="true" class="fas fa-check-circle integr8ly-module-column--footer_status-checked"></span>
+                <svg
+                  height="16px"
+                  width="16px"
+                  fill="#519149"
+                >
+                  <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                </svg>
                 <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.1</span>
-                <span aria-hidden="true" class="fas fa-check-circle integr8ly-module-column--footer_status-checked"></span>
+                <svg
+                  height="16px"
+                  width="16px"
+                  fill="#519149"
+                >
+                  <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                </svg>
                 <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.2</span>
-                <span aria-hidden="true" class="fas fa-check-circle integr8ly-module-column--footer_status-checked"></span>
+                <svg
+                  height="16px"
+                  width="16px"
+                  fill="#519149"
+                  title="Status Complete"
+                >
+                  <use xlink:href="assets/images/fa-solid.svg#check-circle"></use>
+                </svg>
                 <span class="integr8ly-module-column--footer_status-checked pf-u-mr-sm">1.3</span>
               </div>
               <div class="btn-group btn-group-justified" role="group" aria-label="module step progress buttons">
@@ -355,6 +395,7 @@
       </div>
     </div>
   </div>
+  <script src="js/all.min.js"></script>
   <script src="js/site.js"></script>
 </body>
 
