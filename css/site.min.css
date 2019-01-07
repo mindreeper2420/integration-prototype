@@ -9157,6 +9157,11 @@ ol {
   /* stylelint-disable-line declaration-no-important */
   font-weight: var(--pf-global--FontWeight--bold); }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em; }
+
 /* stylelint-disable selector-class-pattern */
 /* used to override existing classes */
 .alert-primary {
@@ -9553,7 +9558,7 @@ ol {
       margin-top: -2px;
       margin-bottom: 0;
       vertical-align: middle; }
-      .integr8ly-tutorial-card-pf-footer .progress .progress-bar[aria-valuenow="100"] {
+      .integr8ly-tutorial-card-pf-footer .progress .progress-bar[aria-valuenow='100'] {
         /* stylelint-disable-line selector-class-pattern */
         background-color: #519149; }
     .integr8ly-tutorial-card-pf-footer .progress-label {

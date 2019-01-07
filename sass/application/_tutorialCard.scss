@@ -32,7 +32,7 @@
       margin-bottom: 0;
       vertical-align: middle;
 
-      .progress-bar[aria-valuenow="100"] { /* stylelint-disable-line selector-class-pattern */
+      .progress-bar[aria-valuenow='100'] { /* stylelint-disable-line selector-class-pattern */
         background-color: $pf-color-green-400;
       }
     }
