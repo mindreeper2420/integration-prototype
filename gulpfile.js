@@ -84,7 +84,7 @@ gulp.task('browserSync', function () {
 
 gulp.task('copy-source', ['clean-dist'], function () {
   gulp.src('./README.md').pipe(gulp.dest('./dist'));
-  gulp.src('./package.json').pipe(gulp.dest('./dist'));
+  gulp.src('./*.json').pipe(gulp.dest('./dist'));
   gulp.src('./css/*.*').pipe(gulp.dest('./dist/css'));
   gulp.src('./js/*.*').pipe(gulp.dest('./dist/js'));
   gulp.src('./assets/images/**/*.*').pipe(gulp.dest('./dist/assets/images/'));
