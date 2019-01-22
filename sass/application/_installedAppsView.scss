@@ -1,3 +1,9 @@
+
+.integr8ly-installed-apps-list {
+  height: calc(100vh - 226px);
+  background-color: $pf-color-white;
+  border-left: 1px solid #ddd;
+}
 .integr8ly-installed-apps-view {
   // height: 100vh;
   // height: calc(100vh - 226px); // View port height - mastheads
