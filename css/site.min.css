@@ -19588,6 +19588,7 @@ ol {
 .integr8ly-label-community {
   margin-left: var(--pf-global--spacer--lg);
   padding: var(--pf-global--spacer--xs) var(--pf-global--spacer--sm);
+  height: 28px;
   border: var(--pf-global--BorderWidth--sm) solid;
   border-color: #d1d1d1;
   background-color: #d1d1d1;
@@ -19599,6 +19600,7 @@ ol {
 .integr8ly-label-preview {
   margin-left: var(--pf-global--spacer--lg);
   padding: var(--pf-global--spacer--xs) var(--pf-global--spacer--sm);
+  height: 28px;
   border: var(--pf-global--BorderWidth--sm) solid;
   border-color: #d1d1d1;
   background-color: #d1d1d1;
@@ -20182,6 +20184,13 @@ ol {
   margin-bottom: 0;
   border-bottom: 0;
   box-shadow: none; }
+  .integr8ly-installed-apps-view ul {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none; }
+  .integr8ly-installed-apps-view li + li {
+    margin-top: 0; }
   .integr8ly-installed-apps-view.panel-default > .panel-heading {
     background-color: #fff; }
   .integr8ly-installed-apps-view-panel-title {
