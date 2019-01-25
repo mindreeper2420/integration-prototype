@@ -473,8 +473,27 @@ ol {
       grid-column: 2;
     }
   }
-
   .btn-primary {
     color: $pf-color-white;
+    .fa,
+    .fas,
+    .far {
+      color: $pf-color-white;
+    }
   }
+}
+
+.pf-l-page--fix {
+  grid-template-columns: 1fr;
+}
+
+.pf-c-background-image {
+  &::before {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+}
+
+.pf-l-page__header-brand {
+  background-color: transparent;
 }

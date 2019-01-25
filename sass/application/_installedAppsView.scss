@@ -1,15 +1,27 @@
+
+.integr8ly-installed-apps-list {
+  height: calc(100vh - 226px);
+  background-color: $pf-color-white;
+  border-left: 1px solid #ddd;
+}
 .integr8ly-installed-apps-view {
-  height: 100vh;
   margin-bottom: 0;
   border-bottom: 0;
   box-shadow: none;
 
-  @media (max-width: 1091px) {
-    width: 100%;
+  ul {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
   }
 
-  @media (min-width: 1092px) {
-    width: 33.3%;
+  li + li {
+    margin-top: 0;
+  }
+
+  &.panel-default > .panel-heading {
+    background-color: #fff;
   }
 
   &-panel-title {
