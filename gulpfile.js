@@ -48,9 +48,6 @@ gulp.task('sass', ['lint-sass'], function () {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
