@@ -23,6 +23,8 @@ $pf-global--enable-reset: false !default;
 // Components
 @import '../node_modules/@patternfly/patternfly-next/components/AboutModalBox/about-modal-box.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Alert/alert.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/AlertGroup/alert-group.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/AppLauncher/app-launcher.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Avatar/avatar.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Backdrop/backdrop.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/BackgroundImage/background-image.scss';
@@ -49,6 +51,7 @@ $pf-global--enable-reset: false !default;
 @import '../node_modules/@patternfly/patternfly-next/components/Page/page.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Popover/popover.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Progress/progress.scss';
+@import '../node_modules/@patternfly/patternfly-next/components/Select/select.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Switch/switch.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Table/table.scss';
 @import '../node_modules/@patternfly/patternfly-next/components/Tabs/tabs.scss';
@@ -57,6 +60,8 @@ $pf-global--enable-reset: false !default;
 
 // Layouts
 @import '../node_modules/@patternfly/patternfly-next/layouts/Bullseye/bullseye.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Flex/flex-ba.scss';
+@import '../node_modules/@patternfly/patternfly-next/layouts/Flex/flex.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Gallery/gallery.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Grid/grid.scss';
 @import '../node_modules/@patternfly/patternfly-next/layouts/Level/level.scss';
@@ -65,13 +70,7 @@ $pf-global--enable-reset: false !default;
 @import '../node_modules/@patternfly/patternfly-next/layouts/Toolbar/toolbar.scss';
 
 // Utilities
-@import '../node_modules/@patternfly/patternfly-next/utilities/Accessibility/accessibility.scss';
-@import '../node_modules/@patternfly/patternfly-next/utilities/Alignment/alignment.scss';
-@import '../node_modules/@patternfly/patternfly-next/utilities/BoxShadow/box-shadow.scss';
-@import '../node_modules/@patternfly/patternfly-next/utilities/Display/display.scss';
-@import '../node_modules/@patternfly/patternfly-next/utilities/Flex/flex.scss';
-@import '../node_modules/@patternfly/patternfly-next/utilities/Sizing/sizing.scss';
-@import '../node_modules/@patternfly/patternfly-next/utilities/Spacing/spacing.scss';
+@import '../node_modules/@patternfly/patternfly-next/patternfly-addons.scss';
 
 // Font Awesome 5 icons
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
