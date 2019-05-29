@@ -38,7 +38,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^7.0.0",
-    "stylelint": "^9.2.1"
+    "stylelint": "^9.10.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.6.3",
